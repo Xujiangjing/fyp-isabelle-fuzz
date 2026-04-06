@@ -1,0 +1,641 @@
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0000_round001_20260331_201748_prob_zipperposition_1.p ====
+21:    one_one_nat : nat).
+99:    ((![X : nat]: ((one_one_nat = X) = (X = one_one_nat)))), [], [isabelle_rank(922)]). % one_reorient
+151:    ((![X : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(1038)]). % one_plus_numeral_commute
+243:    ((zero_zero_nat != one_one_nat)), [], [isabelle_rank(1243)]). % zero_neq_one
+261:    ((![N : num]: ((plus_plus_nat @ (numeral_numeral_nat @ N) @ one_one_nat) = (numeral_numeral_nat @ (plus_plus_num @ N @ one))))), [], [isabelle_simp, isabelle_rank(1283)]). % numeral_plus_one
+265:    ((![N : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ N)) = (numeral_numeral_nat @ (plus_plus_num @ one @ N))))), [], [isabelle_simp, isabelle_rank(1292)]). % one_plus_numeral
+269:    ((numeral_numeral_nat = (^[K2 : num]: (compow_nat_nat @ (numeral_numeral_nat @ K2) @ (plus_plus_nat @ one_one_nat) @ zero_zero_nat)))), [], [isabelle_rank(1301)]). % numeral_unfold_funpow
+303:    ((![N : num]: (((numeral_numeral_nat @ N) = one_one_nat) = (N = one)))), [], [isabelle_simp, isabelle_rank(1377)]). % numeral_eq_one_iff
+307:    ((![N : num]: ((one_one_nat = (numeral_numeral_nat @ N)) = (one = N)))), [], [isabelle_simp, isabelle_rank(1386)]). % one_eq_numeral_iff
+325:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_rank(1426)]). % numerals(1)
+375:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_non_rec_def, isabelle_rank(1538)]). % numeral_One
+387:    ((![K : num, A : nat]: ((plus_plus_nat @ (numeral_numeral_nat @ K) @ A) = (compow_nat_nat @ (numeral_numeral_nat @ K) @ (plus_plus_nat @ one_one_nat) @ A)))), [], [isabelle_rank(1564)]). % numeral_add_unfold_funpow
+439:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_simp, isabelle_rank(1680)]). % one_add_one
+457:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_rank(1721)]). % nat_1_add_1
+467:    ((![P : nat > $o, N : nat]: ((P @ zero_zero_nat) => ((P @ one_one_nat) => ((![N2 : nat]: ((P @ N2) => (P @ (plus_plus_nat @ N2 @ (numeral_numeral_nat @ (bit0 @ one)))))) => (P @ N)))))), [], [isabelle_rank(1743)]). % nat_induct2
+681:    ((![N : num]: ((numeral_numeral_nat @ (bit1 @ N)) = (plus_plus_nat @ (plus_plus_nat @ (numeral_numeral_nat @ N) @ (numeral_numeral_nat @ N)) @ one_one_nat)))), [], [isabelle_rec_def, isabelle_rank(2220)]). % numeral_Bit1
+691:    ((![X : num]: ((numeral_numeral_nat @ (inc @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(2243)]). % numeral_inc
+699:    ((![N : num]: ((numeral_numeral_nat @ (bit1 @ N)) = (plus_plus_nat @ (times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (numeral_numeral_nat @ N)) @ one_one_nat)))), [], [isabelle_rank(2261)]). % numeral_Bit1_eq_inc_double
+705:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (plus_plus_nat @ A @ one_one_nat)) = (~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A)))))), [], [isabelle_simp, isabelle_rank(2274)]). % even_plus_one_iff
+711:    (((divide_divide_nat @ one_one_nat @ (numeral_numeral_nat @ (bit0 @ one))) = zero_zero_nat)), [], [isabelle_simp, isabelle_rank(2287)]). % one_div_two_eq_zero
+731:    ((![M : nat]: ((dvd_dvd_nat @ M @ one_one_nat) = (M = one_one_nat)))), [], [isabelle_simp, isabelle_rank(2332)]). % nat_dvd_1_iff_1
+733:    ((![M : nat, N : nat]: ((one_one_nat = (times_times_nat @ M @ N)) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(2337)]). % nat_1_eq_mult_iff
+735:    ((![M : nat, N : nat]: (((times_times_nat @ M @ N) = one_one_nat) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(2341)]). % nat_mult_eq_1_iff
+773:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(2426)]). % mult.right_neutral
+777:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_simp, isabelle_rank(2435)]). % mult_1
+809:    ((![A : nat]: ((divide_divide_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(2506)]). % div_by_1
+877:    ((![A : nat]: ((A != zero_zero_nat) => ((divide_divide_nat @ A @ A) = one_one_nat)))), [], [isabelle_simp, isabelle_rank(2658)]). % div_self
+891:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ (times_times_nat @ A @ B) @ one_one_nat))))), [], [isabelle_intro, isabelle_rank(2689)]). % unit_prod
+909:    ((![A : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((divide_divide_nat @ one_one_nat @ (divide_divide_nat @ one_one_nat @ A)) = A)))), [], [isabelle_simp, isabelle_rank(2729)]). % unit_div_1_div_1
+913:    ((![A : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (dvd_dvd_nat @ (divide_divide_nat @ one_one_nat @ A) @ one_one_nat)))), [], [isabelle_intro, isabelle_rank(2738)]). % unit_div_1_unit
+917:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ (divide_divide_nat @ A @ B) @ one_one_nat))))), [], [isabelle_intro, isabelle_rank(2747)]). % unit_div
+925:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((times_times_nat @ B @ (divide_divide_nat @ one_one_nat @ A)) = (divide_divide_nat @ B @ A))))), [], [isabelle_simp, isabelle_rank(2765)]). % unit_mult_div_div
+929:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((times_times_nat @ (divide_divide_nat @ B @ A) @ A) = B)))), [], [isabelle_simp, isabelle_rank(2774)]). % unit_div_mult_self
+955:    ((![N : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ N))) => ((times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (divide_divide_nat @ N @ (numeral_numeral_nat @ (bit0 @ one)))) = (minus_minus_nat @ N @ one_one_nat))))), [], [isabelle_simp, isabelle_rank(2832)]). % odd_two_times_div_two_nat
+959:    (((divide_divide_nat @ one_one_nat @ (numeral_numeral_nat @ (bit0 @ one))) = zero_zero_nat)), [], [isabelle_simp, isabelle_rank(2841)]). % bits_1_div_2
+963:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A) => ((divide_divide_nat @ (plus_plus_nat @ one_one_nat @ A) @ (numeral_numeral_nat @ (bit0 @ one))) = (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))))))), [], [isabelle_simp, isabelle_rank(2850)]). % even_half_succ_eq
+967:    ((![A : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A))) => ((divide_divide_nat @ (plus_plus_nat @ A @ one_one_nat) @ (numeral_numeral_nat @ (bit0 @ one))) = (plus_plus_nat @ (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))) @ one_one_nat))))), [], [isabelle_simp, isabelle_rank(2859)]). % odd_succ_div_two
+971:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A) => ((divide_divide_nat @ (plus_plus_nat @ A @ one_one_nat) @ (numeral_numeral_nat @ (bit0 @ one))) = (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))))))), [], [isabelle_simp, isabelle_rank(2868)]). % even_succ_div_two
+975:    ((![A : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A))) => ((plus_plus_nat @ (times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one)))) @ one_one_nat) = A)))), [], [isabelle_simp, isabelle_rank(2877)]). % odd_two_times_div_two_succ
+1095:    ((![A : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (~ (((A != zero_zero_nat) => (![B4 : nat]: ((B4 != zero_zero_nat) => ((dvd_dvd_nat @ B4 @ one_one_nat) => (((divide_divide_nat @ one_one_nat @ A) = B4) => (((divide_divide_nat @ one_one_nat @ B4) = A) => (((times_times_nat @ A @ B4) = one_one_nat) => ((divide_divide_nat @ C @ A) != (times_times_nat @ C @ B4)))))))))))))), [], [isabelle_rank(3144)]). % is_unitE
+1099:    ((![A : nat, B : nat]: ((A != zero_zero_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ A @ B)) = (divide_divide_nat @ one_one_nat @ B)))))), [], [isabelle_rank(3153)]). % is_unit_div_mult_cancel_left
+1103:    ((![A : nat, B : nat]: ((A != zero_zero_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ B @ A)) = (divide_divide_nat @ one_one_nat @ B)))))), [], [isabelle_rank(3162)]). % is_unit_div_mult_cancel_right
+1105:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((times_times_nat @ B @ A) = (times_times_nat @ C @ A)) = (B = C))))), [], [isabelle_rank(3167)]). % unit_mult_right_cancel
+1109:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((times_times_nat @ A @ B) = (times_times_nat @ A @ C)) = (B = C))))), [], [isabelle_rank(3176)]). % unit_mult_left_cancel
+1113:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ C) = (dvd_dvd_nat @ B @ C))))), [], [isabelle_rank(3184)]). % mult_unit_dvd_iff'
+1117:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (times_times_nat @ B @ C)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3193)]). % dvd_mult_unit_iff'
+1121:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ C) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3202)]). % mult_unit_dvd_iff
+1125:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (times_times_nat @ C @ B)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3211)]). % dvd_mult_unit_iff
+1129:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ one_one_nat) = (((dvd_dvd_nat @ A @ one_one_nat)) & ((dvd_dvd_nat @ B @ one_one_nat)))))), [], [isabelle_rank(3220)]). % is_unit_mult_iff
+1139:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (divide_divide_nat @ C @ B)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3242)]). % dvd_div_unit_iff
+1143:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ (divide_divide_nat @ A @ B) @ C) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3251)]). % div_unit_dvd_iff
+1147:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((divide_divide_nat @ B @ A) = (divide_divide_nat @ C @ A)) = (B = C))))), [], [isabelle_rank(3260)]). % unit_div_cancel
+1163:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (((divide_divide_nat @ A @ B) = C) = (A = (times_times_nat @ C @ B)))))), [], [isabelle_rank(3296)]). % unit_eq_div1
+1167:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((A = (divide_divide_nat @ C @ B)) = ((times_times_nat @ A @ B) = C))))), [], [isabelle_rank(3305)]). % unit_eq_div2
+1171:    ((![C : nat, B : nat, A : nat]: ((dvd_dvd_nat @ C @ one_one_nat) => ((dvd_dvd_nat @ B @ A) => ((divide_divide_nat @ A @ (times_times_nat @ B @ C)) = (divide_divide_nat @ (divide_divide_nat @ A @ B) @ C)))))), [], [isabelle_rank(3314)]). % div_mult_unit2
+1175:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((times_times_nat @ (divide_divide_nat @ A @ B) @ C) = (divide_divide_nat @ (times_times_nat @ A @ C) @ B))))), [], [isabelle_rank(3323)]). % unit_div_commute
+1179:    ((![C : nat, A : nat, B : nat]: ((dvd_dvd_nat @ C @ one_one_nat) => ((times_times_nat @ A @ (divide_divide_nat @ B @ C)) = (divide_divide_nat @ (times_times_nat @ A @ B) @ C))))), [], [isabelle_rank(3332)]). % unit_div_mult_swap
+1183:    ((![B : nat, C : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ C @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ B @ C)) = (divide_divide_nat @ (divide_divide_nat @ A @ B) @ C)))))), [], [isabelle_rank(3341)]). % is_unit_div_mult2_eq
+1213:    ((![B : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (((divide_divide_nat @ A @ B) = zero_zero_nat) = (A = zero_zero_nat))))), [], [isabelle_rank(3408)]). % unit_div_eq_0_iff
+1215:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (~ (((A != zero_zero_nat) => (![C2 : nat]: (B != (times_times_nat @ A @ C2))))))))), [], [isabelle_rank(3412)]). % unit_dvdE
+1243:    ((![A : nat]: (dvd_dvd_nat @ one_one_nat @ A))), [], [isabelle_rank(3475)]). % one_dvd
+1247:    ((![B : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ B @ A)))), [], [isabelle_rank(3483)]). % unit_imp_dvd
+1251:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ B) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ A @ one_one_nat))))), [], [isabelle_rank(3492)]). % dvd_unit_imp_unit
+1293:    ((![N : nat]: ((times_times_nat @ one_one_nat @ N) = N))), [], [isabelle_rank(3586)]). % nat_mult_1
+1295:    ((![N : nat]: ((times_times_nat @ N @ one_one_nat) = N))), [], [isabelle_rank(3591)]). % nat_mult_1_right
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0001_round001_20260331_201748_prob_zipperposition_min_1.p ====
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0002_round002_20260331_201817_prob_zipperposition_1.p ====
+29:    one_one_nat : nat).
+55:    groups1056228905et_nat : (nat > nat > nat) > nat > $o).
+59:    groups437861367st_nat : (nat > nat > nat) > nat > $o).
+63:    groups1753312493et_nat : (nat > nat > nat) > nat > $o).
+67:    groups1125920043st_nat : (nat > nat > nat) > nat > $o).
+99:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(900)]). % mult.right_neutral
+103:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_simp, isabelle_rank(908)]). % mult_1
+107:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_rank(917)]). % comm_monoid_mult_class.mult_1
+111:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_rank(926)]). % mult.comm_neutral
+117:    ((![X : nat]: ((one_one_nat = X) = (X = one_one_nat)))), [], [isabelle_rank(940)]). % one_reorient
+137:    ((groups1753312493et_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(984)]). % prod.comm_monoid_list_set_axioms
+141:    ((groups437861367st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(993)]). % prod_list.comm_monoid_list_axioms
+145:    ((groups1125920043st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1002)]). % prod_list.monoid_list_axioms
+149:    ((monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1011)]). % mult.monoid_axioms
+153:    ((comm_monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1020)]). % mult.comm_monoid_axioms
+245:    ((zero_zero_nat != one_one_nat)), [], [isabelle_rank(1225)]). % zero_neq_one
+251:    ((groups1056228905et_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1238)]). % prod.comm_monoid_set_axioms
+537:    ((![X : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(1875)]). % one_plus_numeral_commute
+551:    ((![N : num]: (ord_less_eq_nat @ one_one_nat @ (numeral_numeral_nat @ N)))), [], [isabelle_rank(1906)]). % one_le_numeral
+789:    ((ord_less_eq_nat @ one_one_nat @ one_one_nat)), [], [isabelle_rank(2437)]). % le_numeral_extra(4)
+871:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2619)]). % zero_less_one_class.zero_le_one
+875:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2628)]). % linordered_nonzero_semiring_class.zero_le_one
+879:    ((~ ((ord_less_eq_nat @ one_one_nat @ zero_zero_nat)))), [], [isabelle_rank(2637)]). % not_one_le_zero
+885:    ((groups1056228905et_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2650)]). % sum.comm_monoid_set_axioms
+897:    ((groups1125920043st_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2677)]). % sum_list.monoid_list_axioms
+901:    ((groups437861367st_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2686)]). % sum_list.comm_monoid_list_axioms
+905:    ((groups1753312493et_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2695)]). % sum.comm_monoid_list_set_axioms
+917:    ((![A : nat, B : nat]: ((ord_less_eq_nat @ A @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ B) => ((ord_less_eq_nat @ B @ one_one_nat) => (ord_less_eq_nat @ (times_times_nat @ A @ B) @ one_one_nat)))))), [], [isabelle_rank(2722)]). % mult_le_one
+921:    ((![C : nat, A : nat]: ((ord_less_eq_nat @ C @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ A) => (ord_less_eq_nat @ (times_times_nat @ A @ C) @ A))))), [], [isabelle_rank(2731)]). % mult_left_le
+1085:    ((![N : num]: (((numeral_numeral_nat @ N) = one_one_nat) = (N = one)))), [], [isabelle_simp, isabelle_rank(3096)]). % numeral_eq_one_iff
+1089:    ((![N : num]: ((one_one_nat = (numeral_numeral_nat @ N)) = (one = N)))), [], [isabelle_simp, isabelle_rank(3105)]). % one_eq_numeral_iff
+1099:    ((![N : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ N)) = (numeral_numeral_nat @ (plus_plus_num @ one @ N))))), [], [isabelle_simp, isabelle_rank(3127)]). % one_plus_numeral
+1103:    ((![N : num]: ((plus_plus_nat @ (numeral_numeral_nat @ N) @ one_one_nat) = (numeral_numeral_nat @ (plus_plus_num @ N @ one))))), [], [isabelle_simp, isabelle_rank(3136)]). % numeral_plus_one
+1113:    ((![N : num]: ((ord_less_eq_nat @ (numeral_numeral_nat @ N) @ one_one_nat) = (ord_less_eq_num @ N @ one)))), [], [isabelle_simp, isabelle_rank(3158)]). % numeral_le_one_iff
+1119:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_rank(3172)]). % numerals(1)
+1135:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_non_rec_def, isabelle_rank(3207)]). % numeral_One
+1147:    ((![X : num]: ((numeral_numeral_nat @ (inc @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(3234)]). % numeral_inc
+1191:    ((![M : nat, N : nat]: ((one_one_nat = (times_times_nat @ M @ N)) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(3332)]). % nat_1_eq_mult_iff
+1193:    ((![M : nat, N : nat]: (((times_times_nat @ M @ N) = one_one_nat) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(3337)]). % nat_mult_eq_1_iff
+1233:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_simp, isabelle_rank(3426)]). % one_add_one
+1281:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_rank(3533)]). % nat_1_add_1
+1283:    ((times_times_nat = (^[M2 : nat]: (^[N2 : nat]: $ite((M2 = zero_zero_nat), zero_zero_nat, (plus_plus_nat @ N2 @ (times_times_nat @ (minus_minus_nat @ M2 @ one_one_nat) @ N2))))))), [], [isabelle_rank(3537)]). % mult_eq_if
+1285:    ((![M : nat, N : nat]: ((M = (times_times_nat @ M @ N)) => ((N = one_one_nat) | (M = zero_zero_nat))))), [], [isabelle_rank(3542)]). % mult_eq_self_implies_10
+1287:    ((![N : nat]: ((times_times_nat @ N @ one_one_nat) = N))), [], [isabelle_rank(3546)]). % nat_mult_1_right
+1289:    ((![N : nat]: ((times_times_nat @ one_one_nat @ N) = N))), [], [isabelle_rank(3550)]). % nat_mult_1
+1291:    ((![P : nat > $o, N : nat]: ((P @ zero_zero_nat) => ((P @ one_one_nat) => ((![N3 : nat]: ((P @ N3) => (P @ (plus_plus_nat @ N3 @ (numeral_numeral_nat @ (bit0 @ one)))))) => (P @ N)))))), [], [isabelle_rank(3555)]). % nat_induct2
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0003_round002_20260331_201817_prob_zipperposition_min_1.p ====
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0004_round003_20260331_201852_prob_zipperposition_1.p ====
+45:    one_one_nat : nat).
+69:    groups437861367st_nat : (nat > nat > nat) > nat > $o).
+75:    groups1753312493et_nat : (nat > nat > nat) > nat > $o).
+81:    groups1125920043st_nat : (nat > nat > nat) > nat > $o).
+131:    ((![M : nat, N : nat]: ((one_one_nat = (times_times_nat @ M @ N)) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(900)]). % nat_1_eq_mult_iff
+133:    ((![M : nat, N : nat]: (((times_times_nat @ M @ N) = one_one_nat) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(904)]). % nat_mult_eq_1_iff
+135:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(908)]). % mult.right_neutral
+141:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_simp, isabelle_rank(922)]). % mult_1
+147:    ((![N : nat]: ((times_times_nat @ one_one_nat @ N) = N))), [], [isabelle_rank(935)]). % nat_mult_1
+149:    ((![N : nat]: ((times_times_nat @ N @ one_one_nat) = N))), [], [isabelle_rank(940)]). % nat_mult_1_right
+151:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_rank(944)]). % comm_monoid_mult_class.mult_1
+157:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_rank(958)]). % mult.comm_neutral
+163:    ((one_one_nat = one_one_nat)), [], [isabelle_rank(971)]). % one_natural.rsp
+165:    ((![X : nat]: ((one_one_nat = X) = (X = one_one_nat)))), [], [isabelle_rank(975)]). % one_reorient
+195:    ((monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1042)]). % mult.monoid_axioms
+201:    (((code_nat_of_integer @ one_one_Code_integer) = one_one_nat)), [], [isabelle_simp, isabelle_rank(1056)]). % nat_of_integer_1
+203:    ((comm_monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1060)]). % mult.comm_monoid_axioms
+209:    ((![N : nat]: (((semiri1382578993at_nat @ N) = one_one_nat) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1074)]). % of_nat_eq_1_iff
+211:    ((![N : nat]: (((semiri401560510nteger @ N) = one_one_Code_integer) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1078)]). % of_nat_eq_1_iff
+213:    ((![N : nat]: (((semiri341361033atural @ N) = one_one_Code_natural) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1082)]). % of_nat_eq_1_iff
+215:    ((![N : nat]: (((semiri2019852685at_int @ N) = one_one_int) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1087)]). % of_nat_eq_1_iff
+217:    ((![N : nat]: ((one_one_nat = (semiri1382578993at_nat @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1091)]). % of_nat_1_eq_iff
+219:    ((![N : nat]: ((one_one_Code_integer = (semiri401560510nteger @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1096)]). % of_nat_1_eq_iff
+221:    ((![N : nat]: ((one_one_Code_natural = (semiri341361033atural @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1100)]). % of_nat_1_eq_iff
+223:    ((![N : nat]: ((one_one_int = (semiri2019852685at_int @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1105)]). % of_nat_1_eq_iff
+225:    (((semiri1382578993at_nat @ one_one_nat) = one_one_nat)), [], [isabelle_simp, isabelle_rank(1109)]). % of_nat_1
+227:    (((semiri401560510nteger @ one_one_nat) = one_one_Code_integer)), [], [isabelle_simp, isabelle_rank(1114)]). % of_nat_1
+229:    (((semiri341361033atural @ one_one_nat) = one_one_Code_natural)), [], [isabelle_simp, isabelle_rank(1118)]). % of_nat_1
+231:    (((semiri2019852685at_int @ one_one_nat) = one_one_int)), [], [isabelle_simp, isabelle_rank(1123)]). % of_nat_1
+241:    ((![M : nat, N : nat]: ((M = (times_times_nat @ M @ N)) => ((N = one_one_nat) | (M = zero_zero_nat))))), [], [isabelle_rank(1145)]). % mult_eq_self_implies_10
+243:    (((code_integer_of_nat @ one_one_nat) = one_one_Code_integer)), [], [isabelle_rank(1149)]). % integer_of_nat_1
+245:    ((groups1753312493et_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1154)]). % prod.comm_monoid_list_set_axioms
+251:    ((groups437861367st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1167)]). % prod_list.comm_monoid_list_axioms
+257:    ((groups1125920043st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1181)]). % prod_list.monoid_list_axioms
+321:    ((groups437861367st_nat = (^[F2 : nat > nat > nat]: (^[Z2 : nat]: (((comm_monoid_nat @ F2 @ Z2)) & ((groups1125920043st_nat @ F2 @ Z2))))))), [], [isabelle_rank(1323)]). % comm_monoid_list_def
+323:    ((groups1125920043st_nat = monoid_nat)), [], [isabelle_rank(1328)]). % monoid_list_def
+325:    ((![F : nat > nat > nat, Z : nat]: ((comm_monoid_nat @ F @ Z) => ((groups1125920043st_nat @ F @ Z) => (groups437861367st_nat @ F @ Z))))), [], [isabelle_rank(1332)]). % comm_monoid_list.intro
+327:    ((![F : nat > nat > nat, Z : nat]: ((groups1125920043st_nat @ F @ Z) => (monoid_nat @ F @ Z)))), [], [isabelle_rank(1337)]). % monoid_list.axioms
+329:    ((![F : nat > nat > nat, Z : nat]: ((monoid_nat @ F @ Z) => (groups1125920043st_nat @ F @ Z)))), [], [isabelle_rank(1341)]). % monoid_list.intro
+331:    ((![F : nat > nat > nat, Z : nat]: ((groups437861367st_nat @ F @ Z) => (comm_monoid_nat @ F @ Z)))), [], [isabelle_rank(1346)]). % comm_monoid_list.axioms(1)
+391:    ((zero_zero_nat != one_one_nat)), [], [isabelle_rank(1480)]). % zero_neq_one
+441:    (((semiri2019852685at_int @ one_one_nat) = one_one_int)), [], [isabelle_rank(1591)]). % int_ops(2)
+453:    ((![C : nat, A : nat]: ((ord_less_eq_nat @ C @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ A) => (ord_less_eq_nat @ (times_times_nat @ A @ C) @ A))))), [], [isabelle_rank(1618)]). % mult_left_le
+629:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2011)]). % zero_less_one_class.zero_le_one
+635:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2024)]). % linordered_nonzero_semiring_class.zero_le_one
+641:    ((~ ((ord_less_eq_nat @ one_one_nat @ zero_zero_nat)))), [], [isabelle_rank(2038)]). % not_one_le_zero
+663:    ((![A : nat, B : nat]: ((ord_less_eq_nat @ A @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ B) => ((ord_less_eq_nat @ B @ one_one_nat) => (ord_less_eq_nat @ (times_times_nat @ A @ B) @ one_one_nat)))))), [], [isabelle_rank(2087)]). % mult_le_one
+669:    ((![K : nat]: ((ord_le1366515336atural @ (semiri341361033atural @ K) @ one_one_Code_natural) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2100)]). % of_nat_le_1_iff
+671:    ((![K : nat]: ((ord_less_eq_nat @ (semiri1382578993at_nat @ K) @ one_one_nat) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2104)]). % of_nat_le_1_iff
+673:    ((![K : nat]: ((ord_le1426714813nteger @ (semiri401560510nteger @ K) @ one_one_Code_integer) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2109)]). % of_nat_le_1_iff
+675:    ((![K : nat]: ((ord_less_eq_int @ (semiri2019852685at_int @ K) @ one_one_int) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2113)]). % of_nat_le_1_iff
+677:    ((![K : nat]: ((ord_le1366515336atural @ one_one_Code_natural @ (semiri341361033atural @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2118)]). % one_of_nat_le_iff
+679:    ((![K : nat]: ((ord_less_eq_nat @ one_one_nat @ (semiri1382578993at_nat @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2122)]). % one_of_nat_le_iff
+681:    ((![K : nat]: ((ord_le1426714813nteger @ one_one_Code_integer @ (semiri401560510nteger @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2127)]). % one_of_nat_le_iff
+683:    ((![K : nat]: ((ord_less_eq_int @ one_one_int @ (semiri2019852685at_int @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2131)]). % one_of_nat_le_iff
+689:    (((ord_max_nat @ one_one_nat @ zero_zero_nat) = one_one_nat)), [], [isabelle_simp, isabelle_rank(2145)]). % max_0_1(2)
+695:    (((ord_max_nat @ zero_zero_nat @ one_one_nat) = one_one_nat)), [], [isabelle_simp, isabelle_rank(2158)]). % max_0_1(1)
+783:    ((ord_less_eq_nat @ one_one_nat @ one_one_nat)), [], [isabelle_rank(2354)]). % le_numeral_extra(4)
+1159:    ((![N : nat]: ((ord_less_nat @ N @ one_one_nat) = (N = zero_zero_nat)))), [], [isabelle_simp, isabelle_rank(3193)]). % less_one
+1205:    ((![K : nat]: ((ord_less_nat @ one_one_nat @ (semiri1382578993at_nat @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3296)]). % one_of_nat_less_iff
+1207:    ((![K : nat]: ((ord_le945590961nteger @ one_one_Code_integer @ (semiri401560510nteger @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3300)]). % one_of_nat_less_iff
+1209:    ((![K : nat]: ((ord_le885391484atural @ one_one_Code_natural @ (semiri341361033atural @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3305)]). % one_of_nat_less_iff
+1211:    ((![K : nat]: ((ord_less_int @ one_one_int @ (semiri2019852685at_int @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3309)]). % one_of_nat_less_iff
+1213:    ((![K : nat]: ((ord_less_nat @ (semiri1382578993at_nat @ K) @ one_one_nat) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3314)]). % of_nat_less_1_iff
+1215:    ((![K : nat]: ((ord_le945590961nteger @ (semiri401560510nteger @ K) @ one_one_Code_integer) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3318)]). % of_nat_less_1_iff
+1217:    ((![K : nat]: ((ord_le885391484atural @ (semiri341361033atural @ K) @ one_one_Code_natural) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3323)]). % of_nat_less_1_iff
+1219:    ((![K : nat]: ((ord_less_int @ (semiri2019852685at_int @ K) @ one_one_int) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3327)]). % of_nat_less_1_iff
+1343:    (((times_times_nat @ c @ one_one_nat) = c))).
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0005_round003_20260331_201852_prob_zipperposition_min_1.p ====
+9:    one_one_nat : nat).
+17:    (((times_times_nat @ c @ one_one_nat) = c))).
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0006_round004_20260331_201918_prob_zipperposition_1.p ====
+21:    one_one_nat : nat).
+99:    ((![X : nat]: ((one_one_nat = X) = (X = one_one_nat)))), [], [isabelle_rank(922)]). % one_reorient
+151:    ((![X : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(1038)]). % one_plus_numeral_commute
+243:    ((zero_zero_nat != one_one_nat)), [], [isabelle_rank(1243)]). % zero_neq_one
+261:    ((![N : num]: ((plus_plus_nat @ (numeral_numeral_nat @ N) @ one_one_nat) = (numeral_numeral_nat @ (plus_plus_num @ N @ one))))), [], [isabelle_simp, isabelle_rank(1283)]). % numeral_plus_one
+265:    ((![N : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ N)) = (numeral_numeral_nat @ (plus_plus_num @ one @ N))))), [], [isabelle_simp, isabelle_rank(1292)]). % one_plus_numeral
+269:    ((numeral_numeral_nat = (^[K2 : num]: (compow_nat_nat @ (numeral_numeral_nat @ K2) @ (plus_plus_nat @ one_one_nat) @ zero_zero_nat)))), [], [isabelle_rank(1301)]). % numeral_unfold_funpow
+303:    ((![N : num]: (((numeral_numeral_nat @ N) = one_one_nat) = (N = one)))), [], [isabelle_simp, isabelle_rank(1377)]). % numeral_eq_one_iff
+307:    ((![N : num]: ((one_one_nat = (numeral_numeral_nat @ N)) = (one = N)))), [], [isabelle_simp, isabelle_rank(1386)]). % one_eq_numeral_iff
+325:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_rank(1426)]). % numerals(1)
+375:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_non_rec_def, isabelle_rank(1538)]). % numeral_One
+387:    ((![K : num, A : nat]: ((plus_plus_nat @ (numeral_numeral_nat @ K) @ A) = (compow_nat_nat @ (numeral_numeral_nat @ K) @ (plus_plus_nat @ one_one_nat) @ A)))), [], [isabelle_rank(1564)]). % numeral_add_unfold_funpow
+439:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_simp, isabelle_rank(1680)]). % one_add_one
+457:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_rank(1721)]). % nat_1_add_1
+467:    ((![P : nat > $o, N : nat]: ((P @ zero_zero_nat) => ((P @ one_one_nat) => ((![N2 : nat]: ((P @ N2) => (P @ (plus_plus_nat @ N2 @ (numeral_numeral_nat @ (bit0 @ one)))))) => (P @ N)))))), [], [isabelle_rank(1743)]). % nat_induct2
+681:    ((![N : num]: ((numeral_numeral_nat @ (bit1 @ N)) = (plus_plus_nat @ (plus_plus_nat @ (numeral_numeral_nat @ N) @ (numeral_numeral_nat @ N)) @ one_one_nat)))), [], [isabelle_rec_def, isabelle_rank(2220)]). % numeral_Bit1
+691:    ((![X : num]: ((numeral_numeral_nat @ (inc @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(2243)]). % numeral_inc
+699:    ((![N : num]: ((numeral_numeral_nat @ (bit1 @ N)) = (plus_plus_nat @ (times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (numeral_numeral_nat @ N)) @ one_one_nat)))), [], [isabelle_rank(2261)]). % numeral_Bit1_eq_inc_double
+705:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (plus_plus_nat @ A @ one_one_nat)) = (~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A)))))), [], [isabelle_simp, isabelle_rank(2274)]). % even_plus_one_iff
+711:    (((divide_divide_nat @ one_one_nat @ (numeral_numeral_nat @ (bit0 @ one))) = zero_zero_nat)), [], [isabelle_simp, isabelle_rank(2287)]). % one_div_two_eq_zero
+731:    ((![M : nat]: ((dvd_dvd_nat @ M @ one_one_nat) = (M = one_one_nat)))), [], [isabelle_simp, isabelle_rank(2332)]). % nat_dvd_1_iff_1
+733:    ((![M : nat, N : nat]: ((one_one_nat = (times_times_nat @ M @ N)) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(2337)]). % nat_1_eq_mult_iff
+735:    ((![M : nat, N : nat]: (((times_times_nat @ M @ N) = one_one_nat) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(2341)]). % nat_mult_eq_1_iff
+773:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(2426)]). % mult.right_neutral
+777:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_simp, isabelle_rank(2435)]). % mult_1
+809:    ((![A : nat]: ((divide_divide_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(2506)]). % div_by_1
+877:    ((![A : nat]: ((A != zero_zero_nat) => ((divide_divide_nat @ A @ A) = one_one_nat)))), [], [isabelle_simp, isabelle_rank(2658)]). % div_self
+891:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ (times_times_nat @ A @ B) @ one_one_nat))))), [], [isabelle_intro, isabelle_rank(2689)]). % unit_prod
+909:    ((![A : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((divide_divide_nat @ one_one_nat @ (divide_divide_nat @ one_one_nat @ A)) = A)))), [], [isabelle_simp, isabelle_rank(2729)]). % unit_div_1_div_1
+913:    ((![A : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (dvd_dvd_nat @ (divide_divide_nat @ one_one_nat @ A) @ one_one_nat)))), [], [isabelle_intro, isabelle_rank(2738)]). % unit_div_1_unit
+917:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ (divide_divide_nat @ A @ B) @ one_one_nat))))), [], [isabelle_intro, isabelle_rank(2747)]). % unit_div
+925:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((times_times_nat @ B @ (divide_divide_nat @ one_one_nat @ A)) = (divide_divide_nat @ B @ A))))), [], [isabelle_simp, isabelle_rank(2765)]). % unit_mult_div_div
+929:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((times_times_nat @ (divide_divide_nat @ B @ A) @ A) = B)))), [], [isabelle_simp, isabelle_rank(2774)]). % unit_div_mult_self
+955:    ((![N : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ N))) => ((times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (divide_divide_nat @ N @ (numeral_numeral_nat @ (bit0 @ one)))) = (minus_minus_nat @ N @ one_one_nat))))), [], [isabelle_simp, isabelle_rank(2832)]). % odd_two_times_div_two_nat
+959:    (((divide_divide_nat @ one_one_nat @ (numeral_numeral_nat @ (bit0 @ one))) = zero_zero_nat)), [], [isabelle_simp, isabelle_rank(2841)]). % bits_1_div_2
+963:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A) => ((divide_divide_nat @ (plus_plus_nat @ one_one_nat @ A) @ (numeral_numeral_nat @ (bit0 @ one))) = (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))))))), [], [isabelle_simp, isabelle_rank(2850)]). % even_half_succ_eq
+967:    ((![A : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A))) => ((divide_divide_nat @ (plus_plus_nat @ A @ one_one_nat) @ (numeral_numeral_nat @ (bit0 @ one))) = (plus_plus_nat @ (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))) @ one_one_nat))))), [], [isabelle_simp, isabelle_rank(2859)]). % odd_succ_div_two
+971:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A) => ((divide_divide_nat @ (plus_plus_nat @ A @ one_one_nat) @ (numeral_numeral_nat @ (bit0 @ one))) = (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))))))), [], [isabelle_simp, isabelle_rank(2868)]). % even_succ_div_two
+975:    ((![A : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A))) => ((plus_plus_nat @ (times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one)))) @ one_one_nat) = A)))), [], [isabelle_simp, isabelle_rank(2877)]). % odd_two_times_div_two_succ
+1095:    ((![A : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (~ (((A != zero_zero_nat) => (![B4 : nat]: ((B4 != zero_zero_nat) => ((dvd_dvd_nat @ B4 @ one_one_nat) => (((divide_divide_nat @ one_one_nat @ A) = B4) => (((divide_divide_nat @ one_one_nat @ B4) = A) => (((times_times_nat @ A @ B4) = one_one_nat) => ((divide_divide_nat @ C @ A) != (times_times_nat @ C @ B4)))))))))))))), [], [isabelle_rank(3144)]). % is_unitE
+1099:    ((![A : nat, B : nat]: ((A != zero_zero_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ A @ B)) = (divide_divide_nat @ one_one_nat @ B)))))), [], [isabelle_rank(3153)]). % is_unit_div_mult_cancel_left
+1103:    ((![A : nat, B : nat]: ((A != zero_zero_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ B @ A)) = (divide_divide_nat @ one_one_nat @ B)))))), [], [isabelle_rank(3162)]). % is_unit_div_mult_cancel_right
+1105:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((times_times_nat @ B @ A) = (times_times_nat @ C @ A)) = (B = C))))), [], [isabelle_rank(3167)]). % unit_mult_right_cancel
+1109:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((times_times_nat @ A @ B) = (times_times_nat @ A @ C)) = (B = C))))), [], [isabelle_rank(3176)]). % unit_mult_left_cancel
+1113:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ C) = (dvd_dvd_nat @ B @ C))))), [], [isabelle_rank(3184)]). % mult_unit_dvd_iff'
+1117:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (times_times_nat @ B @ C)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3193)]). % dvd_mult_unit_iff'
+1121:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ C) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3202)]). % mult_unit_dvd_iff
+1125:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (times_times_nat @ C @ B)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3211)]). % dvd_mult_unit_iff
+1129:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ one_one_nat) = (((dvd_dvd_nat @ A @ one_one_nat)) & ((dvd_dvd_nat @ B @ one_one_nat)))))), [], [isabelle_rank(3220)]). % is_unit_mult_iff
+1139:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (divide_divide_nat @ C @ B)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3242)]). % dvd_div_unit_iff
+1143:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ (divide_divide_nat @ A @ B) @ C) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3251)]). % div_unit_dvd_iff
+1147:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((divide_divide_nat @ B @ A) = (divide_divide_nat @ C @ A)) = (B = C))))), [], [isabelle_rank(3260)]). % unit_div_cancel
+1163:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (((divide_divide_nat @ A @ B) = C) = (A = (times_times_nat @ C @ B)))))), [], [isabelle_rank(3296)]). % unit_eq_div1
+1167:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((A = (divide_divide_nat @ C @ B)) = ((times_times_nat @ A @ B) = C))))), [], [isabelle_rank(3305)]). % unit_eq_div2
+1171:    ((![C : nat, B : nat, A : nat]: ((dvd_dvd_nat @ C @ one_one_nat) => ((dvd_dvd_nat @ B @ A) => ((divide_divide_nat @ A @ (times_times_nat @ B @ C)) = (divide_divide_nat @ (divide_divide_nat @ A @ B) @ C)))))), [], [isabelle_rank(3314)]). % div_mult_unit2
+1175:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((times_times_nat @ (divide_divide_nat @ A @ B) @ C) = (divide_divide_nat @ (times_times_nat @ A @ C) @ B))))), [], [isabelle_rank(3323)]). % unit_div_commute
+1179:    ((![C : nat, A : nat, B : nat]: ((dvd_dvd_nat @ C @ one_one_nat) => ((times_times_nat @ A @ (divide_divide_nat @ B @ C)) = (divide_divide_nat @ (times_times_nat @ A @ B) @ C))))), [], [isabelle_rank(3332)]). % unit_div_mult_swap
+1183:    ((![B : nat, C : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ C @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ B @ C)) = (divide_divide_nat @ (divide_divide_nat @ A @ B) @ C)))))), [], [isabelle_rank(3341)]). % is_unit_div_mult2_eq
+1213:    ((![B : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (((divide_divide_nat @ A @ B) = zero_zero_nat) = (A = zero_zero_nat))))), [], [isabelle_rank(3408)]). % unit_div_eq_0_iff
+1215:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (~ (((A != zero_zero_nat) => (![C2 : nat]: (B != (times_times_nat @ A @ C2))))))))), [], [isabelle_rank(3412)]). % unit_dvdE
+1243:    ((![A : nat]: (dvd_dvd_nat @ one_one_nat @ A))), [], [isabelle_rank(3475)]). % one_dvd
+1247:    ((![B : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ B @ A)))), [], [isabelle_rank(3483)]). % unit_imp_dvd
+1251:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ B) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ A @ one_one_nat))))), [], [isabelle_rank(3492)]). % dvd_unit_imp_unit
+1293:    ((![N : nat]: ((times_times_nat @ one_one_nat @ N) = N))), [], [isabelle_rank(3586)]). % nat_mult_1
+1295:    ((![N : nat]: ((times_times_nat @ N @ one_one_nat) = N))), [], [isabelle_rank(3591)]). % nat_mult_1_right
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0007_round004_20260331_201918_prob_zipperposition_min_1.p ====
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0008_round005_20260331_201942_prob_zipperposition_1.p ====
+23:    one_one_nat : nat).
+39:    groups1056228905et_nat : (nat > nat > nat) > nat > $o).
+41:    groups437861367st_nat : (nat > nat > nat) > nat > $o).
+43:    groups1753312493et_nat : (nat > nat > nat) > nat > $o).
+45:    groups1125920043st_nat : (nat > nat > nat) > nat > $o).
+63:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(900)]). % mult.right_neutral
+65:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_simp, isabelle_rank(909)]). % mult_1
+67:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_rank(918)]). % comm_monoid_mult_class.mult_1
+69:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_rank(927)]). % mult.comm_neutral
+73:    ((![X : nat]: ((one_one_nat = X) = (X = one_one_nat)))), [], [isabelle_rank(946)]). % one_reorient
+83:    ((groups1753312493et_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(992)]). % prod.comm_monoid_list_set_axioms
+85:    ((groups437861367st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1001)]). % prod_list.comm_monoid_list_axioms
+87:    ((![F : nat > nat > nat, Z : nat]: ((groups1753312493et_nat @ F @ Z) => (groups437861367st_nat @ F @ Z)))), [], [isabelle_rank(1010)]). % comm_monoid_list_set.axioms(1)
+89:    ((groups1125920043st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1020)]). % prod_list.monoid_list_axioms
+91:    ((monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1029)]). % mult.monoid_axioms
+93:    ((comm_monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1038)]). % mult.comm_monoid_axioms
+95:    ((![F : nat > nat > nat, Z : nat]: ((groups437861367st_nat @ F @ Z) => ((groups1056228905et_nat @ F @ Z) => (groups1753312493et_nat @ F @ Z))))), [], [isabelle_rank(1047)]). % comm_monoid_list_set.intro
+97:    ((groups1753312493et_nat = (^[F2 : nat > nat > nat]: (^[Z2 : nat]: (((groups437861367st_nat @ F2 @ Z2)) & ((groups1056228905et_nat @ F2 @ Z2))))))), [], [isabelle_rank(1057)]). % comm_monoid_list_set_def
+99:    ((![F : nat > nat > nat, Z : nat]: ((groups437861367st_nat @ F @ Z) => (groups1125920043st_nat @ F @ Z)))), [], [isabelle_rank(1066)]). % comm_monoid_list.axioms(2)
+101:    ((![F : nat > nat > nat, Z : nat]: ((groups437861367st_nat @ F @ Z) => (comm_monoid_nat @ F @ Z)))), [], [isabelle_rank(1075)]). % comm_monoid_list.axioms(1)
+117:    ((![F : nat > nat > nat, Z : nat]: ((monoid_nat @ F @ Z) => (groups1125920043st_nat @ F @ Z)))), [], [isabelle_rank(1149)]). % monoid_list.intro
+119:    ((![F : nat > nat > nat, Z : nat]: ((groups1125920043st_nat @ F @ Z) => (monoid_nat @ F @ Z)))), [], [isabelle_rank(1158)]). % monoid_list.axioms
+125:    ((groups1125920043st_nat = monoid_nat)), [], [isabelle_rank(1186)]). % monoid_list_def
+137:    ((zero_zero_nat != one_one_nat)), [], [isabelle_rank(1242)]). % zero_neq_one
+139:    ((groups437861367st_nat = (^[F2 : nat > nat > nat]: (^[Z2 : nat]: (((comm_monoid_nat @ F2 @ Z2)) & ((groups1125920043st_nat @ F2 @ Z2))))))), [], [isabelle_rank(1251)]). % comm_monoid_list_def
+141:    ((![F : nat > nat > nat, Z : nat]: ((comm_monoid_nat @ F @ Z) => ((groups1125920043st_nat @ F @ Z) => (groups437861367st_nat @ F @ Z))))), [], [isabelle_rank(1260)]). % comm_monoid_list.intro
+143:    ((![F : nat > nat > nat, Z : nat]: ((groups1753312493et_nat @ F @ Z) => (groups1056228905et_nat @ F @ Z)))), [], [isabelle_rank(1269)]). % comm_monoid_list_set.axioms(2)
+145:    ((groups1056228905et_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1279)]). % prod.comm_monoid_set_axioms
+147:    ((groups1056228905et_nat = comm_monoid_nat)), [], [isabelle_rank(1288)]). % comm_monoid_set_def
+149:    ((![F : nat > nat > nat, Z : nat]: ((groups1056228905et_nat @ F @ Z) => (comm_monoid_nat @ F @ Z)))), [], [isabelle_rank(1297)]). % comm_monoid_set.axioms
+151:    ((![F : nat > nat > nat, Z : nat]: ((comm_monoid_nat @ F @ Z) => (groups1056228905et_nat @ F @ Z)))), [], [isabelle_rank(1306)]). % comm_monoid_set.intro
+251:    ((![X : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(1769)]). % one_plus_numeral_commute
+257:    ((![N : num]: (ord_less_eq_nat @ one_one_nat @ (numeral_numeral_nat @ N)))), [], [isabelle_rank(1796)]). % one_le_numeral
+351:    ((ord_less_eq_nat @ one_one_nat @ one_one_nat)), [], [isabelle_rank(2231)]). % le_numeral_extra(4)
+373:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2333)]). % zero_less_one_class.zero_le_one
+375:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2342)]). % linordered_nonzero_semiring_class.zero_le_one
+377:    ((~ ((ord_less_eq_nat @ one_one_nat @ zero_zero_nat)))), [], [isabelle_rank(2351)]). % not_one_le_zero
+379:    ((groups1056228905et_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2360)]). % sum.comm_monoid_set_axioms
+385:    ((groups1125920043st_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2388)]). % sum_list.monoid_list_axioms
+387:    ((groups437861367st_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2397)]). % sum_list.comm_monoid_list_axioms
+389:    ((groups1753312493et_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2407)]). % sum.comm_monoid_list_set_axioms
+391:    ((![A : nat, B : nat]: ((ord_less_eq_nat @ A @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ B) => ((ord_less_eq_nat @ B @ one_one_nat) => (ord_less_eq_nat @ (times_times_nat @ A @ B) @ one_one_nat)))))), [], [isabelle_rank(2416)]). % mult_le_one
+393:    ((![C : nat, A : nat]: ((ord_less_eq_nat @ C @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ A) => (ord_less_eq_nat @ (times_times_nat @ A @ C) @ A))))), [], [isabelle_rank(2425)]). % mult_left_le
+521:    ((![N : num]: (((numeral_numeral_nat @ N) = one_one_nat) = (N = one)))), [], [isabelle_simp, isabelle_rank(3017)]). % numeral_eq_one_iff
+523:    ((![N : num]: ((one_one_nat = (numeral_numeral_nat @ N)) = (one = N)))), [], [isabelle_simp, isabelle_rank(3026)]). % one_eq_numeral_iff
+525:    ((![N : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ N)) = (numeral_numeral_nat @ (plus_plus_num @ one @ N))))), [], [isabelle_simp, isabelle_rank(3035)]). % one_plus_numeral
+527:    ((![N : num]: ((plus_plus_nat @ (numeral_numeral_nat @ N) @ one_one_nat) = (numeral_numeral_nat @ (plus_plus_num @ N @ one))))), [], [isabelle_simp, isabelle_rank(3045)]). % numeral_plus_one
+529:    ((![N : num]: ((ord_less_eq_nat @ (numeral_numeral_nat @ N) @ one_one_nat) = (ord_less_eq_num @ N @ one)))), [], [isabelle_simp, isabelle_rank(3054)]). % numeral_le_one_iff
+535:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_rank(3082)]). % numerals(1)
+547:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_non_rec_def, isabelle_rank(3137)]). % numeral_One
+551:    ((![X : num]: ((numeral_numeral_nat @ (inc @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(3156)]). % numeral_inc
+553:    ((![M : nat, N : nat]: ((one_one_nat = (times_times_nat @ M @ N)) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(3165)]). % nat_1_eq_mult_iff
+555:    ((![M : nat, N : nat]: (((times_times_nat @ M @ N) = one_one_nat) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(3174)]). % nat_mult_eq_1_iff
+585:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_simp, isabelle_rank(3313)]). % one_add_one
+631:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_rank(3526)]). % nat_1_add_1
+633:    ((times_times_nat = (^[M2 : nat]: (^[N2 : nat]: $ite((M2 = zero_zero_nat), zero_zero_nat, (plus_plus_nat @ N2 @ (times_times_nat @ (minus_minus_nat @ M2 @ one_one_nat) @ N2))))))), [], [isabelle_rank(3535)]). % mult_eq_if
+635:    ((![M : nat, N : nat]: ((M = (times_times_nat @ M @ N)) => ((N = one_one_nat) | (M = zero_zero_nat))))), [], [isabelle_rank(3544)]). % mult_eq_self_implies_10
+637:    ((![N : nat]: ((times_times_nat @ N @ one_one_nat) = N))), [], [isabelle_rank(3553)]). % nat_mult_1_right
+639:    ((![N : nat]: ((times_times_nat @ one_one_nat @ N) = N))), [], [isabelle_rank(3563)]). % nat_mult_1
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0009_round005_20260331_201942_prob_zipperposition_min_1.p ====
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0010_round006_20260331_202022_prob_zipperposition_1.p ====
+45:    one_one_nat : nat).
+69:    groups437861367st_nat : (nat > nat > nat) > nat > $o).
+75:    groups1753312493et_nat : (nat > nat > nat) > nat > $o).
+81:    groups1125920043st_nat : (nat > nat > nat) > nat > $o).
+131:    ((![M : nat, N : nat]: ((one_one_nat = (times_times_nat @ M @ N)) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(900)]). % nat_1_eq_mult_iff
+133:    ((![M : nat, N : nat]: (((times_times_nat @ M @ N) = one_one_nat) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(904)]). % nat_mult_eq_1_iff
+135:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(908)]). % mult.right_neutral
+141:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_simp, isabelle_rank(922)]). % mult_1
+147:    ((![N : nat]: ((times_times_nat @ one_one_nat @ N) = N))), [], [isabelle_rank(935)]). % nat_mult_1
+149:    ((![N : nat]: ((times_times_nat @ N @ one_one_nat) = N))), [], [isabelle_rank(940)]). % nat_mult_1_right
+151:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_rank(944)]). % comm_monoid_mult_class.mult_1
+157:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_rank(958)]). % mult.comm_neutral
+163:    ((one_one_nat = one_one_nat)), [], [isabelle_rank(971)]). % one_natural.rsp
+165:    ((![X : nat]: ((one_one_nat = X) = (X = one_one_nat)))), [], [isabelle_rank(975)]). % one_reorient
+195:    ((monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1042)]). % mult.monoid_axioms
+201:    (((code_nat_of_integer @ one_one_Code_integer) = one_one_nat)), [], [isabelle_simp, isabelle_rank(1056)]). % nat_of_integer_1
+203:    ((comm_monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1060)]). % mult.comm_monoid_axioms
+209:    ((![N : nat]: (((semiri1382578993at_nat @ N) = one_one_nat) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1074)]). % of_nat_eq_1_iff
+211:    ((![N : nat]: (((semiri401560510nteger @ N) = one_one_Code_integer) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1078)]). % of_nat_eq_1_iff
+213:    ((![N : nat]: (((semiri341361033atural @ N) = one_one_Code_natural) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1082)]). % of_nat_eq_1_iff
+215:    ((![N : nat]: (((semiri2019852685at_int @ N) = one_one_int) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1087)]). % of_nat_eq_1_iff
+217:    ((![N : nat]: ((one_one_nat = (semiri1382578993at_nat @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1091)]). % of_nat_1_eq_iff
+219:    ((![N : nat]: ((one_one_Code_integer = (semiri401560510nteger @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1096)]). % of_nat_1_eq_iff
+221:    ((![N : nat]: ((one_one_Code_natural = (semiri341361033atural @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1100)]). % of_nat_1_eq_iff
+223:    ((![N : nat]: ((one_one_int = (semiri2019852685at_int @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1105)]). % of_nat_1_eq_iff
+225:    (((semiri1382578993at_nat @ one_one_nat) = one_one_nat)), [], [isabelle_simp, isabelle_rank(1109)]). % of_nat_1
+227:    (((semiri401560510nteger @ one_one_nat) = one_one_Code_integer)), [], [isabelle_simp, isabelle_rank(1114)]). % of_nat_1
+229:    (((semiri341361033atural @ one_one_nat) = one_one_Code_natural)), [], [isabelle_simp, isabelle_rank(1118)]). % of_nat_1
+231:    (((semiri2019852685at_int @ one_one_nat) = one_one_int)), [], [isabelle_simp, isabelle_rank(1123)]). % of_nat_1
+241:    ((![M : nat, N : nat]: ((M = (times_times_nat @ M @ N)) => ((N = one_one_nat) | (M = zero_zero_nat))))), [], [isabelle_rank(1145)]). % mult_eq_self_implies_10
+243:    (((code_integer_of_nat @ one_one_nat) = one_one_Code_integer)), [], [isabelle_rank(1149)]). % integer_of_nat_1
+245:    ((groups1753312493et_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1154)]). % prod.comm_monoid_list_set_axioms
+251:    ((groups437861367st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1167)]). % prod_list.comm_monoid_list_axioms
+257:    ((groups1125920043st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1181)]). % prod_list.monoid_list_axioms
+321:    ((groups437861367st_nat = (^[F2 : nat > nat > nat]: (^[Z2 : nat]: (((comm_monoid_nat @ F2 @ Z2)) & ((groups1125920043st_nat @ F2 @ Z2))))))), [], [isabelle_rank(1323)]). % comm_monoid_list_def
+323:    ((groups1125920043st_nat = monoid_nat)), [], [isabelle_rank(1328)]). % monoid_list_def
+325:    ((![F : nat > nat > nat, Z : nat]: ((comm_monoid_nat @ F @ Z) => ((groups1125920043st_nat @ F @ Z) => (groups437861367st_nat @ F @ Z))))), [], [isabelle_rank(1332)]). % comm_monoid_list.intro
+327:    ((![F : nat > nat > nat, Z : nat]: ((groups1125920043st_nat @ F @ Z) => (monoid_nat @ F @ Z)))), [], [isabelle_rank(1337)]). % monoid_list.axioms
+329:    ((![F : nat > nat > nat, Z : nat]: ((monoid_nat @ F @ Z) => (groups1125920043st_nat @ F @ Z)))), [], [isabelle_rank(1341)]). % monoid_list.intro
+331:    ((![F : nat > nat > nat, Z : nat]: ((groups437861367st_nat @ F @ Z) => (comm_monoid_nat @ F @ Z)))), [], [isabelle_rank(1346)]). % comm_monoid_list.axioms(1)
+391:    ((zero_zero_nat != one_one_nat)), [], [isabelle_rank(1480)]). % zero_neq_one
+441:    (((semiri2019852685at_int @ one_one_nat) = one_one_int)), [], [isabelle_rank(1591)]). % int_ops(2)
+453:    ((![C : nat, A : nat]: ((ord_less_eq_nat @ C @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ A) => (ord_less_eq_nat @ (times_times_nat @ A @ C) @ A))))), [], [isabelle_rank(1618)]). % mult_left_le
+629:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2011)]). % zero_less_one_class.zero_le_one
+635:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2024)]). % linordered_nonzero_semiring_class.zero_le_one
+641:    ((~ ((ord_less_eq_nat @ one_one_nat @ zero_zero_nat)))), [], [isabelle_rank(2038)]). % not_one_le_zero
+663:    ((![A : nat, B : nat]: ((ord_less_eq_nat @ A @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ B) => ((ord_less_eq_nat @ B @ one_one_nat) => (ord_less_eq_nat @ (times_times_nat @ A @ B) @ one_one_nat)))))), [], [isabelle_rank(2087)]). % mult_le_one
+669:    ((![K : nat]: ((ord_le1366515336atural @ (semiri341361033atural @ K) @ one_one_Code_natural) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2100)]). % of_nat_le_1_iff
+671:    ((![K : nat]: ((ord_less_eq_nat @ (semiri1382578993at_nat @ K) @ one_one_nat) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2104)]). % of_nat_le_1_iff
+673:    ((![K : nat]: ((ord_le1426714813nteger @ (semiri401560510nteger @ K) @ one_one_Code_integer) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2109)]). % of_nat_le_1_iff
+675:    ((![K : nat]: ((ord_less_eq_int @ (semiri2019852685at_int @ K) @ one_one_int) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2113)]). % of_nat_le_1_iff
+677:    ((![K : nat]: ((ord_le1366515336atural @ one_one_Code_natural @ (semiri341361033atural @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2118)]). % one_of_nat_le_iff
+679:    ((![K : nat]: ((ord_less_eq_nat @ one_one_nat @ (semiri1382578993at_nat @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2122)]). % one_of_nat_le_iff
+681:    ((![K : nat]: ((ord_le1426714813nteger @ one_one_Code_integer @ (semiri401560510nteger @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2127)]). % one_of_nat_le_iff
+683:    ((![K : nat]: ((ord_less_eq_int @ one_one_int @ (semiri2019852685at_int @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2131)]). % one_of_nat_le_iff
+689:    (((ord_max_nat @ one_one_nat @ zero_zero_nat) = one_one_nat)), [], [isabelle_simp, isabelle_rank(2145)]). % max_0_1(2)
+695:    (((ord_max_nat @ zero_zero_nat @ one_one_nat) = one_one_nat)), [], [isabelle_simp, isabelle_rank(2158)]). % max_0_1(1)
+783:    ((ord_less_eq_nat @ one_one_nat @ one_one_nat)), [], [isabelle_rank(2354)]). % le_numeral_extra(4)
+1159:    ((![N : nat]: ((ord_less_nat @ N @ one_one_nat) = (N = zero_zero_nat)))), [], [isabelle_simp, isabelle_rank(3193)]). % less_one
+1205:    ((![K : nat]: ((ord_less_nat @ one_one_nat @ (semiri1382578993at_nat @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3296)]). % one_of_nat_less_iff
+1207:    ((![K : nat]: ((ord_le945590961nteger @ one_one_Code_integer @ (semiri401560510nteger @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3300)]). % one_of_nat_less_iff
+1209:    ((![K : nat]: ((ord_le885391484atural @ one_one_Code_natural @ (semiri341361033atural @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3305)]). % one_of_nat_less_iff
+1211:    ((![K : nat]: ((ord_less_int @ one_one_int @ (semiri2019852685at_int @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3309)]). % one_of_nat_less_iff
+1213:    ((![K : nat]: ((ord_less_nat @ (semiri1382578993at_nat @ K) @ one_one_nat) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3314)]). % of_nat_less_1_iff
+1215:    ((![K : nat]: ((ord_le945590961nteger @ (semiri401560510nteger @ K) @ one_one_Code_integer) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3318)]). % of_nat_less_1_iff
+1217:    ((![K : nat]: ((ord_le885391484atural @ (semiri341361033atural @ K) @ one_one_Code_natural) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3323)]). % of_nat_less_1_iff
+1219:    ((![K : nat]: ((ord_less_int @ (semiri2019852685at_int @ K) @ one_one_int) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3327)]). % of_nat_less_1_iff
+1343:    (((times_times_nat @ u @ one_one_nat) = u))).
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0011_round006_20260331_202022_prob_zipperposition_min_1.p ====
+9:    one_one_nat : nat).
+17:    (((times_times_nat @ u @ one_one_nat) = u))).
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0012_round007_20260331_202046_prob_zipperposition_1.p ====
+21:    one_one_nat : nat).
+99:    ((![X : nat]: ((one_one_nat = X) = (X = one_one_nat)))), [], [isabelle_rank(922)]). % one_reorient
+151:    ((![X : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(1038)]). % one_plus_numeral_commute
+243:    ((zero_zero_nat != one_one_nat)), [], [isabelle_rank(1243)]). % zero_neq_one
+261:    ((![N : num]: ((plus_plus_nat @ (numeral_numeral_nat @ N) @ one_one_nat) = (numeral_numeral_nat @ (plus_plus_num @ N @ one))))), [], [isabelle_simp, isabelle_rank(1283)]). % numeral_plus_one
+265:    ((![N : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ N)) = (numeral_numeral_nat @ (plus_plus_num @ one @ N))))), [], [isabelle_simp, isabelle_rank(1292)]). % one_plus_numeral
+269:    ((numeral_numeral_nat = (^[K2 : num]: (compow_nat_nat @ (numeral_numeral_nat @ K2) @ (plus_plus_nat @ one_one_nat) @ zero_zero_nat)))), [], [isabelle_rank(1301)]). % numeral_unfold_funpow
+303:    ((![N : num]: (((numeral_numeral_nat @ N) = one_one_nat) = (N = one)))), [], [isabelle_simp, isabelle_rank(1377)]). % numeral_eq_one_iff
+307:    ((![N : num]: ((one_one_nat = (numeral_numeral_nat @ N)) = (one = N)))), [], [isabelle_simp, isabelle_rank(1386)]). % one_eq_numeral_iff
+325:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_rank(1426)]). % numerals(1)
+375:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_non_rec_def, isabelle_rank(1538)]). % numeral_One
+387:    ((![K : num, A : nat]: ((plus_plus_nat @ (numeral_numeral_nat @ K) @ A) = (compow_nat_nat @ (numeral_numeral_nat @ K) @ (plus_plus_nat @ one_one_nat) @ A)))), [], [isabelle_rank(1564)]). % numeral_add_unfold_funpow
+439:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_simp, isabelle_rank(1680)]). % one_add_one
+457:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_rank(1721)]). % nat_1_add_1
+467:    ((![P : nat > $o, N : nat]: ((P @ zero_zero_nat) => ((P @ one_one_nat) => ((![N2 : nat]: ((P @ N2) => (P @ (plus_plus_nat @ N2 @ (numeral_numeral_nat @ (bit0 @ one)))))) => (P @ N)))))), [], [isabelle_rank(1743)]). % nat_induct2
+681:    ((![N : num]: ((numeral_numeral_nat @ (bit1 @ N)) = (plus_plus_nat @ (plus_plus_nat @ (numeral_numeral_nat @ N) @ (numeral_numeral_nat @ N)) @ one_one_nat)))), [], [isabelle_rec_def, isabelle_rank(2220)]). % numeral_Bit1
+691:    ((![X : num]: ((numeral_numeral_nat @ (inc @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(2243)]). % numeral_inc
+699:    ((![N : num]: ((numeral_numeral_nat @ (bit1 @ N)) = (plus_plus_nat @ (times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (numeral_numeral_nat @ N)) @ one_one_nat)))), [], [isabelle_rank(2261)]). % numeral_Bit1_eq_inc_double
+705:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (plus_plus_nat @ A @ one_one_nat)) = (~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A)))))), [], [isabelle_simp, isabelle_rank(2274)]). % even_plus_one_iff
+711:    (((divide_divide_nat @ one_one_nat @ (numeral_numeral_nat @ (bit0 @ one))) = zero_zero_nat)), [], [isabelle_simp, isabelle_rank(2287)]). % one_div_two_eq_zero
+731:    ((![M : nat]: ((dvd_dvd_nat @ M @ one_one_nat) = (M = one_one_nat)))), [], [isabelle_simp, isabelle_rank(2332)]). % nat_dvd_1_iff_1
+733:    ((![M : nat, N : nat]: ((one_one_nat = (times_times_nat @ M @ N)) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(2337)]). % nat_1_eq_mult_iff
+735:    ((![M : nat, N : nat]: (((times_times_nat @ M @ N) = one_one_nat) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(2341)]). % nat_mult_eq_1_iff
+773:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(2426)]). % mult.right_neutral
+777:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_simp, isabelle_rank(2435)]). % mult_1
+809:    ((![A : nat]: ((divide_divide_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(2506)]). % div_by_1
+877:    ((![A : nat]: ((A != zero_zero_nat) => ((divide_divide_nat @ A @ A) = one_one_nat)))), [], [isabelle_simp, isabelle_rank(2658)]). % div_self
+891:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ (times_times_nat @ A @ B) @ one_one_nat))))), [], [isabelle_intro, isabelle_rank(2689)]). % unit_prod
+909:    ((![A : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((divide_divide_nat @ one_one_nat @ (divide_divide_nat @ one_one_nat @ A)) = A)))), [], [isabelle_simp, isabelle_rank(2729)]). % unit_div_1_div_1
+913:    ((![A : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (dvd_dvd_nat @ (divide_divide_nat @ one_one_nat @ A) @ one_one_nat)))), [], [isabelle_intro, isabelle_rank(2738)]). % unit_div_1_unit
+917:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ (divide_divide_nat @ A @ B) @ one_one_nat))))), [], [isabelle_intro, isabelle_rank(2747)]). % unit_div
+925:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((times_times_nat @ B @ (divide_divide_nat @ one_one_nat @ A)) = (divide_divide_nat @ B @ A))))), [], [isabelle_simp, isabelle_rank(2765)]). % unit_mult_div_div
+929:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((times_times_nat @ (divide_divide_nat @ B @ A) @ A) = B)))), [], [isabelle_simp, isabelle_rank(2774)]). % unit_div_mult_self
+955:    ((![N : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ N))) => ((times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (divide_divide_nat @ N @ (numeral_numeral_nat @ (bit0 @ one)))) = (minus_minus_nat @ N @ one_one_nat))))), [], [isabelle_simp, isabelle_rank(2832)]). % odd_two_times_div_two_nat
+959:    (((divide_divide_nat @ one_one_nat @ (numeral_numeral_nat @ (bit0 @ one))) = zero_zero_nat)), [], [isabelle_simp, isabelle_rank(2841)]). % bits_1_div_2
+963:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A) => ((divide_divide_nat @ (plus_plus_nat @ one_one_nat @ A) @ (numeral_numeral_nat @ (bit0 @ one))) = (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))))))), [], [isabelle_simp, isabelle_rank(2850)]). % even_half_succ_eq
+967:    ((![A : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A))) => ((divide_divide_nat @ (plus_plus_nat @ A @ one_one_nat) @ (numeral_numeral_nat @ (bit0 @ one))) = (plus_plus_nat @ (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))) @ one_one_nat))))), [], [isabelle_simp, isabelle_rank(2859)]). % odd_succ_div_two
+971:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A) => ((divide_divide_nat @ (plus_plus_nat @ A @ one_one_nat) @ (numeral_numeral_nat @ (bit0 @ one))) = (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))))))), [], [isabelle_simp, isabelle_rank(2868)]). % even_succ_div_two
+975:    ((![A : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A))) => ((plus_plus_nat @ (times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one)))) @ one_one_nat) = A)))), [], [isabelle_simp, isabelle_rank(2877)]). % odd_two_times_div_two_succ
+1095:    ((![A : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (~ (((A != zero_zero_nat) => (![B4 : nat]: ((B4 != zero_zero_nat) => ((dvd_dvd_nat @ B4 @ one_one_nat) => (((divide_divide_nat @ one_one_nat @ A) = B4) => (((divide_divide_nat @ one_one_nat @ B4) = A) => (((times_times_nat @ A @ B4) = one_one_nat) => ((divide_divide_nat @ C @ A) != (times_times_nat @ C @ B4)))))))))))))), [], [isabelle_rank(3144)]). % is_unitE
+1099:    ((![A : nat, B : nat]: ((A != zero_zero_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ A @ B)) = (divide_divide_nat @ one_one_nat @ B)))))), [], [isabelle_rank(3153)]). % is_unit_div_mult_cancel_left
+1103:    ((![A : nat, B : nat]: ((A != zero_zero_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ B @ A)) = (divide_divide_nat @ one_one_nat @ B)))))), [], [isabelle_rank(3162)]). % is_unit_div_mult_cancel_right
+1105:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((times_times_nat @ B @ A) = (times_times_nat @ C @ A)) = (B = C))))), [], [isabelle_rank(3167)]). % unit_mult_right_cancel
+1109:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((times_times_nat @ A @ B) = (times_times_nat @ A @ C)) = (B = C))))), [], [isabelle_rank(3176)]). % unit_mult_left_cancel
+1113:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ C) = (dvd_dvd_nat @ B @ C))))), [], [isabelle_rank(3184)]). % mult_unit_dvd_iff'
+1117:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (times_times_nat @ B @ C)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3193)]). % dvd_mult_unit_iff'
+1121:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ C) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3202)]). % mult_unit_dvd_iff
+1125:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (times_times_nat @ C @ B)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3211)]). % dvd_mult_unit_iff
+1129:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ one_one_nat) = (((dvd_dvd_nat @ A @ one_one_nat)) & ((dvd_dvd_nat @ B @ one_one_nat)))))), [], [isabelle_rank(3220)]). % is_unit_mult_iff
+1139:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (divide_divide_nat @ C @ B)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3242)]). % dvd_div_unit_iff
+1143:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ (divide_divide_nat @ A @ B) @ C) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3251)]). % div_unit_dvd_iff
+1147:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((divide_divide_nat @ B @ A) = (divide_divide_nat @ C @ A)) = (B = C))))), [], [isabelle_rank(3260)]). % unit_div_cancel
+1163:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (((divide_divide_nat @ A @ B) = C) = (A = (times_times_nat @ C @ B)))))), [], [isabelle_rank(3296)]). % unit_eq_div1
+1167:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((A = (divide_divide_nat @ C @ B)) = ((times_times_nat @ A @ B) = C))))), [], [isabelle_rank(3305)]). % unit_eq_div2
+1171:    ((![C : nat, B : nat, A : nat]: ((dvd_dvd_nat @ C @ one_one_nat) => ((dvd_dvd_nat @ B @ A) => ((divide_divide_nat @ A @ (times_times_nat @ B @ C)) = (divide_divide_nat @ (divide_divide_nat @ A @ B) @ C)))))), [], [isabelle_rank(3314)]). % div_mult_unit2
+1175:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((times_times_nat @ (divide_divide_nat @ A @ B) @ C) = (divide_divide_nat @ (times_times_nat @ A @ C) @ B))))), [], [isabelle_rank(3323)]). % unit_div_commute
+1179:    ((![C : nat, A : nat, B : nat]: ((dvd_dvd_nat @ C @ one_one_nat) => ((times_times_nat @ A @ (divide_divide_nat @ B @ C)) = (divide_divide_nat @ (times_times_nat @ A @ B) @ C))))), [], [isabelle_rank(3332)]). % unit_div_mult_swap
+1183:    ((![B : nat, C : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ C @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ B @ C)) = (divide_divide_nat @ (divide_divide_nat @ A @ B) @ C)))))), [], [isabelle_rank(3341)]). % is_unit_div_mult2_eq
+1213:    ((![B : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (((divide_divide_nat @ A @ B) = zero_zero_nat) = (A = zero_zero_nat))))), [], [isabelle_rank(3408)]). % unit_div_eq_0_iff
+1215:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (~ (((A != zero_zero_nat) => (![C2 : nat]: (B != (times_times_nat @ A @ C2))))))))), [], [isabelle_rank(3412)]). % unit_dvdE
+1243:    ((![A : nat]: (dvd_dvd_nat @ one_one_nat @ A))), [], [isabelle_rank(3475)]). % one_dvd
+1247:    ((![B : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ B @ A)))), [], [isabelle_rank(3483)]). % unit_imp_dvd
+1251:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ B) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ A @ one_one_nat))))), [], [isabelle_rank(3492)]). % dvd_unit_imp_unit
+1293:    ((![N : nat]: ((times_times_nat @ one_one_nat @ N) = N))), [], [isabelle_rank(3586)]). % nat_mult_1
+1295:    ((![N : nat]: ((times_times_nat @ N @ one_one_nat) = N))), [], [isabelle_rank(3591)]). % nat_mult_1_right
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0013_round007_20260331_202046_prob_zipperposition_min_1.p ====
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0014_round008_20260331_202108_prob_zipperposition_1.p ====
+29:    one_one_nat : nat).
+55:    groups1056228905et_nat : (nat > nat > nat) > nat > $o).
+59:    groups437861367st_nat : (nat > nat > nat) > nat > $o).
+63:    groups1753312493et_nat : (nat > nat > nat) > nat > $o).
+67:    groups1125920043st_nat : (nat > nat > nat) > nat > $o).
+99:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(900)]). % mult.right_neutral
+103:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_simp, isabelle_rank(908)]). % mult_1
+107:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_rank(917)]). % comm_monoid_mult_class.mult_1
+111:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_rank(926)]). % mult.comm_neutral
+117:    ((![X : nat]: ((one_one_nat = X) = (X = one_one_nat)))), [], [isabelle_rank(940)]). % one_reorient
+137:    ((groups1753312493et_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(984)]). % prod.comm_monoid_list_set_axioms
+141:    ((groups437861367st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(993)]). % prod_list.comm_monoid_list_axioms
+145:    ((groups1125920043st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1002)]). % prod_list.monoid_list_axioms
+149:    ((monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1011)]). % mult.monoid_axioms
+153:    ((comm_monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1020)]). % mult.comm_monoid_axioms
+245:    ((zero_zero_nat != one_one_nat)), [], [isabelle_rank(1225)]). % zero_neq_one
+251:    ((groups1056228905et_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1238)]). % prod.comm_monoid_set_axioms
+537:    ((![X : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(1875)]). % one_plus_numeral_commute
+551:    ((![N : num]: (ord_less_eq_nat @ one_one_nat @ (numeral_numeral_nat @ N)))), [], [isabelle_rank(1906)]). % one_le_numeral
+789:    ((ord_less_eq_nat @ one_one_nat @ one_one_nat)), [], [isabelle_rank(2437)]). % le_numeral_extra(4)
+871:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2619)]). % zero_less_one_class.zero_le_one
+875:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2628)]). % linordered_nonzero_semiring_class.zero_le_one
+879:    ((~ ((ord_less_eq_nat @ one_one_nat @ zero_zero_nat)))), [], [isabelle_rank(2637)]). % not_one_le_zero
+885:    ((groups1056228905et_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2650)]). % sum.comm_monoid_set_axioms
+897:    ((groups1125920043st_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2677)]). % sum_list.monoid_list_axioms
+901:    ((groups437861367st_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2686)]). % sum_list.comm_monoid_list_axioms
+905:    ((groups1753312493et_nat @ plus_plus_nat @ zero_zero_nat)), [], [isabelle_rank(2695)]). % sum.comm_monoid_list_set_axioms
+917:    ((![A : nat, B : nat]: ((ord_less_eq_nat @ A @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ B) => ((ord_less_eq_nat @ B @ one_one_nat) => (ord_less_eq_nat @ (times_times_nat @ A @ B) @ one_one_nat)))))), [], [isabelle_rank(2722)]). % mult_le_one
+921:    ((![C : nat, A : nat]: ((ord_less_eq_nat @ C @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ A) => (ord_less_eq_nat @ (times_times_nat @ A @ C) @ A))))), [], [isabelle_rank(2731)]). % mult_left_le
+1085:    ((![N : num]: (((numeral_numeral_nat @ N) = one_one_nat) = (N = one)))), [], [isabelle_simp, isabelle_rank(3096)]). % numeral_eq_one_iff
+1089:    ((![N : num]: ((one_one_nat = (numeral_numeral_nat @ N)) = (one = N)))), [], [isabelle_simp, isabelle_rank(3105)]). % one_eq_numeral_iff
+1099:    ((![N : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ N)) = (numeral_numeral_nat @ (plus_plus_num @ one @ N))))), [], [isabelle_simp, isabelle_rank(3127)]). % one_plus_numeral
+1103:    ((![N : num]: ((plus_plus_nat @ (numeral_numeral_nat @ N) @ one_one_nat) = (numeral_numeral_nat @ (plus_plus_num @ N @ one))))), [], [isabelle_simp, isabelle_rank(3136)]). % numeral_plus_one
+1113:    ((![N : num]: ((ord_less_eq_nat @ (numeral_numeral_nat @ N) @ one_one_nat) = (ord_less_eq_num @ N @ one)))), [], [isabelle_simp, isabelle_rank(3158)]). % numeral_le_one_iff
+1119:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_rank(3172)]). % numerals(1)
+1135:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_non_rec_def, isabelle_rank(3207)]). % numeral_One
+1147:    ((![X : num]: ((numeral_numeral_nat @ (inc @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(3234)]). % numeral_inc
+1191:    ((![M : nat, N : nat]: ((one_one_nat = (times_times_nat @ M @ N)) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(3332)]). % nat_1_eq_mult_iff
+1193:    ((![M : nat, N : nat]: (((times_times_nat @ M @ N) = one_one_nat) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(3337)]). % nat_mult_eq_1_iff
+1233:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_simp, isabelle_rank(3426)]). % one_add_one
+1281:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_rank(3533)]). % nat_1_add_1
+1283:    ((times_times_nat = (^[M2 : nat]: (^[N2 : nat]: $ite((M2 = zero_zero_nat), zero_zero_nat, (plus_plus_nat @ N2 @ (times_times_nat @ (minus_minus_nat @ M2 @ one_one_nat) @ N2))))))), [], [isabelle_rank(3537)]). % mult_eq_if
+1285:    ((![M : nat, N : nat]: ((M = (times_times_nat @ M @ N)) => ((N = one_one_nat) | (M = zero_zero_nat))))), [], [isabelle_rank(3542)]). % mult_eq_self_implies_10
+1287:    ((![N : nat]: ((times_times_nat @ N @ one_one_nat) = N))), [], [isabelle_rank(3546)]). % nat_mult_1_right
+1289:    ((![N : nat]: ((times_times_nat @ one_one_nat @ N) = N))), [], [isabelle_rank(3550)]). % nat_mult_1
+1291:    ((![P : nat > $o, N : nat]: ((P @ zero_zero_nat) => ((P @ one_one_nat) => ((![N3 : nat]: ((P @ N3) => (P @ (plus_plus_nat @ N3 @ (numeral_numeral_nat @ (bit0 @ one)))))) => (P @ N)))))), [], [isabelle_rank(3555)]). % nat_induct2
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0015_round008_20260331_202108_prob_zipperposition_min_1.p ====
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0016_round009_20260331_202139_prob_zipperposition_1.p ====
+45:    one_one_nat : nat).
+69:    groups437861367st_nat : (nat > nat > nat) > nat > $o).
+75:    groups1753312493et_nat : (nat > nat > nat) > nat > $o).
+81:    groups1125920043st_nat : (nat > nat > nat) > nat > $o).
+131:    ((![M : nat, N : nat]: ((one_one_nat = (times_times_nat @ M @ N)) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(900)]). % nat_1_eq_mult_iff
+133:    ((![M : nat, N : nat]: (((times_times_nat @ M @ N) = one_one_nat) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(904)]). % nat_mult_eq_1_iff
+135:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(908)]). % mult.right_neutral
+141:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_simp, isabelle_rank(922)]). % mult_1
+147:    ((![N : nat]: ((times_times_nat @ one_one_nat @ N) = N))), [], [isabelle_rank(935)]). % nat_mult_1
+149:    ((![N : nat]: ((times_times_nat @ N @ one_one_nat) = N))), [], [isabelle_rank(940)]). % nat_mult_1_right
+151:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_rank(944)]). % comm_monoid_mult_class.mult_1
+157:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_rank(958)]). % mult.comm_neutral
+163:    ((one_one_nat = one_one_nat)), [], [isabelle_rank(971)]). % one_natural.rsp
+165:    ((![X : nat]: ((one_one_nat = X) = (X = one_one_nat)))), [], [isabelle_rank(975)]). % one_reorient
+195:    ((monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1042)]). % mult.monoid_axioms
+201:    (((code_nat_of_integer @ one_one_Code_integer) = one_one_nat)), [], [isabelle_simp, isabelle_rank(1056)]). % nat_of_integer_1
+203:    ((comm_monoid_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1060)]). % mult.comm_monoid_axioms
+209:    ((![N : nat]: (((semiri1382578993at_nat @ N) = one_one_nat) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1074)]). % of_nat_eq_1_iff
+211:    ((![N : nat]: (((semiri401560510nteger @ N) = one_one_Code_integer) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1078)]). % of_nat_eq_1_iff
+213:    ((![N : nat]: (((semiri341361033atural @ N) = one_one_Code_natural) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1082)]). % of_nat_eq_1_iff
+215:    ((![N : nat]: (((semiri2019852685at_int @ N) = one_one_int) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1087)]). % of_nat_eq_1_iff
+217:    ((![N : nat]: ((one_one_nat = (semiri1382578993at_nat @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1091)]). % of_nat_1_eq_iff
+219:    ((![N : nat]: ((one_one_Code_integer = (semiri401560510nteger @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1096)]). % of_nat_1_eq_iff
+221:    ((![N : nat]: ((one_one_Code_natural = (semiri341361033atural @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1100)]). % of_nat_1_eq_iff
+223:    ((![N : nat]: ((one_one_int = (semiri2019852685at_int @ N)) = (N = one_one_nat)))), [], [isabelle_simp, isabelle_rank(1105)]). % of_nat_1_eq_iff
+225:    (((semiri1382578993at_nat @ one_one_nat) = one_one_nat)), [], [isabelle_simp, isabelle_rank(1109)]). % of_nat_1
+227:    (((semiri401560510nteger @ one_one_nat) = one_one_Code_integer)), [], [isabelle_simp, isabelle_rank(1114)]). % of_nat_1
+229:    (((semiri341361033atural @ one_one_nat) = one_one_Code_natural)), [], [isabelle_simp, isabelle_rank(1118)]). % of_nat_1
+231:    (((semiri2019852685at_int @ one_one_nat) = one_one_int)), [], [isabelle_simp, isabelle_rank(1123)]). % of_nat_1
+241:    ((![M : nat, N : nat]: ((M = (times_times_nat @ M @ N)) => ((N = one_one_nat) | (M = zero_zero_nat))))), [], [isabelle_rank(1145)]). % mult_eq_self_implies_10
+243:    (((code_integer_of_nat @ one_one_nat) = one_one_Code_integer)), [], [isabelle_rank(1149)]). % integer_of_nat_1
+245:    ((groups1753312493et_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1154)]). % prod.comm_monoid_list_set_axioms
+251:    ((groups437861367st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1167)]). % prod_list.comm_monoid_list_axioms
+257:    ((groups1125920043st_nat @ times_times_nat @ one_one_nat)), [], [isabelle_rank(1181)]). % prod_list.monoid_list_axioms
+321:    ((groups437861367st_nat = (^[F2 : nat > nat > nat]: (^[Z2 : nat]: (((comm_monoid_nat @ F2 @ Z2)) & ((groups1125920043st_nat @ F2 @ Z2))))))), [], [isabelle_rank(1323)]). % comm_monoid_list_def
+323:    ((groups1125920043st_nat = monoid_nat)), [], [isabelle_rank(1328)]). % monoid_list_def
+325:    ((![F : nat > nat > nat, Z : nat]: ((comm_monoid_nat @ F @ Z) => ((groups1125920043st_nat @ F @ Z) => (groups437861367st_nat @ F @ Z))))), [], [isabelle_rank(1332)]). % comm_monoid_list.intro
+327:    ((![F : nat > nat > nat, Z : nat]: ((groups1125920043st_nat @ F @ Z) => (monoid_nat @ F @ Z)))), [], [isabelle_rank(1337)]). % monoid_list.axioms
+329:    ((![F : nat > nat > nat, Z : nat]: ((monoid_nat @ F @ Z) => (groups1125920043st_nat @ F @ Z)))), [], [isabelle_rank(1341)]). % monoid_list.intro
+331:    ((![F : nat > nat > nat, Z : nat]: ((groups437861367st_nat @ F @ Z) => (comm_monoid_nat @ F @ Z)))), [], [isabelle_rank(1346)]). % comm_monoid_list.axioms(1)
+391:    ((zero_zero_nat != one_one_nat)), [], [isabelle_rank(1480)]). % zero_neq_one
+441:    (((semiri2019852685at_int @ one_one_nat) = one_one_int)), [], [isabelle_rank(1591)]). % int_ops(2)
+453:    ((![C : nat, A : nat]: ((ord_less_eq_nat @ C @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ A) => (ord_less_eq_nat @ (times_times_nat @ A @ C) @ A))))), [], [isabelle_rank(1618)]). % mult_left_le
+629:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2011)]). % zero_less_one_class.zero_le_one
+635:    ((ord_less_eq_nat @ zero_zero_nat @ one_one_nat)), [], [isabelle_rank(2024)]). % linordered_nonzero_semiring_class.zero_le_one
+641:    ((~ ((ord_less_eq_nat @ one_one_nat @ zero_zero_nat)))), [], [isabelle_rank(2038)]). % not_one_le_zero
+663:    ((![A : nat, B : nat]: ((ord_less_eq_nat @ A @ one_one_nat) => ((ord_less_eq_nat @ zero_zero_nat @ B) => ((ord_less_eq_nat @ B @ one_one_nat) => (ord_less_eq_nat @ (times_times_nat @ A @ B) @ one_one_nat)))))), [], [isabelle_rank(2087)]). % mult_le_one
+669:    ((![K : nat]: ((ord_le1366515336atural @ (semiri341361033atural @ K) @ one_one_Code_natural) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2100)]). % of_nat_le_1_iff
+671:    ((![K : nat]: ((ord_less_eq_nat @ (semiri1382578993at_nat @ K) @ one_one_nat) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2104)]). % of_nat_le_1_iff
+673:    ((![K : nat]: ((ord_le1426714813nteger @ (semiri401560510nteger @ K) @ one_one_Code_integer) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2109)]). % of_nat_le_1_iff
+675:    ((![K : nat]: ((ord_less_eq_int @ (semiri2019852685at_int @ K) @ one_one_int) = (ord_less_eq_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(2113)]). % of_nat_le_1_iff
+677:    ((![K : nat]: ((ord_le1366515336atural @ one_one_Code_natural @ (semiri341361033atural @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2118)]). % one_of_nat_le_iff
+679:    ((![K : nat]: ((ord_less_eq_nat @ one_one_nat @ (semiri1382578993at_nat @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2122)]). % one_of_nat_le_iff
+681:    ((![K : nat]: ((ord_le1426714813nteger @ one_one_Code_integer @ (semiri401560510nteger @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2127)]). % one_of_nat_le_iff
+683:    ((![K : nat]: ((ord_less_eq_int @ one_one_int @ (semiri2019852685at_int @ K)) = (ord_less_eq_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(2131)]). % one_of_nat_le_iff
+689:    (((ord_max_nat @ one_one_nat @ zero_zero_nat) = one_one_nat)), [], [isabelle_simp, isabelle_rank(2145)]). % max_0_1(2)
+695:    (((ord_max_nat @ zero_zero_nat @ one_one_nat) = one_one_nat)), [], [isabelle_simp, isabelle_rank(2158)]). % max_0_1(1)
+783:    ((ord_less_eq_nat @ one_one_nat @ one_one_nat)), [], [isabelle_rank(2354)]). % le_numeral_extra(4)
+1159:    ((![N : nat]: ((ord_less_nat @ N @ one_one_nat) = (N = zero_zero_nat)))), [], [isabelle_simp, isabelle_rank(3193)]). % less_one
+1205:    ((![K : nat]: ((ord_less_nat @ one_one_nat @ (semiri1382578993at_nat @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3296)]). % one_of_nat_less_iff
+1207:    ((![K : nat]: ((ord_le945590961nteger @ one_one_Code_integer @ (semiri401560510nteger @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3300)]). % one_of_nat_less_iff
+1209:    ((![K : nat]: ((ord_le885391484atural @ one_one_Code_natural @ (semiri341361033atural @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3305)]). % one_of_nat_less_iff
+1211:    ((![K : nat]: ((ord_less_int @ one_one_int @ (semiri2019852685at_int @ K)) = (ord_less_nat @ one_one_nat @ K)))), [], [isabelle_simp, isabelle_rank(3309)]). % one_of_nat_less_iff
+1213:    ((![K : nat]: ((ord_less_nat @ (semiri1382578993at_nat @ K) @ one_one_nat) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3314)]). % of_nat_less_1_iff
+1215:    ((![K : nat]: ((ord_le945590961nteger @ (semiri401560510nteger @ K) @ one_one_Code_integer) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3318)]). % of_nat_less_1_iff
+1217:    ((![K : nat]: ((ord_le885391484atural @ (semiri341361033atural @ K) @ one_one_Code_natural) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3323)]). % of_nat_less_1_iff
+1219:    ((![K : nat]: ((ord_less_int @ (semiri2019852685at_int @ K) @ one_one_int) = (ord_less_nat @ K @ one_one_nat)))), [], [isabelle_simp, isabelle_rank(3327)]). % of_nat_less_1_iff
+1343:    (((times_times_nat @ r @ one_one_nat) = r))).
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0017_round009_20260331_202139_prob_zipperposition_min_1.p ====
+9:    one_one_nat : nat).
+17:    (((times_times_nat @ r @ one_one_nat) = r))).
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0018_round010_20260331_202202_prob_zipperposition_1.p ====
+21:    one_one_nat : nat).
+99:    ((![X : nat]: ((one_one_nat = X) = (X = one_one_nat)))), [], [isabelle_rank(922)]). % one_reorient
+151:    ((![X : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(1038)]). % one_plus_numeral_commute
+243:    ((zero_zero_nat != one_one_nat)), [], [isabelle_rank(1243)]). % zero_neq_one
+261:    ((![N : num]: ((plus_plus_nat @ (numeral_numeral_nat @ N) @ one_one_nat) = (numeral_numeral_nat @ (plus_plus_num @ N @ one))))), [], [isabelle_simp, isabelle_rank(1283)]). % numeral_plus_one
+265:    ((![N : num]: ((plus_plus_nat @ one_one_nat @ (numeral_numeral_nat @ N)) = (numeral_numeral_nat @ (plus_plus_num @ one @ N))))), [], [isabelle_simp, isabelle_rank(1292)]). % one_plus_numeral
+269:    ((numeral_numeral_nat = (^[K2 : num]: (compow_nat_nat @ (numeral_numeral_nat @ K2) @ (plus_plus_nat @ one_one_nat) @ zero_zero_nat)))), [], [isabelle_rank(1301)]). % numeral_unfold_funpow
+303:    ((![N : num]: (((numeral_numeral_nat @ N) = one_one_nat) = (N = one)))), [], [isabelle_simp, isabelle_rank(1377)]). % numeral_eq_one_iff
+307:    ((![N : num]: ((one_one_nat = (numeral_numeral_nat @ N)) = (one = N)))), [], [isabelle_simp, isabelle_rank(1386)]). % one_eq_numeral_iff
+325:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_rank(1426)]). % numerals(1)
+375:    (((numeral_numeral_nat @ one) = one_one_nat)), [], [isabelle_non_rec_def, isabelle_rank(1538)]). % numeral_One
+387:    ((![K : num, A : nat]: ((plus_plus_nat @ (numeral_numeral_nat @ K) @ A) = (compow_nat_nat @ (numeral_numeral_nat @ K) @ (plus_plus_nat @ one_one_nat) @ A)))), [], [isabelle_rank(1564)]). % numeral_add_unfold_funpow
+439:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_simp, isabelle_rank(1680)]). % one_add_one
+457:    (((plus_plus_nat @ one_one_nat @ one_one_nat) = (numeral_numeral_nat @ (bit0 @ one)))), [], [isabelle_rank(1721)]). % nat_1_add_1
+467:    ((![P : nat > $o, N : nat]: ((P @ zero_zero_nat) => ((P @ one_one_nat) => ((![N2 : nat]: ((P @ N2) => (P @ (plus_plus_nat @ N2 @ (numeral_numeral_nat @ (bit0 @ one)))))) => (P @ N)))))), [], [isabelle_rank(1743)]). % nat_induct2
+681:    ((![N : num]: ((numeral_numeral_nat @ (bit1 @ N)) = (plus_plus_nat @ (plus_plus_nat @ (numeral_numeral_nat @ N) @ (numeral_numeral_nat @ N)) @ one_one_nat)))), [], [isabelle_rec_def, isabelle_rank(2220)]). % numeral_Bit1
+691:    ((![X : num]: ((numeral_numeral_nat @ (inc @ X)) = (plus_plus_nat @ (numeral_numeral_nat @ X) @ one_one_nat)))), [], [isabelle_rank(2243)]). % numeral_inc
+699:    ((![N : num]: ((numeral_numeral_nat @ (bit1 @ N)) = (plus_plus_nat @ (times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (numeral_numeral_nat @ N)) @ one_one_nat)))), [], [isabelle_rank(2261)]). % numeral_Bit1_eq_inc_double
+705:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (plus_plus_nat @ A @ one_one_nat)) = (~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A)))))), [], [isabelle_simp, isabelle_rank(2274)]). % even_plus_one_iff
+711:    (((divide_divide_nat @ one_one_nat @ (numeral_numeral_nat @ (bit0 @ one))) = zero_zero_nat)), [], [isabelle_simp, isabelle_rank(2287)]). % one_div_two_eq_zero
+731:    ((![M : nat]: ((dvd_dvd_nat @ M @ one_one_nat) = (M = one_one_nat)))), [], [isabelle_simp, isabelle_rank(2332)]). % nat_dvd_1_iff_1
+733:    ((![M : nat, N : nat]: ((one_one_nat = (times_times_nat @ M @ N)) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(2337)]). % nat_1_eq_mult_iff
+735:    ((![M : nat, N : nat]: (((times_times_nat @ M @ N) = one_one_nat) = (((M = one_one_nat)) & ((N = one_one_nat)))))), [], [isabelle_simp, isabelle_rank(2341)]). % nat_mult_eq_1_iff
+773:    ((![A : nat]: ((times_times_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(2426)]). % mult.right_neutral
+777:    ((![A : nat]: ((times_times_nat @ one_one_nat @ A) = A))), [], [isabelle_simp, isabelle_rank(2435)]). % mult_1
+809:    ((![A : nat]: ((divide_divide_nat @ A @ one_one_nat) = A))), [], [isabelle_simp, isabelle_rank(2506)]). % div_by_1
+877:    ((![A : nat]: ((A != zero_zero_nat) => ((divide_divide_nat @ A @ A) = one_one_nat)))), [], [isabelle_simp, isabelle_rank(2658)]). % div_self
+891:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ (times_times_nat @ A @ B) @ one_one_nat))))), [], [isabelle_intro, isabelle_rank(2689)]). % unit_prod
+909:    ((![A : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((divide_divide_nat @ one_one_nat @ (divide_divide_nat @ one_one_nat @ A)) = A)))), [], [isabelle_simp, isabelle_rank(2729)]). % unit_div_1_div_1
+913:    ((![A : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (dvd_dvd_nat @ (divide_divide_nat @ one_one_nat @ A) @ one_one_nat)))), [], [isabelle_intro, isabelle_rank(2738)]). % unit_div_1_unit
+917:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ (divide_divide_nat @ A @ B) @ one_one_nat))))), [], [isabelle_intro, isabelle_rank(2747)]). % unit_div
+925:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((times_times_nat @ B @ (divide_divide_nat @ one_one_nat @ A)) = (divide_divide_nat @ B @ A))))), [], [isabelle_simp, isabelle_rank(2765)]). % unit_mult_div_div
+929:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((times_times_nat @ (divide_divide_nat @ B @ A) @ A) = B)))), [], [isabelle_simp, isabelle_rank(2774)]). % unit_div_mult_self
+955:    ((![N : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ N))) => ((times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (divide_divide_nat @ N @ (numeral_numeral_nat @ (bit0 @ one)))) = (minus_minus_nat @ N @ one_one_nat))))), [], [isabelle_simp, isabelle_rank(2832)]). % odd_two_times_div_two_nat
+959:    (((divide_divide_nat @ one_one_nat @ (numeral_numeral_nat @ (bit0 @ one))) = zero_zero_nat)), [], [isabelle_simp, isabelle_rank(2841)]). % bits_1_div_2
+963:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A) => ((divide_divide_nat @ (plus_plus_nat @ one_one_nat @ A) @ (numeral_numeral_nat @ (bit0 @ one))) = (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))))))), [], [isabelle_simp, isabelle_rank(2850)]). % even_half_succ_eq
+967:    ((![A : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A))) => ((divide_divide_nat @ (plus_plus_nat @ A @ one_one_nat) @ (numeral_numeral_nat @ (bit0 @ one))) = (plus_plus_nat @ (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))) @ one_one_nat))))), [], [isabelle_simp, isabelle_rank(2859)]). % odd_succ_div_two
+971:    ((![A : nat]: ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A) => ((divide_divide_nat @ (plus_plus_nat @ A @ one_one_nat) @ (numeral_numeral_nat @ (bit0 @ one))) = (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one))))))), [], [isabelle_simp, isabelle_rank(2868)]). % even_succ_div_two
+975:    ((![A : nat]: ((~ ((dvd_dvd_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ A))) => ((plus_plus_nat @ (times_times_nat @ (numeral_numeral_nat @ (bit0 @ one)) @ (divide_divide_nat @ A @ (numeral_numeral_nat @ (bit0 @ one)))) @ one_one_nat) = A)))), [], [isabelle_simp, isabelle_rank(2877)]). % odd_two_times_div_two_succ
+1095:    ((![A : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (~ (((A != zero_zero_nat) => (![B4 : nat]: ((B4 != zero_zero_nat) => ((dvd_dvd_nat @ B4 @ one_one_nat) => (((divide_divide_nat @ one_one_nat @ A) = B4) => (((divide_divide_nat @ one_one_nat @ B4) = A) => (((times_times_nat @ A @ B4) = one_one_nat) => ((divide_divide_nat @ C @ A) != (times_times_nat @ C @ B4)))))))))))))), [], [isabelle_rank(3144)]). % is_unitE
+1099:    ((![A : nat, B : nat]: ((A != zero_zero_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ A @ B)) = (divide_divide_nat @ one_one_nat @ B)))))), [], [isabelle_rank(3153)]). % is_unit_div_mult_cancel_left
+1103:    ((![A : nat, B : nat]: ((A != zero_zero_nat) => ((dvd_dvd_nat @ B @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ B @ A)) = (divide_divide_nat @ one_one_nat @ B)))))), [], [isabelle_rank(3162)]). % is_unit_div_mult_cancel_right
+1105:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((times_times_nat @ B @ A) = (times_times_nat @ C @ A)) = (B = C))))), [], [isabelle_rank(3167)]). % unit_mult_right_cancel
+1109:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((times_times_nat @ A @ B) = (times_times_nat @ A @ C)) = (B = C))))), [], [isabelle_rank(3176)]). % unit_mult_left_cancel
+1113:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ C) = (dvd_dvd_nat @ B @ C))))), [], [isabelle_rank(3184)]). % mult_unit_dvd_iff'
+1117:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (times_times_nat @ B @ C)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3193)]). % dvd_mult_unit_iff'
+1121:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ C) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3202)]). % mult_unit_dvd_iff
+1125:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (times_times_nat @ C @ B)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3211)]). % dvd_mult_unit_iff
+1129:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ (times_times_nat @ A @ B) @ one_one_nat) = (((dvd_dvd_nat @ A @ one_one_nat)) & ((dvd_dvd_nat @ B @ one_one_nat)))))), [], [isabelle_rank(3220)]). % is_unit_mult_iff
+1139:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ A @ (divide_divide_nat @ C @ B)) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3242)]). % dvd_div_unit_iff
+1143:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ (divide_divide_nat @ A @ B) @ C) = (dvd_dvd_nat @ A @ C))))), [], [isabelle_rank(3251)]). % div_unit_dvd_iff
+1147:    ((![A : nat, B : nat, C : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (((divide_divide_nat @ B @ A) = (divide_divide_nat @ C @ A)) = (B = C))))), [], [isabelle_rank(3260)]). % unit_div_cancel
+1163:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (((divide_divide_nat @ A @ B) = C) = (A = (times_times_nat @ C @ B)))))), [], [isabelle_rank(3296)]). % unit_eq_div1
+1167:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((A = (divide_divide_nat @ C @ B)) = ((times_times_nat @ A @ B) = C))))), [], [isabelle_rank(3305)]). % unit_eq_div2
+1171:    ((![C : nat, B : nat, A : nat]: ((dvd_dvd_nat @ C @ one_one_nat) => ((dvd_dvd_nat @ B @ A) => ((divide_divide_nat @ A @ (times_times_nat @ B @ C)) = (divide_divide_nat @ (divide_divide_nat @ A @ B) @ C)))))), [], [isabelle_rank(3314)]). % div_mult_unit2
+1175:    ((![B : nat, A : nat, C : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((times_times_nat @ (divide_divide_nat @ A @ B) @ C) = (divide_divide_nat @ (times_times_nat @ A @ C) @ B))))), [], [isabelle_rank(3323)]). % unit_div_commute
+1179:    ((![C : nat, A : nat, B : nat]: ((dvd_dvd_nat @ C @ one_one_nat) => ((times_times_nat @ A @ (divide_divide_nat @ B @ C)) = (divide_divide_nat @ (times_times_nat @ A @ B) @ C))))), [], [isabelle_rank(3332)]). % unit_div_mult_swap
+1183:    ((![B : nat, C : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => ((dvd_dvd_nat @ C @ one_one_nat) => ((divide_divide_nat @ A @ (times_times_nat @ B @ C)) = (divide_divide_nat @ (divide_divide_nat @ A @ B) @ C)))))), [], [isabelle_rank(3341)]). % is_unit_div_mult2_eq
+1213:    ((![B : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (((divide_divide_nat @ A @ B) = zero_zero_nat) = (A = zero_zero_nat))))), [], [isabelle_rank(3408)]). % unit_div_eq_0_iff
+1215:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ one_one_nat) => (~ (((A != zero_zero_nat) => (![C2 : nat]: (B != (times_times_nat @ A @ C2))))))))), [], [isabelle_rank(3412)]). % unit_dvdE
+1243:    ((![A : nat]: (dvd_dvd_nat @ one_one_nat @ A))), [], [isabelle_rank(3475)]). % one_dvd
+1247:    ((![B : nat, A : nat]: ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ B @ A)))), [], [isabelle_rank(3483)]). % unit_imp_dvd
+1251:    ((![A : nat, B : nat]: ((dvd_dvd_nat @ A @ B) => ((dvd_dvd_nat @ B @ one_one_nat) => (dvd_dvd_nat @ A @ one_one_nat))))), [], [isabelle_rank(3492)]). % dvd_unit_imp_unit
+1293:    ((![N : nat]: ((times_times_nat @ one_one_nat @ N) = N))), [], [isabelle_rank(3586)]). % nat_mult_1
+1295:    ((![N : nat]: ((times_times_nat @ N @ one_one_nat) = N))), [], [isabelle_rank(3591)]). % nat_mult_1_right
+==== /Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0019_round010_20260331_202202_prob_zipperposition_min_1.p ====

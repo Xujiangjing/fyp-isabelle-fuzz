@@ -1,0 +1,2 @@
+thf(sy_c_Groups__List_Ocomm__monoid__list__set_001t__Nat__Onat, type,
+    groups1753312493et_nat : (nat > nat > nat) > nat > $o).

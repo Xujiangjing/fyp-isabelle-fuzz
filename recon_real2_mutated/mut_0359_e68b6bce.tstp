@@ -1,0 +1,4 @@
+% done 0 iterations in 0.003s
+% SZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0006_r004_20260331_221119_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(conj_0, conjecture, ($true)).

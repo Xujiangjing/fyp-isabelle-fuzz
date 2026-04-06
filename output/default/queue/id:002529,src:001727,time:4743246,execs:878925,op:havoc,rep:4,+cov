@@ -1,0 +1,4 @@
+% /A
+thf(t, type, lit : $tType).
+thf(t_J, type,
+at : $tt_option^

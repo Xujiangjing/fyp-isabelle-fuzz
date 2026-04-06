@@ -1,0 +1,2 @@
+thf(sy_c_Groups_Oone__class_Oone_001t__Code____Numeral__Onatural, type,
+    one_one_Code_natural : code_natural).

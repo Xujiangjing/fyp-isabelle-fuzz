@@ -1,0 +1,2 @@
+thf(sy_c_Groups__List_Omonoid__list_001t__Int__Oint, type,
+    groups1763193735st_int : (int > int > int) > int > $o).

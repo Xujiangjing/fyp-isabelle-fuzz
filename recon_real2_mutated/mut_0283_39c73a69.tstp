@@ -1,0 +1,29 @@
+fof(injected_1275, plain, $true, inference(axiom_of_choice_42, [status(thm)], [])).
+% done 71 iterations in 0.079s
+% SZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0002_r002_20260331_221036_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(option_nat_type, type, option_nat: $tType).
+thf(list_option_nat_type, type, list_option_nat: $tType).
+thf(cons_option_nat_type, type, cons_option_nat: option_nat > list_option_nat > list_option_nat).
+thf(nil_option_nat_type, type, nil_option_nat: list_option_nat).
+thf(r7_type, type, r7: option_nat).
+thf(hd_option_nat_type, type, hd_option_nat: list_option_nat > option_nat).
+thf(conj_0, conjecture,
+  (( hd_option_nat @ ( cons_option_nat @ r7 @ nil_option_nat ) ) = ( r7 ))).
+thf(zf_stmt_0, negated_conjecture,
+  (( hd_option_nat @ ( cons_option_nat @ r7 @ nil_option_nat ) ) != ( r7 )),
+  inference('cnf.neg', [status(esa)], [conj_0])).
+thf(zip_derived_cl1497, plain,
+    (((hd_option_nat @ (cons_option_nat @ r7 @ nil_option_nat)) != (r7))),
+    inference('cnf', [status(esa)], [zf_stmt_0])).
+thf(fact_5_list_Osel_I1_J, axiom,
+  (![X21:option_nat,X22:list_option_nat]:
+   ( ( hd_option_nat @ ( cons_option_nat @ X21 @ X22 ) ) = ( X21 ) ))).
+thf(zip_derived_cl11, plain,
+    (![X0 : option_nat, X1 : list_option_nat]:
+       ((hd_option_nat @ (cons_option_nat @ X0 @ X1)) = (X0))),
+    inference('cnf', [status(esa)], [fact_5_list_Osel_I1_J])).
+thf(zip_derived_cl1531, plain, (((r7) != (r7))),
+    inference('demod', [status(thm)], [zip_derived_cl1497, zip_derived_cl11])).
+thf(zip_derived_cl1532, plain, ($false),
+    inference('simplify', [status(thm)], [zip_derived_cl1531])).

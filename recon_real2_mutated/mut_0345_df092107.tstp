@@ -1,0 +1,6 @@
+% done 0 iterations in 0.001s
+% SZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0013_round002_20260331_201817_prob_zipperposition_min_1.p'
+% SZS output start Refutation
+thf(nat_type, type, nat: $tType).
+thf(conj_0, conjecture, (( m ) = ( m ))).
+thf(m_type, type, m: nat).

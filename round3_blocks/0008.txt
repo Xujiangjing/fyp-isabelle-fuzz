@@ -1,0 +1,2 @@
+thf(sy_c_Code__Numeral_Ointeger__of__natural, type,
+    code_i1730018169atural : code_natural > code_integer).

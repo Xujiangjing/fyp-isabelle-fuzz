@@ -1,0 +1,258 @@
+Targeted Fuzzing Summary
+============================================================
+
+Total tests: 111
+  crash: 10
+  error_graceful: 4
+  ok: 35
+  parse_error: 62
+
+New bugs found: 32
+
+  [t2] t2_badrole_assertion
+    Type: crash
+    Description: Crash: Failure("not a proper TPTP role: assertion")
+    Exit code: 1
+    Output: Failure("not a proper TPTP role: assertion")
+
+
+  [t2] t2_badrole_claim
+    Type: crash
+    Description: Crash: Failure("not a proper TPTP role: claim")
+    Exit code: 1
+    Output: Failure("not a proper TPTP role: claim")
+
+
+  [t2] t2_badrole_clause
+    Type: crash
+    Description: Crash: Failure("not a proper TPTP role: clause")
+    Exit code: 1
+    Output: Failure("not a proper TPTP role: clause")
+
+
+  [t2] t2_badrole_corollary
+    Type: crash
+    Description: Crash: Failure("not a proper TPTP role: corollary")
+    Exit code: 1
+    Output: Failure("not a proper TPTP role: corollary")
+
+
+  [t2] t2_badrole_declaration
+    Type: crash
+    Description: Crash: Failure("not a proper TPTP role: declaration")
+    Exit code: 1
+    Output: Failure("not a proper TPTP role: declaration")
+
+
+  [t2] t2_badrole_fact
+    Type: crash
+    Description: Crash: Failure("not a proper TPTP role: fact")
+    Exit code: 1
+    Output: Failure("not a proper TPTP role: fact")
+
+
+  [t2] t2_badrole_fi_unknown
+    Type: crash
+    Description: Crash: Failure("not a proper TPTP role: fi_unknown")
+    Exit code: 1
+    Output: Failure("not a proper TPTP role: fi_unknown")
+
+
+  [t2] t2_badrole_formula
+    Type: crash
+    Description: Crash: Failure("not a proper TPTP role: formula")
+    Exit code: 1
+    Output: Failure("not a proper TPTP role: formula")
+
+
+  [t2] t2_badrole_goal
+    Type: crash
+    Description: Crash: Failure("not a proper TPTP role: goal")
+    Exit code: 1
+    Output: Failure("not a proper TPTP role: goal")
+
+
+  [t2] t2_badrole_rule
+    Type: crash
+    Description: Crash: Failure("not a proper TPTP role: rule")
+    Exit code: 1
+    Output: Failure("not a proper TPTP role: rule")
+
+
+  [t2] t2_role_empty_quoted
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: lexer fails on char '
+
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t2_role_empty_quoted.p': line 2, col 10 to 11
+
+
+  [t3] t3_builtin_args_foo
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin function `$foo`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_args_foo.p': line 2, col 22 to 41
+
+
+  [t3] t3_builtin_args_nonexistent
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin function `$nonexistent`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_args_nonexistent.p': line 2, col 22 to 49
+
+
+  [t3] t3_builtin_bar
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$bar`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_bar.p': line 2, col 22 to 26
+
+
+  [t3] t3_builtin_e
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$e`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_e.p': line 2, col 22 to 24
+
+
+  [t3] t3_builtin_eval
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$eval`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_eval.p': line 2, col 22 to 27
+
+
+  [t3] t3_builtin_foo
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$foo`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_foo.p': line 2, col 22 to 26
+
+
+  [t3] t3_builtin_infinity
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$infinity`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_infinity.p': line 2, col 22 to 31
+
+
+  [t3] t3_builtin_is_real
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$is_real`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_is_real.p': line 2, col 22 to 30
+
+
+  [t3] t3_builtin_ite_t
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$ite_t`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_ite_t.p': line 2, col 22 to 28
+
+
+  [t3] t3_builtin_let_ff
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$let_ff`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_let_ff.p': line 2, col 22 to 29
+
+
+  [t3] t3_builtin_let_tf
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$let_tf`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_let_tf.p': line 2, col 22 to 29
+
+
+  [t3] t3_builtin_nonexistent
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$nonexistent`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_nonexistent.p': line 2, col 22 to 34
+
+
+  [t3] t3_builtin_pi
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$pi`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_pi.p': line 2, col 22 to 25
+
+
+  [t3] t3_builtin_print
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$print`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_print.p': line 2, col 22 to 28
+
+
+  [t3] t3_builtin_select
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$select`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_select.p': line 2, col 22 to 29
+
+
+  [t3] t3_builtin_store
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$store`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_store.p': line 2, col 22 to 28
+
+
+  [t3] t3_builtin_to_real
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$to_real`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_to_real.p': line 2, col 22 to 30
+
+
+  [t3] t3_builtin_typeof
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: unknown builtin `$typeof`
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t3_builtin_typeof.p': line 2, col 22 to 29
+
+
+  [t4] t4_distinct_empty
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: expected declaration
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t4_distinct_empty.p': line 2, col 32 to 33
+
+
+  [t6] t6_ite_four_args
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: expected declaration
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t6_ite_four_args.p': line 2, col 47 to 48
+
+
+  [t6] t6_ite_wrong_arity
+    Type: parse_error
+    Description: Parse error (exit 1)
+    Exit code: 1
+    Output: parse error: expected declaration
+    at file '/Users/xujiangjing/fyp-isabelle-fuzz/targeted_results_bundled/inputs/t6_ite_wrong_arity.p': line 2, col 39 to 40
+
+

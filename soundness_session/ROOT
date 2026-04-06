@@ -1,0 +1,22 @@
+session FuzzTests = HOL +
+  theories
+    FuzzTest000
+    FuzzTest001
+    FuzzTest002
+    FuzzTest003
+    FuzzTest004
+    FuzzTest005
+    FuzzTest006
+    FuzzTest007
+    FuzzTest008
+    FuzzTest009
+    FuzzTest010
+    FuzzTest011
+    FuzzTest012
+    FuzzTest013
+    FuzzTest014
+    FuzzTest015
+    FuzzTest016
+    FuzzTest017
+    FuzzTest018
+    FuzzTest019

@@ -1,0 +1,2 @@
+thf(sy_c_Int_Oring__1__class_Oof__int_001t__Int__Oint, type,
+    ring_1_of_int_int : int > int).

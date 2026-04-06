@@ -1,0 +1,16 @@
+% done 0 iterations in 0.001s
+% SZS status The		orem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0019_round005_20260331_201942_prob_zipperposition_min_1.p'
+% SZS output start Refutation
+thf(nat_type, type, nat: $tType).
+thf(z_type, type, z: nat).
+
+% SZS output end Refutation
+thf(conj_0, conjecture, (( z ) = ( z ))).
+thf(zf_stmt_0, negated_conjecture, (( z ) != ( z )),
+  inference('cnf.neg', [status(esa)], [conj_0])).
+thf(zip_derived_cl0, plain, (((z) != (z))),
+    inference('cnf', [status(esa)], [zf_stmt_0])).
+thf(zip_derived_cl1, plain, ($false),
+    inference('simplify', [status(thm)], [zip_derived_cl0])).
+
+% SZS output end Refutation

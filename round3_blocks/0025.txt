@@ -1,0 +1,2 @@
+thf(sy_c_Groups_Otimes__class_Otimes_001t__Code____Numeral__Onatural, type,
+    times_1359456045atural : code_natural > code_natural > code_natural).

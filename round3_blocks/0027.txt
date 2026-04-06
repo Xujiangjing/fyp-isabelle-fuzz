@@ -1,0 +1,2 @@
+thf(sy_c_Groups_Otimes__class_Otimes_001t__Nat__Onat, type,
+    times_times_nat : nat > nat > nat).

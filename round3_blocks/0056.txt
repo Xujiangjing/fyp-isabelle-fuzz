@@ -1,0 +1,2 @@
+thf(sy_c_Orderings_Oord__class_Oless__eq_001t__Int__Oint, type,
+    ord_less_eq_int : int > int > $o).

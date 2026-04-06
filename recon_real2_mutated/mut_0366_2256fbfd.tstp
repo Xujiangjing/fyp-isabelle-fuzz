@@ -1,0 +1,4 @@
+% done 0 iterations in 0.026s
+% SZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0022_round007_20260331_202046_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(a_type, theorem, a: $tType).

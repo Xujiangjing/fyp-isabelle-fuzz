@@ -1,0 +1,3 @@
+session ReproLambdaFree = HOL +
+  theories
+    Repro_LambdaFree

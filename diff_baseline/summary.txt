@@ -1,0 +1,217 @@
+======================================================================
+DIFFERENTIAL FUZZING SUMMARY
+======================================================================
+Date:      2026-04-02 20:00:13
+Seeds:     30 files
+Mutants:   0
+Provers:   e, zipperposition
+Timeout:   30s
+Total time: 90.7s
+
+FINDINGS:
+  Crashes:       21
+  Disagreements: 0
+  Hangs:         0
+
+======================================================================
+DETAILED FINDINGS
+======================================================================
+
+  [HIGH] crash: 0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: fuzz/unique_inputs/0000_r001_20260331_221018_prob_zipperposition_1.p:99:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: fuzz/unique_inputs/0000_r001_20260331_221018_prob_zipperposition_1.p:99:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0002_r002_20260331_221036_prob_zipperposition_1.p
+    e crashed: uzz/unique_inputs/0002_r002_20260331_221036_prob_zipperposition_1.p:323:(Column 241):(just read '[')
+    prover: e
+    exit: 3
+    error: uzz/unique_inputs/0002_r002_20260331_221036_prob_zipperposition_1.p:323:(Column 241):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0003_r002_20260331_221036_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 75382 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: uzz/unique_inputs/0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '[')
+    prover: e
+    exit: 3
+    error: uzz/unique_inputs/0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0005_r003_20260331_221053_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 75397 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: fuzz/unique_inputs/0006_r004_20260331_221119_prob_zipperposition_1.p:97:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: fuzz/unique_inputs/0006_r004_20260331_221119_prob_zipperposition_1.p:97:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: uzz/unique_inputs/0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: uzz/unique_inputs/0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0009_r005_20260331_221136_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 75418 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0010_round001_20260331_201748_prob_zipperposition_1.p
+    e crashed: /unique_inputs/0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: /unique_inputs/0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0012_round002_20260331_201817_prob_zipperposition_1.p
+    e crashed: z/unique_inputs/0012_round002_20260331_201817_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: z/unique_inputs/0012_round002_20260331_201817_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0014_round003_20260331_201852_prob_zipperposition_1.p
+    e crashed: unique_inputs/0014_round003_20260331_201852_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: unique_inputs/0014_round003_20260331_201852_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 75517 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0016_round004_20260331_201918_prob_zipperposition_1.p
+    e crashed: /unique_inputs/0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: /unique_inputs/0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0018_round005_20260331_201942_prob_zipperposition_1.p
+    e crashed: z/unique_inputs/0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: z/unique_inputs/0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0020_round006_20260331_202022_prob_zipperposition_1.p
+    e crashed: unique_inputs/0020_round006_20260331_202022_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: unique_inputs/0020_round006_20260331_202022_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 75616 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0022_round007_20260331_202046_prob_zipperposition_1.p
+    e crashed: /unique_inputs/0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: /unique_inputs/0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: z/unique_inputs/0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: z/unique_inputs/0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0026_round009_20260331_202139_prob_zipperposition_1.p
+    e crashed: unique_inputs/0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: unique_inputs/0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0027_round009_20260331_202139_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 75722 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0028_round010_20260331_202202_prob_zipperposition_1.p
+    e crashed: /unique_inputs/0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: /unique_inputs/0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+======================================================================
+PER-PROVER STATUS DISTRIBUTION
+======================================================================
+
+  e:
+    Unknown                     15
+    Theorem                      9
+    GaveUp                       6
+    CRASHES                     21
+
+  zipperposition:
+    Theorem                     20
+    CounterSatisfiable           6
+    ResourceOut                  3
+    Unknown                      1

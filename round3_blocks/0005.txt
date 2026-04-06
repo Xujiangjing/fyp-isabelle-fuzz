@@ -1,0 +1,2 @@
+thf(ty_n_t__Nat__Onat, type,
+    nat : $tType).

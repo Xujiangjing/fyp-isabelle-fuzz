@@ -1,0 +1,2 @@
+thf(sy_c_Int_Oring__1__class_Oof__int_001t__Code____Numeral__Ointeger, type,
+    ring_13863724nteger : int > code_integer).

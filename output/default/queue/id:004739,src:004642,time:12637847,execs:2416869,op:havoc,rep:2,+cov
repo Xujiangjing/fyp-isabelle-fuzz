@@ -1,0 +1,5 @@
+%
+
+%
+thf(co, conjecture,~ s=8 &(((s=F &
+s =( isXaz)) )= g)).

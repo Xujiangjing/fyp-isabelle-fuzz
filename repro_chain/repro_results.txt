@@ -1,0 +1,32 @@
+──────────────────────────────────────────────
+File: prob_zipperposition_1_proof.p
+  Normal mode:      exit=1
+  Lambda-free mode: exit=1
+  >>> PARSE ERROR (TPTP keyword collision bug)
+
+──────────────────────────────────────────────
+File: prob_zipperposition_1.p
+  Normal mode:      exit=1
+  Lambda-free mode: exit=1
+  >>> PARSE ERROR (TPTP keyword collision bug)
+
+──────────────────────────────────────────────
+File: prob_zipperposition_min_1_proof.p
+  Normal mode:      exit=0
+  Lambda-free mode: exit=0
+  OK (no bug triggered)
+
+──────────────────────────────────────────────
+File: prob_zipperposition_min_1.p
+  Normal mode:      exit=0
+  Lambda-free mode: exit=1
+  >>> BUG: Uncaught Failure()
+  >>> exception raised in signal: Failure("Argument of a term has out-of-fragment type [sorted_wrt_nat ord_less_eq_nat \n                                              (linord464714530at_nat\n                                                (\206\187 (Y0:nat). Y0) \n                                                (cons_nat x \n                                                  (cons_nat y nil_nat))):prop]")
+
+============================================================
+SUMMARY
+  Lambda-free Failure() bugs:  1
+  Parse error bugs:            2
+  OK (no bug):                 1
+  Total files tested:          4
+============================================================

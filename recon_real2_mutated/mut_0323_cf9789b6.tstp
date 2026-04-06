@@ -1,0 +1,7 @@
+thf(zf_stmt_0, negated_conjecture, ($false),
+  inference('cnf.neg', [status(esa)], [conj_0])).
+thf(zip_derived_cl0, plain, ($false),
+    inference('cnf', [status(esa)], [zf_stmt_0])).
+fof(a,axiom,($true)).
+
+% SZS output end Refutation

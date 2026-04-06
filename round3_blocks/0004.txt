@@ -1,0 +1,2 @@
+thf(ty_n_t__Code____Numeral__Ointeger, type,
+    code_integer : $tType).

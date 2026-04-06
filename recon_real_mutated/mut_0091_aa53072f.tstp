@@ -1,0 +1,6 @@
+fof(injected_7793, plain, $true, inference(∀_intro_fake, [status(thm)], [])).
+% SZS status ResourceOut for problem
+% /usr/local/bin/vampire --input_syntax tptp --proof tptp --output_axiom_names on --mode portfolio --schedule snake_slh -t 30 --input_file /Users/xujiangjing/.isabelle/Isabelle2025/prob_vampire_1.p
+% 2026-04-04 13:22:07.734
+User error: snake_slh is an invalid value for schedule
+See vampire -explain schedule for help.

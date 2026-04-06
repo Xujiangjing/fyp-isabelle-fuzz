@@ -1,0 +1,2 @@
+thf(ty_n_t__Int__Oint, type,
+    int : $tType).

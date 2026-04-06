@@ -1,0 +1,43 @@
+thf(zip_derived_cl1454, plain,
+    (((rev_list_int @ (cons_list_int @ n0 @ nil_list_int))
+       != (cons_list_int @ n0 @ nil_list_int))),
+    inference('cnf', [status(esa)], [zf_stmt_0])).
+thf(zip_derived_cl5, plain,
+    (![X0 : list_int, X1 : list_list_int]:
+       (((rev_list_int @ X1) = (cons_list_int @ X0 @ nil_list_int))
+        | ((X1) != (cons_list_int @ X0 @ nil_list_int)))),
+    inference('cnf', [status(esa)], [fact_2_rev__singleton__conv])).
+thf(fact_2_rev__singleton__conv, axiom,
+  (![Xs:list_list_int,X:list_int]:
+   ( ( ( rev_list_int @ Xs ) = ( cons_list_int @ X @ nil_list_int ) ) <=>
+     ( ( Xs ) = ( cons_list_int @ X @ nil_list_int ) ) ))).
+thf(n0_type, type, n0: list_int).
+thf(zf_stmt_0, negated_conjecture,
+  (( rev_list_int @ ( cons_list_int @ n0 @ nil_list_int ) ) !=
+   ( cons_list_int @ n0 @ nil_list_int )),
+  inference('cnf.neg', [status(esa)], [conj_0])).
+thf(cons_list_int_type, type, cons_list_int: list_int > list_list_int > list_list_int).
+thf(zip_derived_cl1487, plain, ($false),
+    inference('simplify', [status(thm)], [zip_derived_cl1486])).
+
+% SZS output end Refutation
+thf(list_int_type, type, list_int: $tType).
+thf(zip_derived_cl1486, plain,
+    (((cons_list_int @ n0 @ nil_list_int)
+       != (cons_list_int @ n0 @ nil_list_int))),
+    inference('demod', [status(thm)],
+              [zip_derived_cl1454, zip_derived_cl1485])).
+thf(nil_list_int_type, type, nil_list_int: list_list_int).
+thf(conj_0, conjecture,
+  (( rev_list_int @ ( cons_list_int @ n0 @ nil_list_int ) ) =
+   ( cons_list_int @ n0 @ nil_list_int ))).
+thf(rev_list_int_type, type, rev_list_int: list_list_int > list_list_int).
+% done 35 iterations in 0.065s
+% SZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0004_r003_20260331_221053_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(list_list_int_type, negated_conjecture, list_list_int: $tType).
+thf(zip_derived_cl1485, plain,
+    (![X0 : list_int]:
+       ((rev_list_int @ (cons_list_int @ X0 @ nil_list_int))
+         = (cons_list_int @ X0 @ nil_list_int))),
+    inference('simplify', [status(thm)], [zip_derived_cl5])).

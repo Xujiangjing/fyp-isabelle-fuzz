@@ -1,0 +1,2 @@
+thf(sy_c_Code__Numeral_Onat__of__integer, type,
+    code_nat_of_integer : code_integer > nat).

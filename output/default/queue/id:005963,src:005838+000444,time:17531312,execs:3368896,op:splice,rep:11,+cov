@@ -1,0 +1,8 @@
+cnf(cc,type,
+
+at).
+
+% /Ajections=0 --ho-mCx-rigid-imitations=1 --ho-max-identifications=0 --boolean-reasoning=bool-hoist --bool-hoist-simpl=true --bool-select=LI --recognize-injectivity=true --ext-rules=ext-family --ext-rules-max-depth=1 --ho-choice-inst=true --ho-prim-enum=none --ho-elim-leibniz=0 --interpret-bool-funs=true --try“e="$E_HOME/eprover" --tmp-dir="$ISABELLE_TMP_PREF).
+
+%
+tff(co, conjecture,~(((~~~IX" --ho-unif-level=pragmatic-framework --select=bb+e-Selection2 --post-cnf-lambda-lifting=true -q "4|

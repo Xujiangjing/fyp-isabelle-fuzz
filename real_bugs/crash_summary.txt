@@ -1,0 +1,17 @@
+============================================================
+CRASH/BUG TESTING SUMMARY
+============================================================
+
+parse_error: 165 occurrences
+  [high] mut_0000_0013_round007_20260331_202046_prob_zipperposition_min_1.p | --steps 10000 --timeout 30
+    Parse error on Sledgehammer-generated TPTP
+  [high] mut_0002_0017_round009_20260331_202139_prob_zipperposition_min_1.p | --steps 10000 --timeout 30
+    Parse error on Sledgehammer-generated TPTP
+  [high] mut_0003_0013_round007_20260331_202046_prob_zipperposition_min_1.p | --steps 10000 --timeout 30
+    Parse error on Sledgehammer-generated TPTP
+  [high] mut_0004_0011_round006_20260331_202022_prob_zipperposition_min_1.p | --steps 10000 --timeout 30
+    Parse error on Sledgehammer-generated TPTP
+  [high] mut_0006_0008_round005_20260331_201942_prob_zipperposition_1.p | --steps 10000 --timeout 30
+    Parse error on Sledgehammer-generated TPTP
+  ... and 160 more
+

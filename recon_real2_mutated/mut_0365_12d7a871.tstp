@@ -1,0 +1,8 @@
+% done 0 iterations in 0.001s
+% SZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0007_r004_20260331_221119_prob_zipperposition_min_1.p'
+% SZS output start Refutation
+thf(conj_0, conjecture, ($true)).
+thf(zf_stmt_0, negated_conjecture, ($false),
+  inference('cnf.neg', [status(esa)], [conj_0])).
+thf(zip_derived_cl0, plain, ($false),
+    inference('cnf', [status(esa)], [zf_stmt_0])).

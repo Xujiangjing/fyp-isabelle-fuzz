@@ -1,0 +1,2 @@
+thf(sy_c_Groups_Omonoid__axioms_001t__Nat__Onat, type,
+    monoid_axioms_nat : (nat > nat > nat) > nat > $o).

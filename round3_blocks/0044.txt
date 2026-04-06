@@ -1,0 +1,2 @@
+thf(sy_c_Nat_Osemiring__1__class_Oof__nat_001t__Code____Numeral__Ointeger, type,
+    semiri401560510nteger : nat > code_integer).

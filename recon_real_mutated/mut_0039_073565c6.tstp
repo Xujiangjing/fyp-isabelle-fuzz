@@ -1,0 +1,3 @@
+fof(extra_5539, axiom, (![X]: (X = X))).
+fof(injected_8678, plain, $true, inference(None, [status(thm)], [])).
+% SZS status BROKEN_STATUS for problem

@@ -1,0 +1,25 @@
+% SZS status CounterSatisfiable for problem
+% done 41 iterations in 0.032s
+% SZS status CounterSatisfiable for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0020_round006_20260331_202022_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(nat_type, type, nat: $tType).
+thf(times_times_nat_type, type, times_times_nat: nat > nat > nat).
+thf(one_one_nat_type, type, one_one_nat: nat).
+thf(u_type, type, u: nat).
+thf(conj_0, conjecture, (( times_times_nat @ u @ one_one_nat ) = ( u ))).
+thf(zf_stmt_0, negated_conjecture,
+  (( times_times_nat @ u @ one_one_nat ) != ( u )),
+  inference('cnf.neg', [status(esa)], [conj_0])).
+thf(zip_derived_cl996, plain, (((times_times_nat @ u @ one_one_nat) != (u))),
+    inference('cnf', [status(esa)], [zf_stmt_0])).
+thf(fact_2_mult_Oright__neutral, axiom,
+  (![A:nat]: ( ( times_times_nat @ A @ one_one_nat ) = ( A ) ))).
+thf(zip_derived_cl6, plain,
+    (![X0 : nat]: ((times_times_nat @ X0 @ one_one_nat) = (X0))),
+    inference('cnf', [status(esa)], [fact_2_mult_Oright__neutral])).
+thf(zip_derived_cl1010, plain, (((u) != (u))),
+    inference('demod', [status(thm)], [zip_derived_cl996, zip_derived_cl6])).
+thf(zip_derived_cl1011, plain, ($false),
+    inference('simplify', [status(thm)], [zip_derived_cl1010])).
+
+% SZS output end Refutation

@@ -1,0 +1,89 @@
+# Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 5 seconds (5 total)
+# Starting new_ho_10 with 5s (1) cores
+# new_ho_10 with pid 51169 completed with status 0
+# Result found by new_ho_10
+# Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 5 seconds (5 total)
+# Starting new_ho_10 with 5s (1) cores
+# No SInE strategy applied
+# Search class: HUHPF-FFSF00-SFFFFFNN
+# Scheduled 2 strats onto 1 cores with 5 seconds (5 total)
+# Starting new_ho_10 with 4s (1) cores
+# new_ho_10 with pid 51170 completed with status 0
+# Result found by new_ho_10
+# Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 5 seconds (5 total)
+# Starting new_ho_10 with 5s (1) cores
+# No SInE strategy applied
+# Search class: HUHPF-FFSF00-SFFFFFNN
+# Scheduled 2 strats onto 1 cores with 5 seconds (5 total)
+# Starting new_ho_10 with 4s (1) cores
+# Initializing proof state
+# Scanning for AC axioms
+## Presaturation interreduction done
+
+# Proof found!
+# SZS status Theorem
+# SZS output start CNFRefutation
+thf(decl_sort1, type, a: $tType).
+thf(decl_22, type, one_one_a: a).
+thf(decl_23, type, plus_plus_a: a > a > a).
+thf(decl_24, type, m: a).
+BROKEN(conj_0, conjecture, ((plus_plus_a @ m @ one_one_a)=(plus_plus_a @ m @ one_one_a)), file('/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0023_round007_20260331_202046_prob_zipperposition_min_1.p', conj_0)).
+thf(c_0_1, negated_conjecture, ((plus_plus_a @ m @ one_one_a)!=(plus_plus_a @ m @ one_one_a)), inference(fof_simplification,[status(thm)],[inference(assum		e_negation,[status(cth)],[conj_0])])).
+thf(c_0_2, negated_conjecture, ((plus_plus_a @ m @ one_one_a)!=(plus_plus_a @ m @ one_one_a)), inference(fof_nnf,[status(thm)],[c_0_1])).
+thf(c_0_3, negated_conjecture, ((plus_plus_a @ m @ one_one_a)!=(plus_plus_a @ m @ one_one_a)), inference(split_conjunct,[status(thm)],[c_0_2])).
+thf(c_0_4, negated_conjecture, ($false), inference(cn,[status(thm)],[c_0_3]), ['proof']).
+# SZS output end CNFRefutation
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+

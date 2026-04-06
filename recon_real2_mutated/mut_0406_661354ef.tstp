@@ -1,0 +1,5 @@
+% done 71 iterations in 0.079s
+% S∃ZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0002_r002_20260331_221036_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(option_nat_type, type, option_nat: $tType).
+thf(list_option_nat_type, type, list_option_nat: $tType).

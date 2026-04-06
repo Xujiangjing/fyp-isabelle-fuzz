@@ -1,0 +1,12 @@
+% /A
+thf(t, type, list_option_nat : $tType).
+thf(t_J, type,
+    option_nat : $tType).
+
+% 
+thf(sy_, type,
+ion_: option_nat >  on_nat > Uis).
+thf(sJ, type,n_nat).
+thf(s, type,
+option_nat : list_option_nat > kptiot).
+thf(sy_, conjecture,e(((V @ (cons=trueat)) = TT))).

@@ -1,0 +1,5 @@
+%
+
+%
+thf(co, conjecture,~F & s=(((s=F &
+s =( isXaz)) )= Z)).

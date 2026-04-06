@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/root/.opam/4.14.1+afl/bin/zipperposition
+AFL_CUSTOM_INFO_PROGRAM_ARGV=--input tptp --output none @@
+AFL_CUSTOM_INFO_OUT=/fuzz/output/default
+# command line:
+'afl-fuzz' '-m' 'none' '-i' '/fuzz/seeds' '-o' '/fuzz/output' '--' '/root/.opam/4.14.1+afl/bin/zipperposition' '--input' 'tptp' '--output' 'none' '@@'

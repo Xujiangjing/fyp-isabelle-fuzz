@@ -1,0 +1,1615 @@
+======================================================================
+DIFFERENTIAL FUZZING SUMMARY
+======================================================================
+Date:      2026-04-02 21:19:34
+Seeds:     30 files
+Mutants:   200
+Provers:   e, zipperposition
+Timeout:   30s
+Total time: 513.2s
+
+FINDINGS:
+  Crashes:       203
+  Disagreements: 0
+  Hangs:         0
+
+======================================================================
+DETAILED FINDINGS
+======================================================================
+
+  [HIGH] crash: 0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: fuzz/unique_inputs/0000_r001_20260331_221018_prob_zipperposition_1.p:99:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: fuzz/unique_inputs/0000_r001_20260331_221018_prob_zipperposition_1.p:99:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0002_r002_20260331_221036_prob_zipperposition_1.p
+    e crashed: uzz/unique_inputs/0002_r002_20260331_221036_prob_zipperposition_1.p:323:(Column 241):(just read '[')
+    prover: e
+    exit: 3
+    error: uzz/unique_inputs/0002_r002_20260331_221036_prob_zipperposition_1.p:323:(Column 241):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0003_r002_20260331_221036_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 97334 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: uzz/unique_inputs/0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '[')
+    prover: e
+    exit: 3
+    error: uzz/unique_inputs/0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0005_r003_20260331_221053_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 97349 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: fuzz/unique_inputs/0006_r004_20260331_221119_prob_zipperposition_1.p:97:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: fuzz/unique_inputs/0006_r004_20260331_221119_prob_zipperposition_1.p:97:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: uzz/unique_inputs/0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: uzz/unique_inputs/0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0009_r005_20260331_221136_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 97370 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0010_round001_20260331_201748_prob_zipperposition_1.p
+    e crashed: /unique_inputs/0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: /unique_inputs/0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0012_round002_20260331_201817_prob_zipperposition_1.p
+    e crashed: z/unique_inputs/0012_round002_20260331_201817_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: z/unique_inputs/0012_round002_20260331_201817_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0014_round003_20260331_201852_prob_zipperposition_1.p
+    e crashed: unique_inputs/0014_round003_20260331_201852_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: unique_inputs/0014_round003_20260331_201852_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 97480 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0016_round004_20260331_201918_prob_zipperposition_1.p
+    e crashed: /unique_inputs/0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: /unique_inputs/0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0018_round005_20260331_201942_prob_zipperposition_1.p
+    e crashed: z/unique_inputs/0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: z/unique_inputs/0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0020_round006_20260331_202022_prob_zipperposition_1.p
+    e crashed: unique_inputs/0020_round006_20260331_202022_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: unique_inputs/0020_round006_20260331_202022_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 97579 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0022_round007_20260331_202046_prob_zipperposition_1.p
+    e crashed: /unique_inputs/0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: /unique_inputs/0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: z/unique_inputs/0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: z/unique_inputs/0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0026_round009_20260331_202139_prob_zipperposition_1.p
+    e crashed: unique_inputs/0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: unique_inputs/0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: 0027_round009_20260331_202139_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 97685 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: 0028_round010_20260331_202202_prob_zipperposition_1.p
+    e crashed: /unique_inputs/0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: /unique_inputs/0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0000_0011_round001_20260331_201748_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0000_0011_round001_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0000_0011_round001_20260331_201748_prob_zipperposition_min_1.p:5:(Column 4):(just read '('): Colon (':') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0001_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0001_0008_r005_20260331_221136_prob_zipperposition_1.p:141:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0001_0008_r005_20260331_221136_prob_zipperposition_1.p:141:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0002_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0002_0015_round003_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0002_0015_round003_20260331_201852_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0003_0027_round009_20260331_202139_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0003_0027_round009_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0003_0027_round009_20260331_202139_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0004_0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: d/mutants/mut_0004_0006_r004_20260331_221119_prob_zipperposition_1.p:99:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: d/mutants/mut_0004_0006_r004_20260331_221119_prob_zipperposition_1.p:99:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0005_0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: d/mutants/mut_0005_0006_r004_20260331_221119_prob_zipperposition_1.p:97:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: d/mutants/mut_0005_0006_r004_20260331_221119_prob_zipperposition_1.p:97:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0006_0017_round004_20260331_201918_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0006_0017_round004_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0006_0017_round004_20260331_201918_prob_zipperposition_min_1.p:5:(Column 16):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0007_0013_round002_20260331_201817_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0007_0013_round002_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0007_0013_round002_20260331_201817_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0008_0010_round001_20260331_201748_prob_zipperposition_1.p
+    e crashed: tants/mut_0008_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0008_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0009_0027_round009_20260331_202139_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0009_0027_round009_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0009_0027_round009_20260331_202139_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0010_0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0011_0016_round004_20260331_201918_prob_zipperposition_1.p
+    e crashed: tants/mut_0011_0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0011_0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0012_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0012_0015_round003_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0012_0015_round003_20260331_201852_prob_zipperposition_min_1.p:15:(Column 24):(just read '@'): Function symbol times_times_nat has not been defined previously.
+
+
+  [HIGH] crash: mut_0013_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0013_0015_round003_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0013_0015_round003_20260331_201852_prob_zipperposition_min_1.p:10:(Column 38):(just read '('): Comma (',') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0014_0028_round010_20260331_202202_prob_zipperposition_1.p
+    e crashed: tants/mut_0014_0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0014_0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0016_0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0016_0006_r004_20260331_22111
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0016_0006_r004_20260331_221119_prob_zipperposition_1.p:48:(Column 37):(just read '('): Comma (',') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0017_0009_r005_20260331_221136_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0017_0009_r005_20260331_22113
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0017_0009_r005_20260331_221136_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0018_0026_round009_20260331_202139_prob_zipperposition_1.p
+    e crashed: ants/mut_0018_0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0018_0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0020_0005_r003_20260331_221053_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0021_0010_round001_20260331_201748_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0021_0010_round001_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0021_0010_round001_20260331_201748_prob_zipperposition_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0022_0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 97914 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0023_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0023_0000_r001_20260331_22101
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0023_0000_r001_20260331_221018_prob_zipperposition_1.p:21:(Column 4):(just read '('): Colon (':') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0024_0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0024_0024_round008_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0024_0024_round008_20260331_202108_prob_zipperposition_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0025_0002_r002_20260331_221036_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0025_0002_r002_20260331_221036_prob_zipperposition_1.p:323:(Column 241):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0025_0002_r002_20260331_221036_prob_zipperposition_1.p:323:(Column 241):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0026_0022_round007_20260331_202046_prob_zipperposition_1.p
+    e crashed: tants/mut_0026_0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0026_0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0027_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0027_0008_r005_20260331_22113
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0027_0008_r005_20260331_221136_prob_zipperposition_1.p:5:(Column 35):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0028_0001_r001_20260331_221018_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0028_0001_r001_20260331_22101
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0028_0001_r001_20260331_221018_prob_zipperposition_min_1.p:5:(Column 23):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0029_0029_round010_20260331_202202_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0029_0029_round010_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0029_0029_round010_20260331_202202_prob_zipperposition_min_1.p:15:(Column 24):(just read '@'): Function symbol z has not been defined previously.
+
+
+  [HIGH] crash: mut_0030_0014_round003_20260331_201852_prob_zipperposition_1.p
+    e crashed: ants/mut_0030_0014_round003_20260331_201852_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0030_0014_round003_20260331_201852_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0031_0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0031_0021_round006_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0031_0021_round006_20260331_202022_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0032_0001_r001_20260331_221018_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0032_0001_r001_20260331_22101
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0032_0001_r001_20260331_221018_prob_zipperposition_min_1.p:11:(Column 9):(just read '='): Function symbol s has not been defined previously.
+
+
+  [HIGH] crash: mut_0033_0016_round004_20260331_201918_prob_zipperposition_1.p
+    e crashed: tants/mut_0033_0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0033_0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0034_0017_round004_20260331_201918_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0034_0017_round004_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0034_0017_round004_20260331_201918_prob_zipperposition_min_1.p:13:(Column 4):(just read '('): Colon (':') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0035_0011_round001_20260331_201748_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0035_0011_round001_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0035_0011_round001_20260331_201748_prob_zipperposition_min_1.p:15:(Column 35):(just read ')'): Function symbol one_one_a has not been defined previously.
+
+
+  [HIGH] crash: mut_0036_0017_round004_20260331_201918_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0037_0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0037_0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0037_0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0038_0020_round006_20260331_202022_prob_zipperposition_1.p
+    e crashed: ants/mut_0038_0020_round006_20260331_202022_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0038_0020_round006_20260331_202022_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0040_0026_round009_20260331_202139_prob_zipperposition_1.p
+    e crashed: ants/mut_0040_0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0040_0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0041_0022_round007_20260331_202046_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0041_0022_round007_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0041_0022_round007_20260331_202046_prob_zipperposition_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0043_0029_round010_20260331_202202_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0043_0029_round010_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0043_0029_round010_20260331_202202_prob_zipperposition_min_1.p:5:(Column 16):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0044_0003_r002_20260331_221036_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0044_0003_r002_20260331_22103
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0044_0003_r002_20260331_221036_prob_zipperposition_min_1.p:16:(Column 1):(just read 'th'): No token (probably EOF) expected, but Identifier not terminating in a number read 
+
+
+  [HIGH] crash: mut_0045_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0045_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0045_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0046_0019_round005_20260331_201942_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0046_0019_round005_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0046_0019_round005_20260331_201942_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0047_0012_round002_20260331_201817_prob_zipperposition_1.p
+    e crashed: utants/mut_0047_0012_round002_20260331_201817_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0047_0012_round002_20260331_201817_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0048_0005_r003_20260331_221053_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0048_0005_r003_20260331_22105
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0048_0005_r003_20260331_221053_prob_zipperposition_min_1.p:5:(Column 28):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0049_0020_round006_20260331_202022_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0049_0020_round006_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0049_0020_round006_20260331_202022_prob_zipperposition_1.p:5:(Column 27):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0050_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0050_0000_r001_20260331_22101
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0050_0000_r001_20260331_221018_prob_zipperposition_1.p:99:(Column 130):(just read ','): Closing bracket (')') expected, but Comma (',') read 
+
+
+  [HIGH] crash: mut_0051_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0052_0019_round005_20260331_201942_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0053_0005_r003_20260331_221053_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0054_0010_round001_20260331_201748_prob_zipperposition_1.p
+    e crashed: tants/mut_0054_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0054_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0055_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0055_0000_r001_20260331_22101
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0055_0000_r001_20260331_221018_prob_zipperposition_1.p:85:(Column 64):(just read '.'): Closing bracket (')') expected, but Fullstop ('.') read 
+
+
+  [HIGH] crash: mut_0058_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 98626 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0059_0019_round005_20260331_201942_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0060_0025_round008_20260331_202108_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0060_0025_round008_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0060_0025_round008_20260331_202108_prob_zipperposition_min_1.p:11:(Column 9):(just read '='): Function symbol c has not been defined previously.
+
+
+  [HIGH] crash: mut_0061_0027_round009_20260331_202139_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0061_0027_round009_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0061_0027_round009_20260331_202139_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0062_0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0062_0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0062_0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0063_0023_round007_20260331_202046_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0063_0023_round007_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0063_0023_round007_20260331_202046_prob_zipperposition_min_1.p:5:(Column 16):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0064_0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0064_0006_r004_20260331_22111
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0064_0006_r004_20260331_221119_prob_zipperposition_1.p:5:(Column 37):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0065_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0065_0000_r001_20260331_22101
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0065_0000_r001_20260331_221018_prob_zipperposition_1.p:5:(Column 37):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0066_0026_round009_20260331_202139_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0066_0026_round009_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0066_0026_round009_20260331_202139_prob_zipperposition_1.p:5:(Column 27):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0067_0026_round009_20260331_202139_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0067_0026_round009_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0067_0026_round009_20260331_202139_prob_zipperposition_1.p:74:(Column 43):(just read '('): Comma (',') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0068_0012_round002_20260331_201817_prob_zipperposition_1.p
+    e crashed: utants/mut_0068_0012_round002_20260331_201817_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0068_0012_round002_20260331_201817_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0069_0025_round008_20260331_202108_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0069_0025_round008_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0069_0025_round008_20260331_202108_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0070_0011_round001_20260331_201748_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0070_0011_round001_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0070_0011_round001_20260331_201748_prob_zipperposition_min_1.p:15:(Column 35):(just read ')'): Function symbol one_one_a has not been defined previously.
+
+
+  [HIGH] crash: mut_0071_0010_round001_20260331_201748_prob_zipperposition_1.p
+    e crashed: tants/mut_0071_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0071_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0073_0022_round007_20260331_202046_prob_zipperposition_1.p
+    e crashed: tants/mut_0073_0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0073_0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0074_0028_round010_20260331_202202_prob_zipperposition_1.p
+    e crashed: tants/mut_0074_0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0074_0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0075_0027_round009_20260331_202139_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 98673 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0076_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0076_0015_round003_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0076_0015_round003_20260331_201852_prob_zipperposition_min_1.p:8:(Column 55):(just read '('): Comma (',') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0077_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0077_0000_r001_20260331_22101
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0077_0000_r001_20260331_221018_prob_zipperposition_1.p:66:(Column 72):(just read '('): Comma (',') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0078_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: d/mutants/mut_0078_0000_r001_20260331_221018_prob_zipperposition_1.p:99:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: d/mutants/mut_0078_0000_r001_20260331_221018_prob_zipperposition_1.p:99:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0079_0026_round009_20260331_202139_prob_zipperposition_1.p
+    e crashed: ants/mut_0079_0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0079_0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0080_0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: d/mutants/mut_0080_0006_r004_20260331_221119_prob_zipperposition_1.p:97:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: d/mutants/mut_0080_0006_r004_20260331_221119_prob_zipperposition_1.p:97:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0081_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0081_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0081_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0082_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0082_0000_r001_20260331_221018_prob_zipperposition_1.p:101:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0082_0000_r001_20260331_221018_prob_zipperposition_1.p:101:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0084_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0084_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0084_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0085_0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0085_0004_r003_20260331_22105
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0085_0004_r003_20260331_221053_prob_zipperposition_1.p:51:(Column 4):(just read '('): Colon (':') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0086_0022_round007_20260331_202046_prob_zipperposition_1.p
+    e crashed: tants/mut_0086_0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0086_0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0087_0018_round005_20260331_201942_prob_zipperposition_1.p
+    e crashed: utants/mut_0087_0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0087_0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0089_0014_round003_20260331_201852_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0089_0014_round003_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0089_0014_round003_20260331_201852_prob_zipperposition_1.p:5:(Column 27):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0090_0020_round006_20260331_202022_prob_zipperposition_1.p
+    e crashed: ants/mut_0090_0020_round006_20260331_202022_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0090_0020_round006_20260331_202022_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0091_0014_round003_20260331_201852_prob_zipperposition_1.p
+    e crashed: ants/mut_0091_0014_round003_20260331_201852_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0091_0014_round003_20260331_201852_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0092_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: d/mutants/mut_0092_0000_r001_20260331_221018_prob_zipperposition_1.p:97:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: d/mutants/mut_0092_0000_r001_20260331_221018_prob_zipperposition_1.p:97:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0093_0026_round009_20260331_202139_prob_zipperposition_1.p
+    e crashed: ants/mut_0093_0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0093_0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0094_0026_round009_20260331_202139_prob_zipperposition_1.p
+    e crashed: ants/mut_0094_0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0094_0026_round009_20260331_202139_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0095_0023_round007_20260331_202046_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0095_0023_round007_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0095_0023_round007_20260331_202046_prob_zipperposition_min_1.p:5:(Column 16):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0096_0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 98810 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0097_0010_round001_20260331_201748_prob_zipperposition_1.p
+    e crashed: tants/mut_0097_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0097_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0098_0020_round006_20260331_202022_prob_zipperposition_1.p
+    e crashed: ants/mut_0098_0020_round006_20260331_202022_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0098_0020_round006_20260331_202022_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0099_0011_round001_20260331_201748_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0099_0011_round001_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0099_0011_round001_20260331_201748_prob_zipperposition_min_1.p:5:(Column 16):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0100_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0100_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0100_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0101_0018_round005_20260331_201942_prob_zipperposition_1.p
+    e crashed: utants/mut_0101_0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0101_0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0102_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 98904 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0103_0011_round001_20260331_201748_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0103_0011_round001_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0103_0011_round001_20260331_201748_prob_zipperposition_min_1.p:5:(Column 16):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0104_0005_r003_20260331_221053_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0104_0005_r003_20260331_22105
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0104_0005_r003_20260331_221053_prob_zipperposition_min_1.p:5:(Column 28):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0105_0027_round009_20260331_202139_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 98921 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0106_0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0106_0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0106_0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0107_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0107_0015_round003_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0107_0015_round003_20260331_201852_prob_zipperposition_min_1.p:15:(Column 24):(just read '@'): Function symbol times_times_nat has not been defined previously.
+
+
+  [HIGH] crash: mut_0108_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0108_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0108_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0109_0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0111_0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: utants/mut_0111_0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0111_0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0112_0022_round007_20260331_202046_prob_zipperposition_1.p
+    e crashed: tants/mut_0112_0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0112_0022_round007_20260331_202046_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0113_0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: utants/mut_0113_0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0113_0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0114_0018_round005_20260331_201942_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0114_0018_round005_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0114_0018_round005_20260331_201942_prob_zipperposition_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0115_0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0115_0006_r004_20260331_22111
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0115_0006_r004_20260331_221119_prob_zipperposition_1.p:5:(Column 37):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0116_0013_round002_20260331_201817_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0118_0025_round008_20260331_202108_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99110 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0119_0001_r001_20260331_221018_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0120_0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0120_0021_round006_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0120_0021_round006_20260331_202022_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0121_0005_r003_20260331_221053_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99127 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0122_0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: d/mutants/mut_0122_0006_r004_20260331_221119_prob_zipperposition_1.p:95:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: d/mutants/mut_0122_0006_r004_20260331_221119_prob_zipperposition_1.p:95:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0123_0023_round007_20260331_202046_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0125_0009_r005_20260331_221136_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99148 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0126_0026_round009_20260331_202139_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0126_0026_round009_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0126_0026_round009_20260331_202139_prob_zipperposition_1.p:5:(Column 27):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0127_0009_r005_20260331_221136_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0127_0009_r005_20260331_22113
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0127_0009_r005_20260331_221136_prob_zipperposition_min_1.p:13:(Column 24):(just read '@'): Function symbol times_times_int has not been defined previously.
+
+
+  [HIGH] crash: mut_0128_0025_round008_20260331_202108_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0128_0025_round008_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0128_0025_round008_20260331_202108_prob_zipperposition_min_1.p:9:(Column 4):(just read '('): Colon (':') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0129_0018_round005_20260331_201942_prob_zipperposition_1.p
+    e crashed: utants/mut_0129_0018_round005_20260331_201942_prob_zipperposition_1.p:61:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0129_0018_round005_20260331_201942_prob_zipperposition_1.p:61:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0130_0003_r002_20260331_221036_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0130_0003_r002_20260331_22103
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0130_0003_r002_20260331_221036_prob_zipperposition_min_1.p:5:(Column 30):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0131_0009_r005_20260331_221136_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0132_0016_round004_20260331_201918_prob_zipperposition_1.p
+    e crashed: tants/mut_0132_0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0132_0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0133_0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0133_0006_r004_20260331_22111
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0133_0006_r004_20260331_221119_prob_zipperposition_1.p:89:(Column 4):(just read '('): Colon (':') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0134_0013_round002_20260331_201817_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0134_0013_round002_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0134_0013_round002_20260331_201817_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0135_0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0135_0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0135_0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0136_0018_round005_20260331_201942_prob_zipperposition_1.p
+    e crashed: utants/mut_0136_0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0136_0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0137_0028_round010_20260331_202202_prob_zipperposition_1.p
+    e crashed: tants/mut_0137_0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0137_0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0138_0005_r003_20260331_221053_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0138_0005_r003_20260331_22105
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0138_0005_r003_20260331_221053_prob_zipperposition_min_1.p:5:(Column 28):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0139_0016_round004_20260331_201918_prob_zipperposition_1.p
+    e crashed: tants/mut_0139_0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0139_0016_round004_20260331_201918_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0140_0029_round010_20260331_202202_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0140_0029_round010_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0140_0029_round010_20260331_202202_prob_zipperposition_min_1.p:4:(Column 14):(just read '('): Comma (',') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0141_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0141_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0141_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0142_0019_round005_20260331_201942_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0142_0019_round005_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0142_0019_round005_20260331_201942_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0143_0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: utants/mut_0143_0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0143_0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0144_0005_r003_20260331_221053_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0144_0005_r003_20260331_22105
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0144_0005_r003_20260331_221053_prob_zipperposition_min_1.p:5:(Column 28):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0145_0023_round007_20260331_202046_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0146_0010_round001_20260331_201748_prob_zipperposition_1.p
+    e crashed: tants/mut_0146_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0146_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0147_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0148_0027_round009_20260331_202139_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99426 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0150_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: d/mutants/mut_0150_0000_r001_20260331_221018_prob_zipperposition_1.p:99:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: d/mutants/mut_0150_0000_r001_20260331_221018_prob_zipperposition_1.p:99:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0153_0001_r001_20260331_221018_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99453 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0154_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99466 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0155_0010_round001_20260331_201748_prob_zipperposition_1.p
+    e crashed: tants/mut_0155_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0155_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0156_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0156_0000_r001_20260331_22101
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0156_0000_r001_20260331_221018_prob_zipperposition_1.p:64:(Column 12):(just read '('): Comma (',') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0157_0028_round010_20260331_202202_prob_zipperposition_1.p
+    e crashed: tants/mut_0157_0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0157_0028_round010_20260331_202202_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0158_0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0158_0004_r003_20260331_22105
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0158_0004_r003_20260331_221053_prob_zipperposition_1.p:5:(Column 36):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0159_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0159_0000_r001_20260331_221018_prob_zipperposition_1.p:101:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0159_0000_r001_20260331_221018_prob_zipperposition_1.p:101:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0160_0029_round010_20260331_202202_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0160_0029_round010_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0160_0029_round010_20260331_202202_prob_zipperposition_min_1.p:5:(Column 16):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0162_0029_round010_20260331_202202_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0162_0029_round010_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0162_0029_round010_20260331_202202_prob_zipperposition_min_1.p:15:(Column 35):(just read ')'): Function symbol one_one_a has not been defined previously.
+
+
+  [HIGH] crash: mut_0164_0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0164_0021_round006_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0164_0021_round006_20260331_202022_prob_zipperposition_min_1.p:15:(Column 24):(just read '@'): Function symbol times_times_nat has not been defined previously.
+
+
+  [HIGH] crash: mut_0165_0009_r005_20260331_221136_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0166_0027_round009_20260331_202139_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0167_0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99603 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0168_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0168_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0168_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0169_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99618 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0170_0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0170_0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0170_0004_r003_20260331_221053_prob_zipperposition_1.p:295:(Column 117):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0171_0029_round010_20260331_202202_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0171_0029_round010_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0171_0029_round010_20260331_202202_prob_zipperposition_min_1.p:10:(Column 10):(just read '('): Comma (',') expected, but Opening bracket ('(') read 
+
+
+  [HIGH] crash: mut_0172_0023_round007_20260331_202046_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0173_0013_round002_20260331_201817_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0173_0013_round002_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0173_0013_round002_20260331_201817_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0174_0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: utants/mut_0174_0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0174_0024_round008_20260331_202108_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0175_0000_r001_20260331_221018_prob_zipperposition_1.p
+    e crashed: d/mutants/mut_0175_0000_r001_20260331_221018_prob_zipperposition_1.p:97:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: d/mutants/mut_0175_0000_r001_20260331_221018_prob_zipperposition_1.p:97:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0176_0007_r004_20260331_221119_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0176_0007_r004_20260331_22111
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0176_0007_r004_20260331_221119_prob_zipperposition_min_1.p:5:(Column 13):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0177_0009_r005_20260331_221136_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0177_0009_r005_20260331_22113
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0177_0009_r005_20260331_221136_prob_zipperposition_min_1.p:15:(Column 42):(just read ')'): Function symbol one_one_int has not been defined previously.
+
+
+  [HIGH] crash: mut_0178_0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0178_0024_round008_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0178_0024_round008_20260331_202108_prob_zipperposition_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0179_0021_round006_20260331_202022_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99649 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0180_0006_r004_20260331_221119_prob_zipperposition_1.p
+    e crashed: d/mutants/mut_0180_0006_r004_20260331_221119_prob_zipperposition_1.p:97:(Column 131):(just read '[')
+    prover: e
+    exit: 3
+    error: d/mutants/mut_0180_0006_r004_20260331_221119_prob_zipperposition_1.p:97:(Column 131):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0181_0018_round005_20260331_201942_prob_zipperposition_1.p
+    e crashed: utants/mut_0181_0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0181_0018_round005_20260331_201942_prob_zipperposition_1.p:63:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0182_0019_round005_20260331_201942_prob_zipperposition_min_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0183_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0183_0008_r005_20260331_22113
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0183_0008_r005_20260331_221136_prob_zipperposition_1.p:5:(Column 35):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0184_0008_r005_20260331_221136_prob_zipperposition_1.p
+    e crashed: /mutants/mut_0184_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '[')
+    prover: e
+    exit: 3
+    error: /mutants/mut_0184_0008_r005_20260331_221136_prob_zipperposition_1.p:143:(Column 467):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0185_0014_round003_20260331_201852_prob_zipperposition_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0186_0014_round003_20260331_201852_prob_zipperposition_1.p
+    e crashed: eprover: Mixing of first order and higher order syntax is not allowed.
+
+    prover: e
+    exit: 3
+    error: eprover: Mixing of first order and higher order syntax is not allowed.
+
+
+  [HIGH] crash: mut_0187_0014_round003_20260331_201852_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0187_0014_round003_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0187_0014_round003_20260331_201852_prob_zipperposition_1.p:5:(Column 27):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0188_0012_round002_20260331_201817_prob_zipperposition_1.p
+    e crashed: utants/mut_0188_0012_round002_20260331_201817_prob_zipperposition_1.p:99:(Column 64):(just read '[')
+    prover: e
+    exit: 3
+    error: utants/mut_0188_0012_round002_20260331_201817_prob_zipperposition_1.p:99:(Column 64):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0189_0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0189_0004_r003_20260331_22105
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0189_0004_r003_20260331_221053_prob_zipperposition_1.p:5:(Column 36):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0190_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99754 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0191_0013_round002_20260331_201817_prob_zipperposition_min_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0191_0013_round002_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0191_0013_round002_20260331_201817_prob_zipperposition_min_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0192_0010_round001_20260331_201748_prob_zipperposition_1.p
+    e crashed: tants/mut_0192_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '[')
+    prover: e
+    exit: 3
+    error: tants/mut_0192_0010_round001_20260331_201748_prob_zipperposition_1.p:89:(Column 104):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0193_0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0193_0024_round008_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0193_0024_round008_20260331_202108_prob_zipperposition_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0194_0014_round003_20260331_201852_prob_zipperposition_1.p
+    e crashed: ants/mut_0194_0014_round003_20260331_201852_prob_zipperposition_1.p:131:(Column 121):(just read '[')
+    prover: e
+    exit: 3
+    error: ants/mut_0194_0014_round003_20260331_201852_prob_zipperposition_1.p:131:(Column 121):(just read '['): Identifier not terminating in a number or Identifier terminating in a number or Integer (sequence of decimal digits) convertible to an 'unsigned long' expected, but Opening square brace ('[') read 
+
+
+  [HIGH] crash: mut_0196_0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0196_0024_round008_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0196_0024_round008_20260331_202108_prob_zipperposition_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0197_0015_round003_20260331_201852_prob_zipperposition_min_1.p
+    e crashed: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+    prover: e
+    exit: 9
+    error: # Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 30 seconds (30 total)
+# Starting new_ho_10 with 30s (1) cores
+# new_ho_10 with pid 99781 completed with status 9
+# Schedule exhausted
+# SZS status GaveUp
+
+
+  [HIGH] crash: mut_0198_0024_round008_20260331_202108_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0198_0024_round008_20260331_2
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0198_0024_round008_20260331_202108_prob_zipperposition_1.p:5:(Column 18):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+  [HIGH] crash: mut_0199_0004_r003_20260331_221053_prob_zipperposition_1.p
+    e crashed: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0199_0004_r003_20260331_22105
+    prover: e
+    exit: 3
+    error: eprover: /Users/xujiangjing/fyp-isabelle-fuzz/diff_mutated/mutants/mut_0199_0004_r003_20260331_221053_prob_zipperposition_1.p:5:(Column 36):(just read ')'): Fullstop ('.') expected, but Closing bracket (')') read 
+
+
+======================================================================
+PER-PROVER STATUS DISTRIBUTION
+======================================================================
+
+  e:
+    Unknown                    180
+    Theorem                     27
+    GaveUp                      23
+    CRASHES                    203
+
+  zipperposition:
+    Unknown                    120
+    Theorem                     65
+    CounterSatisfiable          24
+    ResourceOut                 17
+    GaveUp                       2
+    Satisfiable                  2

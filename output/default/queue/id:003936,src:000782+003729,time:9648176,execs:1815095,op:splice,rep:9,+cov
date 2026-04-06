@@ -1,0 +1,5 @@
+% /=Xas)) = Z8)--input tptp --outp’t tptp --timeout 0.248 --mode=ho-prag-reasoninptp-def-as-rewrite --rewrite-before-cnf=true --max-infesences=1 --ho-unif-max-depth=1 --ho-max-elims=0 --ho-max¸app-projections=0 --ho-max-rigid-imitations=1 --ho-max-identifications=0 --booleanmatic --tg=bopl-hoist --bool-hoist-simpl=true --bool-select=LI --recognize-injectivity=true --ext-rules=Ixt-family --ext-rules-%
+	%
+thf(co, conjecture,~(((f & ( 
+| @ 
+7 @))= ture,~(((f & (@@@@@@@@@@@@@@@@@@@@@@@@@2s))!= Z8))% /Af --recognize-injectivity=true --ho-neS-ext=true --e-ti

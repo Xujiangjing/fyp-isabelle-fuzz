@@ -1,0 +1,51 @@
+============================================================
+CLASSIFICATION SUMMARY
+============================================================
+
+Harness: lambda_free
+  ok                          15
+  unknown_failure              4
+  family_a                     4
+  family_c                     4
+  family_b                     2
+  parse_error                  1
+
+Harness: main
+  ok                          29
+  parse_error                  1
+
+============================================================
+INTERESTING FILES (non-ok)
+============================================================
+  [lambda_free ] unknown_failure       0000_r001_20260331_221018_prob_zipperposition_1.p
+                                      → Failure("Argument of a term has out-of-fragment type [zip_internal_ite_pred_Product_unit\n                              
+  [lambda_free ] unknown_failure       0002_r002_20260331_221036_prob_zipperposition_1.p
+                                      → Failure("Argument of a term has out-of-fragment type [sk__32 F1:list_l2046238800on_nat]")
+  [lambda_free ] unknown_failure       0004_r003_20260331_221053_prob_zipperposition_1.p
+                                      → Failure("Argument of a term has out-of-fragment type [sk__20 F1:list_list_int]")
+  [lambda_free ] unknown_failure       0006_r004_20260331_221119_prob_zipperposition_1.p
+                                      → Failure("Argument of a term has out-of-fragment type [zip_internal_ite_pred_Product_unit\n                              
+  [main        ] parse_error           0008_r005_20260331_221136_prob_zipperposition_1.p
+                                      → parse error: expected declaration
+  [lambda_free ] parse_error           0008_r005_20260331_221136_prob_zipperposition_1.p
+                                      → parse error: expected declaration
+  [lambda_free ] family_a              0010_round001_20260331_201748_prob_zipperposition_1.p
+                                      → Failure("Argument of a term has out-of-fragment type [F0 one_one_nat:prop]")
+  [lambda_free ] family_b              0012_round002_20260331_201817_prob_zipperposition_1.p
+                                      → Failure("Argument of a term has out-of-fragment type [zip_tseitin_12 X0 X1 F2:prop]")
+  [lambda_free ] family_c              0014_round003_20260331_201852_prob_zipperposition_1.p
+                                      → Failure("Constant has out-of-fragment type [groups1125920043st_nat] ")
+  [lambda_free ] family_a              0016_round004_20260331_201918_prob_zipperposition_1.p
+                                      → Failure("Argument of a term has out-of-fragment type [F0 one_one_nat:prop]")
+  [lambda_free ] family_c              0018_round005_20260331_201942_prob_zipperposition_1.p
+                                      → Failure("Constant has out-of-fragment type [groups1125920043st_nat] ")
+  [lambda_free ] family_c              0020_round006_20260331_202022_prob_zipperposition_1.p
+                                      → Failure("Constant has out-of-fragment type [groups1125920043st_nat] ")
+  [lambda_free ] family_a              0022_round007_20260331_202046_prob_zipperposition_1.p
+                                      → Failure("Argument of a term has out-of-fragment type [F0 one_one_nat:prop]")
+  [lambda_free ] family_b              0024_round008_20260331_202108_prob_zipperposition_1.p
+                                      → Failure("Argument of a term has out-of-fragment type [zip_tseitin_12 X0 X1 F2:prop]")
+  [lambda_free ] family_c              0026_round009_20260331_202139_prob_zipperposition_1.p
+                                      → Failure("Constant has out-of-fragment type [groups1125920043st_nat] ")
+  [lambda_free ] family_a              0028_round010_20260331_202202_prob_zipperposition_1.p
+                                      → Failure("Argument of a term has out-of-fragment type [F0 one_one_nat:prop]")

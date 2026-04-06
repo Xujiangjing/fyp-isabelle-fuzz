@@ -1,0 +1,2 @@
+thf(sy_c_Groups_Ocomm__monoid_001t__Int__Oint, type,
+    comm_monoid_int : (int > int > int) > int > $o).

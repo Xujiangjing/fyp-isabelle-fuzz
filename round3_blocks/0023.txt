@@ -1,0 +1,2 @@
+thf(sy_c_Groups_Oplus__class_Oplus_001t__Nat__Onat, type,
+    plus_plus_nat : nat > nat > nat).

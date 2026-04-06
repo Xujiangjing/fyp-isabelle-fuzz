@@ -1,0 +1,37 @@
+% /opt/homebrew/bin/eprover --tstp-in --tstp-out --silent --auto-schedule --cpu-limit=2 --proof-object=1 /Users/xujiangjing/.isabelle/Isabelle2025/prob_e_min_1.p
+% 2026-04-04 13:22:07.834
+# Preprocessing class: FSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 2 seconds (2 total)
+# Starting G-E--_302_C18_F1_URBAN_RG_S04BN with 2s (1) cores
+# G-E--_302_C18_F1_URBAN_RG_S04BN with pid 45973 completed with status 1
+# Result found by G-E--_302_C18_F1_URBAN_RG_S04BN
+# Preprocessing class: FSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 2 seconds (2 total)
+# Starting G-E--_302_C18_F1_URBAN_RG_S04BN with 2s (1) cores
+# No SInE strategy applied
+# Search class: FUUPF-FFSF22-SFFFFFNN
+# Scheduled 1 strats onto 1 cores with 2 seconds (2 total)
+# Starting SAT001_MinMin_p005000_rr_RG with 2s (1) cores
+# SAT001_MinMin_p005000_rr_RG with pid 45974 completed with status 1
+# Result found by SAT001_MinMin_p005000_rr_RG
+# Preprocessing class: FSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 2 seconds (2 total)
+# Starting G-E--_302_C18_F1_URBAN_RG_S04BN with 2s (1) cores
+# No SInE strategy applied
+# Search class: FUUPF-FFSF22-SFFFFFNN
+# Scheduled 1 strats onto 1 cores with 2 seconds (2 total)
+# Starting SAT001_MinMin_p005000_rr_RG with 2s (1) cores
+# Presaturation interreduction done
+
+# No proof found!
+# SZS status CounterSatisfiable
+# SZS output start Saturation
+tff(decl_sort1, type, nat: $tType).
+tff(decl_23, type, plus_plus_nat: (nat * nat) > nat).
+tff(decl_24, type, zero_zero_nat: nat).
+tff(decl_25, type, x: nat).
+tff(conj_0, conjecture, plus_plus_nat(zero_zero_nat,x)=x, file('/Users/xujiangjing/.isabelle/Isabelle2025/prob_e_min_1.p', conj_0)).
+tff(c_0_1, negated_conjecture, plus_plus_nat(zero_zero_nat,x)!!=x, inference(fof_simplification,[status(thm)],[inference(skolemize,[status(cth)],[conj_0])])).
+tff(c_0_2, negated_conjecture, plus_plus_nat(zero_zero_nat,x)!=x, inference(fof_nnf,[status(thm)],[c_0_1])).
+tcf(c_0_3, negated_conjecture, plus_plus_nat(zero_zero_nat,x)!=x, inference(split_conjunct,[status(thm)],[c_0_2]), ['final']).
+# SZS output end Saturation

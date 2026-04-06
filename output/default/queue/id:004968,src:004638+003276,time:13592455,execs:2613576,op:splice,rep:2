@@ -1,0 +1,14 @@
+%
+
+%
+thf(co, conjecture,~ s=F &(((
+s<=( 
+%@t s=F &(((
+s<=( 
+%((
+s<=( 
+%@t s=F &(((
+s<=(@t_)._).
+
+%
+tff(co, conjec

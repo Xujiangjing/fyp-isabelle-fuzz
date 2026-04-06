@@ -1,0 +1,6 @@
+%
+
+%
+thf(co, conjecture,~ s=F &((F &
+s =( i&F &
+s =( is&az)) )=Z)).

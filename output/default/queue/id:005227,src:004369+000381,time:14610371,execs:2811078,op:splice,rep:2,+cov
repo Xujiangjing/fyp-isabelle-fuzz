@@ -1,0 +1,7 @@
+%
+
+%
+thf(co, conjecture,~ s =( 
+((
+s=f &(Xaz)) = % /iIsabell-mode=ho-pragmatic --tptp-def----------------------before-cnf=true --max-inferences=1 --ho-unif-max-depth=1 --ho-max-elims=0 --ho-max-app-projections=0 --ho*max-rigid-imitations=1 --ho-max-identifications=0 --boolean-reasoning=bool-hoist --bool-hoist-simpl=true --bool-select=LI --recognize-injectivity=true --ext-rules=ext-family --ext-rules-max-depth=1 --ho-choice-inst=true --ho-prim-enum=none --hoOelim-leibniz=0 --interpret-boo, conjecture,~ s ( 
+~|~n

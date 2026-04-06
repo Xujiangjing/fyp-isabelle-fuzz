@@ -1,0 +1,2 @@
+thf(sy_c_Groups__List_Omonoid__list_001t__Code____Numeral__Ointeger, type,
+    groups1972247992nteger : (code_integer > code_integer > code_integer) > code_integer > $o).

@@ -1,0 +1,2 @@
+thf(sy_c_Orderings_Oord__class_Oless_001t__Code____Numeral__Ointeger, type,
+    ord_le945590961nteger : code_integer > code_integer > $o).

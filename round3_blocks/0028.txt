@@ -1,0 +1,2 @@
+thf(sy_c_Groups_Ozero__class_Ozero_001t__Code____Numeral__Ointeger, type,
+    zero_z413810534nteger : code_integer).

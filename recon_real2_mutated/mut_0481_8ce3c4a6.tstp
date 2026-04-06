@@ -1,0 +1,9 @@
+% done 0 iterations in 0.029s
+% SZS status BROKEN_STATUS for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0016_round004_20260331_201918_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(a_type, type, a: $tType).
+thf(one_one_a_type, type, one_one_a: a).
+thf(plus_plus_a_type, type, plus_plus_a: a > a > a).
+thf(r_type, type, r: a).
+thf(conj_0, conjecture,
+  (( plus_plus_a @ r @ one_one_a ) = ( plus_plus_a @ r @ one_one_a ))).

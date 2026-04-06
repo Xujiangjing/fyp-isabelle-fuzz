@@ -1,0 +1,20 @@
+% done 41 iterations in 0.031s
+% SZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0014_round003_20260331_201852_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(nat_type, type, nat: $tType).
+thf(times_times_nat_type, type, times_times_nat: nat > nat > nat).
+thf(one_one_nat_type, type, one_one_nat: nat).
+thf(c_type, type, c: nat).
+thf(conj_0, conjecture, (( times_times_nat @ c @ one_one_nat ) = ( c ))).
+thf(zf_stmt_0, negated_conjecture,
+  (( times_times_nat @ c @ one_one_nat ) != ( c )),
+  inference('cnf.neg', [status(esa)], [conj_0])).
+thf(zip_derived_cl996, plain, (((times_times_nat @ c @ one_one_nat) != (c))),
+    inference('cnf', [status(esa)], [zf_stmt_0])).
+thf(fact_2_mult_Oright__neutral, axiom,
+  (![A:nat]: ( ( times_times_nat @ A @ one_one_nat ) = ( A ) ))).
+thf(zip_derived_cl6, plain,
+    (![X0 : nat]: ((times_times_nat @ X0 @ one_one_nat) = (X0))),
+    inference('cnf', [status(esa)], [fact_2_mult_Oright__neutral])).
+thf(zip_derived_cl1010, plain, (((c) != (c))),
+    inference('demod', [status(thm)], [zip_derived_cl996, zip_derived_cl6])).

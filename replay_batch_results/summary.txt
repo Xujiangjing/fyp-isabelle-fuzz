@@ -1,0 +1,12 @@
+[*] Running main harness...
+[*] Running lambda-free check...
+Main harness (--steps 1 --timeout 1):
+  ok=20
+  nonzero=0
+  parse_errors=0
+  exceptions=0
+
+Lambda-free only:
+  ok=10
+  nonzero=10
+  exceptions=10

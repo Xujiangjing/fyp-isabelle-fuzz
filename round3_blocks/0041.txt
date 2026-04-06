@@ -1,0 +1,2 @@
+thf(sy_c_Int_Onat, type,
+    nat2 : int > nat).

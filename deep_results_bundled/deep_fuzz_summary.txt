@@ -1,0 +1,10 @@
+Deep Fuzzing Summary
+============================================================
+
+Total tests: 47
+  error_graceful: 9
+  ok: 37
+  parse_error: 1
+
+New bugs/hangs found: 0
+

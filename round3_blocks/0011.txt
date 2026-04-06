@@ -1,0 +1,2 @@
+thf(sy_c_Groups_Ocomm__monoid_001t__Code____Numeral__Ointeger, type,
+    comm_m604335976nteger : (code_integer > code_integer > code_integer) > code_integer > $o).

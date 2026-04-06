@@ -1,0 +1,6 @@
+/root/.opam/4.14.1+afl/bin/zipperposition
+--input
+tptp
+--output
+none
+@@

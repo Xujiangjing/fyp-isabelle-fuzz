@@ -1,0 +1,12 @@
+session AutoSeeds = HOL +
+  theories
+    R005_Mut000
+    R005_Mut001
+    R005_Mut002
+    R005_Mut003
+    R005_Mut004
+    R005_Mut005
+    R005_Mut006
+    R005_Mut007
+    R005_Mut008
+    R005_Mut009

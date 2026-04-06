@@ -1,0 +1,5 @@
+session FuzzTests = HOL +
+  theories
+    FuzzTest000
+    FuzzTest001
+    FuzzTest002

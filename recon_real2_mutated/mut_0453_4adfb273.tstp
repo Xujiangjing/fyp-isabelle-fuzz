@@ -1,0 +1,72 @@
+% done 0 iterations in 0.026s
+% SZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0010_round001_20260331_201748_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(a_type, type, a: $tType).
+thf(one_one_a_type, type, one_one_a: a).
+thf(plus_plus_a_type, type, plus_plus_a: a > a > a).
+cnf(extra_5421, axiom, (a | ~a)).
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+% comment flood
+
+thf(u_type, type, u: a).
+thf(conj_0, conjecture,
+  (( plus_plus_a @ u @ one_one_a ) = ( plus_plus_a @ u @ one_one_a ))).
+(
+thf(zf_stmt_0, negated_conjecture,
+  (( plus_plus_a @ u @ one_one_a ) != ( plus_plus_a @ u @ one_one_a )),
+  inference('cnf.neg', [status(esa)], [conj_0])).
+thf(zip_derived_cl868, plain,
+    (((plus_plus_a @ u @ one_one_a) != (plus_plus_a @ u @ one_one_a))),
+    inference('cnf', [status(esa)], [zf_stmt_0])).
+thf(zip_derived_cl871, plain, ($false),
+    inference('simplify', [status(thm)], [zip_derived_cl868])).
+
+% SZS output end Refutation

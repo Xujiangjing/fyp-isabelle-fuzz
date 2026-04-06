@@ -1,0 +1,2 @@
+thf(sy_c_Num_Oneg__numeral__class_Odbl__inc_001t__Int__Oint, type,
+    neg_nu1877376189nc_int : int > int).

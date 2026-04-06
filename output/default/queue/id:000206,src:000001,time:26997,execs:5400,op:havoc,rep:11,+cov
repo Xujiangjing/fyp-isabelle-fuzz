@@ -1,0 +1,2 @@
+% /A2025.app6_64-darwin/zipperposition --input tptp --output tptp --timeout 0.248 --mode=ho-pragmatic --tptp-def-as---interpret-bool-funs=true --try-e="$E_HOME/eprover" --tmp-dir="$ISABELLE_T`P_PREFIX" --ho-ufif-level=pragmatic-framework --select=bb+e-selection2 --post-cnf-lambda-lifting=true -q "4|prefer-sos|pnrefined(2,1,1,1,2,2,2)" -q "6|prefer-processed|conjecture-relative-struct(1.5,3.5,2,3)" -q "1|const|fifo" -q "4|prefer-ground|orient-lmax(2,1,2,1,1)" -q "4|defer-sos|conjecture-relative-struct(1nat).
+,5,

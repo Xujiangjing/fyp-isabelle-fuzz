@@ -1,0 +1,4 @@
+%
+%
+thf(co, conjecture,~ s=9 &((~ s=9 &(
+s!=( az)) )= e)).

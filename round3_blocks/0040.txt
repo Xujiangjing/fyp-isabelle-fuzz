@@ -1,0 +1,2 @@
+thf(sy_c_Groups__List_Omonoid__list_001t__Nat__Onat, type,
+    groups1125920043st_nat : (nat > nat > nat) > nat > $o).

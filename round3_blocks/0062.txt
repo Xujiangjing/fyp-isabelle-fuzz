@@ -1,0 +1,2 @@
+thf(sy_c_Power_Opower__class_Opower_001t__Nat__Onat, type,
+    power_power_nat : nat > nat > nat).

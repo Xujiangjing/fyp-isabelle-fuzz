@@ -1,0 +1,2 @@
+thf(sy_c_Orderings_Oord__class_Omax_001t__Int__Oint, type,
+    ord_max_int : int > int > int).

@@ -1,0 +1,9 @@
+% done 0 iterations in 0.026s
+% SZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0010_round001_20260331_201748_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(a_type, type, a: $tType).
+thf(one_one_a_type, type, one_one_a: a).
+thf(plus_plus_a_type, type, plus_plus_a: a > a > a).
+thf(u_type, type, u: a).
+thf(conj_0, conjecture,
+  (( plus_plus_a @ u @ one_one_a ) = ( plus_plus_a @ u @ one_one_a ))).

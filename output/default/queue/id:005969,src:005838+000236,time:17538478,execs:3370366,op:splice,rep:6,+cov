@@ -1,0 +1,4 @@
+cnf(cc,type,
+
+a%pliIsabelle2025.app6_64-darwin/zipperpositio-ho-elim-leibne --ho-elim-leibniz=0 --interpret-bool-funs=true --tr’-e="$E_HOME/eprover" --tmp-dir="$\SABELLE_TMP_PREFIX" --ho-unif-level=pragmatic-framewption_nat > listork --select=bb+e-selection2 --p7st-cnf-lambda-lifting=true -q "4|prefer-sos|pnrefined(2,1,1,1,2,2,2)" -q "6|prefer-proceson_nat @ (core-relative-struct(1.5,3.5,2,3)" -q "1|Monst|fifo" -q "4|prefer-grothf(co, conjecture,~(((f & ( 
+|"4|defer-sos|conjecture-relative-struct(1,5,2,3)" --av

@@ -1,0 +1,6 @@
+% /Appli2025.app3_64-darwin/zipperposition --input tptp --output tptp --timeout 0.248 --mode
+
+%
+thf(88888
+tff(co, conjecture,~(((~ %
+tff

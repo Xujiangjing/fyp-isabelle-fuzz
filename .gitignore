@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Isabelle / fuzz outputs
+*.p
+*.out
+*.log
+*.json
+
+# Fuzzing outputs
+collected/
+logs/
+mutated/
+interesting/
+minimized/
+
+# macOS
+.DS_Store
+
+# virtual env
+venv/
+

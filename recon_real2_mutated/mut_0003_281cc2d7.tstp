@@ -1,0 +1,17 @@
+% done 0 iterations in 0.007s
+% SZS status Theorem for '/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0000_r001_20260331_221018_prob_zipperposition_1.p'
+% SZS output start Refutation
+thf(list_int_type, type, list_int: $tType).
+thf(s_type, type, s: list_int).
+thf(conj_0, conjecture, (( s ) = ( s ))).
+thf(zf_stmt_0, negated_conjecture, (( s ) != ( s )),
+  inference('cnf.neg', [status(esa)], [conj_0])).
+thf(zip_derived_cl32, plain, (((s) != (s))),
+    inference('cnf', [status(esa)], [zf_stmt_0])).
+thf(zip_derived_cl35, plain, ($false),
+    inference('simplify', [status(thm)], [zip_derived_cl32])).
+
+% SZS output end Refutation
+fof(a,axiom,($true)).
+thf(zf_stmt_0, negated_conjecture, (( s ) = ( s )),
+  inference('cnf.neg', [status(esa)], [conj_0])).

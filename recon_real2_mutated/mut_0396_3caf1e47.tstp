@@ -1,0 +1,35 @@
+# Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 5 seconds (5 total)
+# Starting new_ho_10 with 5s (1) cores
+# new_ho_10 with pid 51182 completed with status 0
+# Result found by new_ho_10
+# Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 5 seconds (5 total)
+# Starting new_ho_10 with 5s (1) cores
+# No SInE strategy applied
+# Search class: HUHPF-FFSF00-SFFFFFNN
+# Scheduled 2 strats onto 1 cores with 5 seconds (5 total)
+# Starting new_ho_10 with 4s (1) cores
+# new_ho_10 with pid 51183 completed with status 0
+# Result found by new_ho_10
+# Preprocessing class: HSSSSMSSSSSNFFN.
+# Scheduled 1 strats onto 1 cores with 5 seconds (5 total)
+# Starting new_ho_10 with 5s (1) cores
+# No SInE strategy applied
+# Search class: HUHPF-FFSF00-SFFFFFNN
+# Scheduled 2 strats onto 1 cores with 5 seconds (5 total)
+# Starting new_ho_10 with 4s (1) cores
+# Initializing proof state
+# Scanning for AC axioms
+## Presaturation interreduction done
+
+# Proof found!
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+thf(decl_sort1, type, nat: $tType).
+thf(decl_22, type, c: nat).
+thf(conj_0, conjecture, ((c)=(c)), file('/Users/xujiangjing/fyp-isabelle-fuzz/unique_inputs/0025_round008_20260331_202108_prob_zipperposition_min_1.p', conj_0)).
+thf(c_0_2, negated_conjecture, ((c)!=(c)), inference(fof_nnf,[status(thm)],[c_9422_32])).
+thf(c_0_3, negated_conjecture, ((c)!=(c)), inference(split_conjunct,[status(thm)],[c_0_2])).
+thf(c_0_4, negated_conjecture, ($false), inference(cn,[status(thm)],[c_0_3]), ['proof']).
+# SZS output end CNFRefutation

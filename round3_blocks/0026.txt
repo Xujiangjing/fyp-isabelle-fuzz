@@ -1,0 +1,2 @@
+thf(sy_c_Groups_Otimes__class_Otimes_001t__Int__Oint, type,
+    times_times_int : int > int > int).

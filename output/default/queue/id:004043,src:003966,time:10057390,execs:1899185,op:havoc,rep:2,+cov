@@ -1,0 +1,4 @@
+%
+
+%
+thf(co, conjecture,~(on_nat > list_option_nat > = Z8)= Z)).
