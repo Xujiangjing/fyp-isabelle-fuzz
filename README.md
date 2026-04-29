@@ -132,8 +132,8 @@ fyp-isabelle-fuzz/
 
 Experiments were performed on:
 
-- **Hardware:** MacBook Pro (14-inch, 2024), Apple M4, 16 GiB RAM
-- **OS:** macOS 15.4
+- **Hardware:** MacBook Pro (14-inch, 2021), Apple M1 Pro, 16 GiB RAM
+- **OS:** macOS Tahoe 26.4.1
 - **Isabelle:** Isabelle2025-2 (with bundled provers)
 - **Zipperposition:** 2.1; opam switches `default` for production runs and
   `4.14.0+afl` for AFL++ campaigns
