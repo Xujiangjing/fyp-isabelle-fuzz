@@ -268,13 +268,13 @@ If you use this artifact, please cite both the paper and the Zenodo record:
   year      = {2026},
 }
 
-@misc{xu_2026_zenodo,
+@misc{xu_2026_19899187,
   author       = {Xu, Jiangjing},
   title        = {{fyp-isabelle-fuzz}: Source-Informed Fuzzing of
                   {Sledgehammer}'s External {ATP} Interface},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.XXXXXXX},
+  doi          = {10.5281/zenodo.19899187},
 }
 ```
 
