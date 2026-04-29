@@ -15,6 +15,23 @@ and one in E prover's TSTP source parser.
 
 ---
 
+## Repository status
+
+This is **v1.0**, released alongside the paper submission. The
+`scripts/` tree is organised by purpose, but the campaign working
+directories at the repository root (`ho_format_bug/`, `real_bugs/`,
+`reproduce/`, `repro_chain/`, `recon*/`, `targeted_results*/`,
+`deep_results*/`, etc.) contain the raw campaign outputs in the form
+they were produced — they have not been minimised into clean
+reproducers. A future v2 release will add a curated
+`bug_reports/` tree with self-contained minimal reproducers per bug.
+
+For the current release, the **"Reproducing the three defects"** section
+below provides self-contained reproduction recipes that do not depend on
+the contents of the working directories.
+
+---
+
 ## Confirmed defects
 
 | # | Component | Defect | Status |
@@ -37,6 +54,7 @@ fyp-isabelle-fuzz/
 ├── README.md
 ├── LICENSE
 ├── main.md                       ← working notebook of campaign notes
+├── version_provenance.txt        ← recorded prover versions used in the runs
 │
 ├── scripts/
 │   ├── pipeline/                 ← core fuzzing pipeline
@@ -47,23 +65,14 @@ fyp-isabelle-fuzz/
 ├── theories/                     ← Isabelle .thy seed corpus
 ├── recon_seeds/                  ← seeds for the proof-reconstruction harness
 │
-├── ho_format_bug/                ← Bug 1 working directory + reproducer
-├── real_bugs/                    ← Bug 2 working directory + reproducer
-├── reproduce/                    ← Bug 3 reproducer
-├── repro_chain/                  ← cross-bug minimal reproducers
-│
-├── sledgehammer_attack/          ← source-informed attack-surface campaign (Bug 1 lead)
-├── recon_results/, recon*/       ← proof-reconstruction campaign sessions
-├── targeted_results*/            ← targeted root-cause analysis runs
-├── deep_results*/                ← deep root-cause analysis runs
-├── diff_baseline/, diff_mutated/ ← differential testing inputs
-├── soundness_session/, soundness_small/ ← soundness-check sessions (negative result)
-├── replay_batch_results/         ← replay run outputs
-├── validation/                   ← bug-validity check outputs
-├── round3_blocks/                ← block-level delta-debugging artefacts
-│
 ├── coverage_results/             ← aggregated coverage reports
-└── bisect*.coverage              ← bisect_ppx raw coverage data (April 2026)
+├── bisect*.coverage              ← bisect_ppx raw coverage data (April 2026)
+│
+└── (campaign working directories — raw outputs, not minimised:)
+    ho_format_bug/, real_bugs/, reproduce/, repro_chain/,
+    sledgehammer_attack/, recon*/, targeted_results*/, deep_results*/,
+    diff_baseline/, diff_mutated/, soundness_session/, soundness_small/,
+    replay_batch_results/, validation/, round3_blocks/
 ```
 
 ---
@@ -114,11 +123,8 @@ fyp-isabelle-fuzz/
 | `run_and_collect.sh` | One-shot run-and-collect wrapper |
 | `collect_soundness.sh` | Builds individual `.thy` files in `soundness_session/` and collects their `.p` outputs |
 | `generate_smt_seeds.sh` | SMT-LIB seed generator |
-| `test_ho_format_bug.sh` | Bug 1 reproduction script |
+| `test_ho_format_bug.sh` | Bug 1 reproduction script (older, references `ho_format_bug/`) |
 | `version_provenance.sh` | Records exact versions of all provers used (writes to `version_provenance.txt`) |
-
-`version_provenance.txt` (in the repo root) is the recorded output for the
-versions used in the campaigns.
 
 ---
 
@@ -145,19 +151,32 @@ campaigns.
 
 ## Reproducing the three defects
 
-All commands below are run from the repository root unless otherwise
-noted. Scripts that take an `--output-dir` accept an absolute path; the
-defaults assume the repo lives at `~/fyp-isabelle-fuzz`.
+The three reproductions below are self-contained and do not require any
+of the campaign working directories. They assume Isabelle2025-2 and the
+relevant prover binaries are on `$PATH` or otherwise locatable.
 
 ### Bug 1 — TPTP keyword collision
 
-```bash
-cd ho_format_bug
-# See the included theory and minimised .p file. With a stock
-# Isabelle2025-2 + bundled Zipperposition 2.1, Sledgehammer dispatches
-# but Zipperposition reports a syntax error on the unrenamed `cnf`
-# constant.
+Save the following as `KeywordCollision.thy` in any directory:
+
+```isabelle
+theory KeywordCollision
+  imports Main
+begin
+
+consts cnf :: "nat \<Rightarrow> nat"
+
+lemma "cnf 0 = cnf 0"
+  sledgehammer [prover = zipperposition, slices = 1, timeout = 30]
+  by simp
+
+end
 ```
+
+Open the file in Isabelle/jEdit and let Sledgehammer run. Zipperposition
+will report a syntax error on the unrenamed `cnf` constant in the
+generated TPTP problem; E and Vampire accept the same problem because
+their lexers are context-sensitive.
 
 The two-sided fix lives in the patched fork of Zipperposition (branch
 `fix-parser-keyword-collision`, commit `5f4c9c1`) and is mirrored as
@@ -165,20 +184,29 @@ GitHub issue #102 / PR #103 against the upstream Zipperposition repo.
 
 ### Bug 2 — `CCOption.get_exn` in `Unif.ml`
 
+`ANA088^1.p` is from the standard TPTP problem library
+(<https://www.tptp.org>). Run it directly against Zipperposition:
+
 ```bash
-cd real_bugs
 zipperposition --input tptp ANA088^1.p
 # → Fatal exception: CCOption.get_exn (Unif.ml)
 ```
 
 Vampire returns `Theorem` on the same input in 0.053 s, confirming the
-problem is in Zipperposition's unifier rather than the input.
-GitHub issue #104 / PR #105.
+problem is in Zipperposition's higher-order unifier rather than the
+input. GitHub issue #104 / PR #105.
 
 ### Bug 3 — E prover `TSTPSkipSource` on list-form sources
 
+The minimal trigger fits in two lines. Save as `bug3_minimal.p`:
+
+```
+cnf(c, axiom, p, []).
+```
+
+Then:
+
 ```bash
-cd reproduce
 eprover --auto bug3_minimal.p
 # → Fatal: TSTPSkipSource: unrecognised source format
 ```
