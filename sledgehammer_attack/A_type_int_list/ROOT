@@ -1,0 +1,3 @@
+session A_type_int_list = HOL +
+  theories
+    A_type_int_list

@@ -1,0 +1,3 @@
+session A_bool_eq = HOL +
+  theories
+    A_bool_eq

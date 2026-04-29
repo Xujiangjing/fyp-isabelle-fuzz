@@ -1,0 +1,3 @@
+session A_shadow_int = HOL +
+  theories
+    A_shadow_int

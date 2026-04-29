@@ -1,0 +1,13 @@
+========================================
+HO FORMAT BUG EXPERIMENT SUMMARY
+========================================
+
+Workdir: /Users/xujiangjing/fyp-isabelle-fuzz/ho_format_bug
+Collected: /Users/xujiangjing/fyp-isabelle-fuzz/ho_format_bug/collected
+Build exit code: 0
+New prob files: 0
+
+
+========================================
+PROVER REPLAY
+========================================

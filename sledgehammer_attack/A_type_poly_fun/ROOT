@@ -1,0 +1,3 @@
+session A_type_poly_fun = HOL +
+  theories
+    A_type_poly_fun

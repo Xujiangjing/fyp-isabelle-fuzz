@@ -1,0 +1,3 @@
+session A_ite_nested = HOL +
+  theories
+    A_ite_nested

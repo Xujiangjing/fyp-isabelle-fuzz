@@ -1,0 +1,3 @@
+session A_nested_quant = HOL +
+  theories
+    A_nested_quant

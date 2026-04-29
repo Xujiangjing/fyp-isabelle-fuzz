@@ -1,0 +1,3 @@
+session A_long_name = HOL +
+  theories
+    A_long_name

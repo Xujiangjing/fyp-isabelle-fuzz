@@ -1,0 +1,3 @@
+session A_short_I = HOL +
+  theories
+    A_short_I

@@ -1,0 +1,3 @@
+session A_conn_equal = HOL +
+  theories
+    A_conn_equal

@@ -1,0 +1,3 @@
+session A_shadow_set = HOL +
+  theories
+    A_shadow_set

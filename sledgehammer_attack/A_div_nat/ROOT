@@ -1,0 +1,3 @@
+session A_div_nat = HOL +
+  theories
+    A_div_nat

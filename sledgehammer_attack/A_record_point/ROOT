@@ -1,0 +1,3 @@
+session A_record_point = HOL +
+  theories
+    A_record_point

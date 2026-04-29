@@ -1,0 +1,3 @@
+session A_primrec_len = HOL +
+  theories
+    A_primrec_len

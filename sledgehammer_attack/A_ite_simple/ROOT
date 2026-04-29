@@ -1,0 +1,3 @@
+session A_ite_simple = HOL +
+  theories
+    A_ite_simple

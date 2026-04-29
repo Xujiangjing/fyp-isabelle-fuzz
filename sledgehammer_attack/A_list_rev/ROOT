@@ -1,0 +1,3 @@
+session A_list_rev = HOL +
+  theories
+    A_list_rev

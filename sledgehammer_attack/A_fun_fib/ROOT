@@ -1,0 +1,3 @@
+session A_fun_fib = HOL +
+  theories
+    A_fun_fib

@@ -1,0 +1,3 @@
+session A_lambda_const = HOL +
+  theories
+    A_lambda_const

@@ -1,0 +1,3 @@
+session A_mp_comm_zipperposition = HOL +
+  theories
+    A_mp_comm_zipperposition

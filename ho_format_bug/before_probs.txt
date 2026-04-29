@@ -1,0 +1,10 @@
+/Users/xujiangjing/.isabelle/Isabelle2025/prob_e_1.p
+/Users/xujiangjing/.isabelle/Isabelle2025/prob_e_1_proof.p
+/Users/xujiangjing/.isabelle/Isabelle2025/prob_e_min_1.p
+/Users/xujiangjing/.isabelle/Isabelle2025/prob_e_min_1_proof.p
+/Users/xujiangjing/.isabelle/Isabelle2025/prob_vampire_1.p
+/Users/xujiangjing/.isabelle/Isabelle2025/prob_vampire_1_proof.p
+/Users/xujiangjing/.isabelle/Isabelle2025/prob_zipperposition_1.p
+/Users/xujiangjing/.isabelle/Isabelle2025/prob_zipperposition_1_proof.p
+/Users/xujiangjing/.isabelle/Isabelle2025/prob_zipperposition_min_1.p
+/Users/xujiangjing/.isabelle/Isabelle2025/prob_zipperposition_min_1_proof.p

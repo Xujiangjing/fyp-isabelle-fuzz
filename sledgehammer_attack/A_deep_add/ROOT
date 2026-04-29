@@ -1,0 +1,3 @@
+session A_deep_add = HOL +
+  theories
+    A_deep_add

@@ -1,0 +1,3 @@
+session A_kw_fof = HOL +
+  theories
+    A_kw_fof

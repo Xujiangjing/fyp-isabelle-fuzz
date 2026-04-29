@@ -1,0 +1,3 @@
+session A_let_multi = HOL +
+  theories
+    A_let_multi

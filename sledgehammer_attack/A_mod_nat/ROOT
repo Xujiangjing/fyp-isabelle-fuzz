@@ -1,0 +1,3 @@
+session A_mod_nat = HOL +
+  theories
+    A_mod_nat

@@ -1,0 +1,4 @@
+bisect-ppx-report: unknown option '--summary-only'.
+                   unknown option '--coverage-path'.
+Usage: bisect-ppx-report [COMMAND] …
+Try 'bisect-ppx-report --help' for more information.

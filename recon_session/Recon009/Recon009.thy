@@ -2,303 +2,303 @@ theory Recon009
 imports Main
 begin
 
-lemma let__medium__1_zipperposition: "(let x = (u::nat); y = v in x + y) = u + v"
+lemma int_arith__medium__1_zipperposition: "(x::int) * (-1) = -x"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma let__medium__1_e: "(let x = (u::nat); y = v in x + y) = u + v"
+lemma int_arith__medium__1_e: "(x::int) * (-1) = -x"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma let__medium__1_vampire: "(let x = (u::nat); y = v in x + y) = u + v"
+lemma int_arith__medium__1_vampire: "(x::int) * (-1) = -x"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma let__medium__1_spass: "(let x = (u::nat); y = v in x + y) = u + v"
+lemma int_arith__medium__1_spass: "(x::int) * (-1) = -x"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma let__medium__1_cvc5: "(let x = (u::nat); y = v in x + y) = u + v"
+lemma int_arith__medium__1_cvc5: "(x::int) * (-1) = -x"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma hof__medium__2_zipperposition: "filter (\<lambda>x. True) [(1::nat)] = [1]"
+lemma ite__medium__2_zipperposition: "(if (u::nat) = u then 1 else 0) = 1"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma hof__medium__2_e: "filter (\<lambda>x. True) [(1::nat)] = [1]"
+lemma ite__medium__2_e: "(if (u::nat) = u then 1 else 0) = 1"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma hof__medium__2_vampire: "filter (\<lambda>x. True) [(1::nat)] = [1]"
+lemma ite__medium__2_vampire: "(if (u::nat) = u then 1 else 0) = 1"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma hof__medium__2_spass: "filter (\<lambda>x. True) [(1::nat)] = [1]"
+lemma ite__medium__2_spass: "(if (u::nat) = u then 1 else 0) = 1"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma hof__medium__2_cvc5: "filter (\<lambda>x. True) [(1::nat)] = [1]"
+lemma ite__medium__2_cvc5: "(if (u::nat) = u then 1 else 0) = 1"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma recursive__medium__3_zipperposition: "sum_list [(1::nat), 2, 3] = 6"
+lemma set__simple__3_zipperposition: "y = (y::nat)"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma recursive__medium__3_e: "sum_list [(1::nat), 2, 3] = 6"
+lemma set__simple__3_e: "y = (y::nat)"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma recursive__medium__3_vampire: "sum_list [(1::nat), 2, 3] = 6"
+lemma set__simple__3_vampire: "y = (y::nat)"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma recursive__medium__3_spass: "sum_list [(1::nat), 2, 3] = 6"
+lemma set__simple__3_spass: "y = (y::nat)"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma recursive__medium__3_cvc5: "sum_list [(1::nat), 2, 3] = 6"
+lemma set__simple__3_cvc5: "y = (y::nat)"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma pair__simple__4_zipperposition: "snd (b, z) = (z::nat)"
+lemma option__simple__4_zipperposition: "Option.is_none (None :: nat option)"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma pair__simple__4_e: "snd (b, z) = (z::nat)"
+lemma option__simple__4_e: "Option.is_none (None :: nat option)"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma pair__simple__4_vampire: "snd (b, z) = (z::nat)"
+lemma option__simple__4_vampire: "Option.is_none (None :: nat option)"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma pair__simple__4_spass: "snd (b, z) = (z::nat)"
+lemma option__simple__4_spass: "Option.is_none (None :: nat option)"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma pair__simple__4_cvc5: "snd (b, z) = (z::nat)"
+lemma option__simple__4_cvc5: "Option.is_none (None :: nat option)"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma logic__medium__5_zipperposition: "(P \<or> Q) = (Q \<or> P)"
+lemma power__simple__5_zipperposition: "(2::nat) ^ 0 = 1"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma logic__medium__5_e: "(P \<or> Q) = (Q \<or> P)"
+lemma power__simple__5_e: "(2::nat) ^ 0 = 1"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma logic__medium__5_vampire: "(P \<or> Q) = (Q \<or> P)"
+lemma power__simple__5_vampire: "(2::nat) ^ 0 = 1"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma logic__medium__5_spass: "(P \<or> Q) = (Q \<or> P)"
+lemma power__simple__5_spass: "(2::nat) ^ 0 = 1"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma logic__medium__5_cvc5: "(P \<or> Q) = (Q \<or> P)"
+lemma power__simple__5_cvc5: "(2::nat) ^ 0 = 1"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma set__hard__6_zipperposition: "set [v] \<inter> set [v, z] = set [(v::nat)]"
+lemma fun__medium__6_zipperposition: "(\<lambda>x::nat. 0)((a::nat) := 1) a = 1"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma set__hard__6_e: "set [v] \<inter> set [v, z] = set [(v::nat)]"
+lemma fun__medium__6_e: "(\<lambda>x::nat. 0)((a::nat) := 1) a = 1"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma set__hard__6_vampire: "set [v] \<inter> set [v, z] = set [(v::nat)]"
+lemma fun__medium__6_vampire: "(\<lambda>x::nat. 0)((a::nat) := 1) a = 1"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma set__hard__6_spass: "set [v] \<inter> set [v, z] = set [(v::nat)]"
+lemma fun__medium__6_spass: "(\<lambda>x::nat. 0)((a::nat) := 1) a = 1"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma set__hard__6_cvc5: "set [v] \<inter> set [v, z] = set [(v::nat)]"
+lemma fun__medium__6_cvc5: "(\<lambda>x::nat. 0)((a::nat) := 1) a = 1"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma sum__simple__7_zipperposition: "isl (Inl (m::nat) :: nat + nat)"
+lemma divmod__simple__7_zipperposition: "(0::nat) div 1 = 0"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma sum__simple__7_e: "isl (Inl (m::nat) :: nat + nat)"
+lemma divmod__simple__7_e: "(0::nat) div 1 = 0"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma sum__simple__7_vampire: "isl (Inl (m::nat) :: nat + nat)"
+lemma divmod__simple__7_vampire: "(0::nat) div 1 = 0"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma sum__simple__7_spass: "isl (Inl (m::nat) :: nat + nat)"
+lemma divmod__simple__7_spass: "(0::nat) div 1 = 0"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma sum__simple__7_cvc5: "isl (Inl (m::nat) :: nat + nat)"
+lemma divmod__simple__7_cvc5: "(0::nat) div 1 = 0"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma int_arith__medium__8_zipperposition: "\<bar>(w::int)\<bar> \<ge> 0"
+lemma pair__simple__8_zipperposition: "snd (m, z) = (z::nat)"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma int_arith__medium__8_e: "\<bar>(w::int)\<bar> \<ge> 0"
+lemma pair__simple__8_e: "snd (m, z) = (z::nat)"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma int_arith__medium__8_vampire: "\<bar>(w::int)\<bar> \<ge> 0"
+lemma pair__simple__8_vampire: "snd (m, z) = (z::nat)"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma int_arith__medium__8_spass: "\<bar>(w::int)\<bar> \<ge> 0"
+lemma pair__simple__8_spass: "snd (m, z) = (z::nat)"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma int_arith__medium__8_cvc5: "\<bar>(w::int)\<bar> \<ge> 0"
+lemma pair__simple__8_cvc5: "snd (m, z) = (z::nat)"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma list__medium__9_zipperposition: "last [m, y] = (y::nat)"
+lemma nat_arith__simple__9_zipperposition: "(y::nat) \<le> y"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma list__medium__9_e: "last [m, y] = (y::nat)"
+lemma nat_arith__simple__9_e: "(y::nat) \<le> y"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma list__medium__9_vampire: "last [m, y] = (y::nat)"
+lemma nat_arith__simple__9_vampire: "(y::nat) \<le> y"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma list__medium__9_spass: "last [m, y] = (y::nat)"
+lemma nat_arith__simple__9_spass: "(y::nat) \<le> y"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma list__medium__9_cvc5: "last [m, y] = (y::nat)"
+lemma nat_arith__simple__9_cvc5: "(y::nat) \<le> y"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma option__simple__10_zipperposition: "Option.is_none (None :: nat option)"
+lemma recursive__medium__10_zipperposition: "sum_list [(1::nat), 2, 3] = 6"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma option__simple__10_e: "Option.is_none (None :: nat option)"
+lemma recursive__medium__10_e: "sum_list [(1::nat), 2, 3] = 6"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma option__simple__10_vampire: "Option.is_none (None :: nat option)"
+lemma recursive__medium__10_vampire: "sum_list [(1::nat), 2, 3] = 6"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma option__simple__10_spass: "Option.is_none (None :: nat option)"
+lemma recursive__medium__10_spass: "sum_list [(1::nat), 2, 3] = 6"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma option__simple__10_cvc5: "Option.is_none (None :: nat option)"
+lemma recursive__medium__10_cvc5: "sum_list [(1::nat), 2, 3] = 6"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma ite__medium__11_zipperposition: "(if (v::nat) = v then 1 else 0) = 1"
+lemma logic__simple__11_zipperposition: "(m::nat) = m \<or> False"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma ite__medium__11_e: "(if (v::nat) = v then 1 else 0) = 1"
+lemma logic__simple__11_e: "(m::nat) = m \<or> False"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma ite__medium__11_vampire: "(if (v::nat) = v then 1 else 0) = 1"
+lemma logic__simple__11_vampire: "(m::nat) = m \<or> False"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma ite__medium__11_spass: "(if (v::nat) = v then 1 else 0) = 1"
+lemma logic__simple__11_spass: "(m::nat) = m \<or> False"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma ite__medium__11_cvc5: "(if (v::nat) = v then 1 else 0) = 1"
+lemma logic__simple__11_cvc5: "(m::nat) = m \<or> False"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma power__medium__12_zipperposition: "(w::nat) ^ 1 = w"
+lemma let__medium__12_zipperposition: "(let x = (z::nat); y = y in x + y) = z + y"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma power__medium__12_e: "(w::nat) ^ 1 = w"
+lemma let__medium__12_e: "(let x = (z::nat); y = y in x + y) = z + y"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma power__medium__12_vampire: "(w::nat) ^ 1 = w"
+lemma let__medium__12_vampire: "(let x = (z::nat); y = y in x + y) = z + y"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma power__medium__12_spass: "(w::nat) ^ 1 = w"
+lemma let__medium__12_spass: "(let x = (z::nat); y = y in x + y) = z + y"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma power__medium__12_cvc5: "(w::nat) ^ 1 = w"
+lemma let__medium__12_cvc5: "(let x = (z::nat); y = y in x + y) = z + y"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma fun__medium__13_zipperposition: "(\<lambda>x::nat. 0)((v::nat) := 1) v = 1"
+lemma hof__medium__13_zipperposition: "filter (\<lambda>x. True) [(1::nat)] = [1]"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma fun__medium__13_e: "(\<lambda>x::nat. 0)((v::nat) := 1) v = 1"
+lemma hof__medium__13_e: "filter (\<lambda>x. True) [(1::nat)] = [1]"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma fun__medium__13_vampire: "(\<lambda>x::nat. 0)((v::nat) := 1) v = 1"
+lemma hof__medium__13_vampire: "filter (\<lambda>x. True) [(1::nat)] = [1]"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma fun__medium__13_spass: "(\<lambda>x::nat. 0)((v::nat) := 1) v = 1"
+lemma hof__medium__13_spass: "filter (\<lambda>x. True) [(1::nat)] = [1]"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma fun__medium__13_cvc5: "(\<lambda>x::nat. 0)((v::nat) := 1) v = 1"
+lemma hof__medium__13_cvc5: "filter (\<lambda>x. True) [(1::nat)] = [1]"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma divmod__medium__14_zipperposition: "(4::nat) div 2 = 2"
+lemma sum__simple__14_zipperposition: "\<not> isl (Inr (x::nat) :: nat + nat)"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma divmod__medium__14_e: "(4::nat) div 2 = 2"
+lemma sum__simple__14_e: "\<not> isl (Inr (x::nat) :: nat + nat)"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma divmod__medium__14_vampire: "(4::nat) div 2 = 2"
+lemma sum__simple__14_vampire: "\<not> isl (Inr (x::nat) :: nat + nat)"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma divmod__medium__14_spass: "(4::nat) div 2 = 2"
+lemma sum__simple__14_spass: "\<not> isl (Inr (x::nat) :: nat + nat)"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma divmod__medium__14_cvc5: "(4::nat) div 2 = 2"
+lemma sum__simple__14_cvc5: "\<not> isl (Inr (x::nat) :: nat + nat)"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 
-lemma nat_arith__medium__15_zipperposition: "min (m::nat) n \<le> max m n"
+lemma list__simple__15_zipperposition: "distinct [(u::nat)]"
   sledgehammer [prover = zipperposition, slices = 1, timeout = 30, overlord]
   oops
 
-lemma nat_arith__medium__15_e: "min (m::nat) n \<le> max m n"
+lemma list__simple__15_e: "distinct [(u::nat)]"
   sledgehammer [prover = e, slices = 1, timeout = 30, overlord]
   oops
 
-lemma nat_arith__medium__15_vampire: "min (m::nat) n \<le> max m n"
+lemma list__simple__15_vampire: "distinct [(u::nat)]"
   sledgehammer [prover = vampire, slices = 1, timeout = 30, overlord]
   oops
 
-lemma nat_arith__medium__15_spass: "min (m::nat) n \<le> max m n"
+lemma list__simple__15_spass: "distinct [(u::nat)]"
   sledgehammer [prover = spass, slices = 1, timeout = 30, overlord]
   oops
 
-lemma nat_arith__medium__15_cvc5: "min (m::nat) n \<le> max m n"
+lemma list__simple__15_cvc5: "distinct [(u::nat)]"
   sledgehammer [prover = cvc5, slices = 1, timeout = 30, overlord]
   oops
 

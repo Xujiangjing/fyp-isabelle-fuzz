@@ -1,0 +1,3 @@
+session A_case_nat = HOL +
+  theories
+    A_case_nat

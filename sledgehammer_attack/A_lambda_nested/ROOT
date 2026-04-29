@@ -1,0 +1,3 @@
+session A_lambda_nested = HOL +
+  theories
+    A_lambda_nested

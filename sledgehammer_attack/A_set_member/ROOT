@@ -1,0 +1,3 @@
+session A_set_member = HOL +
+  theories
+    A_set_member

@@ -1,0 +1,3 @@
+session A_role_plain = HOL +
+  theories
+    A_role_plain

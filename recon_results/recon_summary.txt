@@ -2,34 +2,33 @@
 PROOF RECONSTRUCTION ANALYSIS
 ============================================================
 
-Total sledgehammer calls parsed: 666
+Total sledgehammer calls parsed: 899
 
 ── Overall outcomes ──
-  error                      402
-  found_and_ok               260
-  found_but_fail               4
+  error                      543
+  found_and_ok               353
+  found_but_fail               3
 
 ── By prover ──
   zipperposition:
-    found_and_ok               126
-    found_but_fail               4
+    found_and_ok               173
+    found_but_fail               3
   e:
-    found_and_ok               134
+    found_and_ok               180
 
 ── By domain ──
   unknown:
-    error                      402
-    found_and_ok               260
-    found_but_fail               4
+    error                      543
+    found_and_ok               353
+    found_but_fail               3
 
 ============================================================
 RECONSTRUCTION FAILURES (proof found but reconstruction failed)
 ============================================================
 
-  [zipperposition ] line_226_zipperposition
-  [zipperposition ] line_46_zipperposition
-  [zipperposition ] line_26_zipperposition
-  [zipperposition ] line_106_zipperposition
+  [zipperposition ] line_206_zipperposition
+  [zipperposition ] line_166_zipperposition
+  [zipperposition ] line_266_zipperposition
 
 ============================================================
 PROVER ERRORS / CRASHES
@@ -77,246 +76,6 @@ PROVER ERRORS / CRASHES
     Warning: Prover error:
   [exception      ] line_142_exception
     exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_14_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_22_Warning
-    Warning: Prover error:
-  [exception      ] line_22_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_34_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_42_Warning
-    Warning: Prover error:
-  [exception      ] line_42_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_54_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_62_Warning
-    Warning: Prover error:
-  [exception      ] line_62_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_74_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_82_Warning
-    Warning: Prover error:
-  [exception      ] line_82_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_94_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_102_Warning
-    Warning: Prover error:
-  [exception      ] line_102_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_114_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_122_Warning
-    Warning: Prover error:
-  [exception      ] line_122_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_134_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_142_Warning
-    Warning: Prover error:
-  [exception      ] line_142_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_154_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_162_Warning
-    Warning: Prover error:
-  [exception      ] line_162_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_174_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_182_Warning
-    Warning: Prover error:
-  [exception      ] line_182_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_194_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_202_Warning
-    Warning: Prover error:
-  [exception      ] line_202_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_214_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_222_Warning
-    Warning: Prover error:
-  [exception      ] line_222_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_234_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_242_Warning
-    Warning: Prover error:
-  [exception      ] line_242_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_14_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_22_Warning
-    Warning: Prover error:
-  [exception      ] line_22_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_14_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_22_Warning
-    Warning: Prover error:
-  [exception      ] line_22_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_34_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_42_Warning
-    Warning: Prover error:
-  [exception      ] line_42_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_54_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_62_Warning
-    Warning: Prover error:
-  [exception      ] line_62_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_74_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_82_Warning
-    Warning: Prover error:
-  [exception      ] line_82_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_94_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_102_Warning
-    Warning: Prover error:
-  [exception      ] line_102_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_114_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_122_Warning
-    Warning: Prover error:
-  [exception      ] line_122_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_134_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_142_Warning
-    Warning: Prover error:
-  [exception      ] line_142_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_14_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_22_Warning
-    Warning: Prover error:
-  [exception      ] line_22_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_34_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_42_Warning
-    Warning: Prover error:
-  [exception      ] line_42_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_54_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_62_Warning
-    Warning: Prover error:
-  [exception      ] line_62_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_74_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_82_Warning
-    Warning: Prover error:
-  [exception      ] line_82_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_94_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_102_Warning
-    Warning: Prover error:
-  [exception      ] line_102_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_114_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_122_Warning
-    Warning: Prover error:
-  [exception      ] line_122_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_134_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_142_Warning
-    Warning: Prover error:
-  [exception      ] line_142_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_154_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_162_Warning
-    Warning: Prover error:
-  [exception      ] line_162_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_14_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_22_Warning
-    Warning: Prover error:
-  [exception      ] line_22_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_34_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_42_Warning
-    Warning: Prover error:
-  [exception      ] line_42_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_54_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_62_Warning
-    Warning: Prover error:
-  [exception      ] line_62_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_74_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_82_Warning
-    Warning: Prover error:
-  [exception      ] line_82_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_94_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_102_Warning
-    Warning: Prover error:
-  [exception      ] line_102_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_14_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_22_Warning
-    Warning: Prover error:
-  [exception      ] line_22_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_34_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_42_Warning
-    Warning: Prover error:
-  [exception      ] line_42_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_54_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_62_Warning
-    Warning: Prover error:
-  [exception      ] line_62_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_74_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_82_Warning
-    Warning: Prover error:
-  [exception      ] line_82_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_94_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_102_Warning
-    Warning: Prover error:
-  [exception      ] line_102_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_114_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_122_Warning
-    Warning: Prover error:
-  [exception      ] line_122_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_134_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_142_Warning
-    Warning: Prover error:
-  [exception      ] line_142_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
   [Warning        ] line_154_Warning
     Warning: Prover error (pass the "verbose" option for details)
   [Warning        ] line_162_Warning
@@ -353,29 +112,11 @@ PROVER ERRORS / CRASHES
     Warning: Prover error:
   [exception      ] line_262_exception
     exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_14_Warning
+  [Warning        ] line_274_Warning
     Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_22_Warning
+  [Warning        ] line_282_Warning
     Warning: Prover error:
-  [exception      ] line_22_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_34_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_42_Warning
-    Warning: Prover error:
-  [exception      ] line_42_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_54_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_62_Warning
-    Warning: Prover error:
-  [exception      ] line_62_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_74_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_82_Warning
-    Warning: Prover error:
-  [exception      ] line_82_exception
+  [exception      ] line_282_exception
     exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
   [Warning        ] line_14_Warning
     Warning: Prover error (pass the "verbose" option for details)
@@ -479,17 +220,137 @@ PROVER ERRORS / CRASHES
     Warning: Prover error:
   [exception      ] line_102_exception
     exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_94_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_102_Warning
+    Warning: Prover error:
+  [exception      ] line_102_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
   [Warning        ] line_114_Warning
     Warning: Prover error (pass the "verbose" option for details)
   [Warning        ] line_122_Warning
     Warning: Prover error:
   [exception      ] line_122_exception
     exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_134_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_142_Warning
+    Warning: Prover error:
+  [exception      ] line_142_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_154_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_162_Warning
+    Warning: Prover error:
+  [exception      ] line_162_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_174_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_182_Warning
+    Warning: Prover error:
+  [exception      ] line_182_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
   [Warning        ] line_14_Warning
     Warning: Prover error (pass the "verbose" option for details)
   [Warning        ] line_22_Warning
     Warning: Prover error:
   [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_94_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_102_Warning
+    Warning: Prover error:
+  [exception      ] line_102_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_114_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_122_Warning
+    Warning: Prover error:
+  [exception      ] line_122_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_134_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_142_Warning
+    Warning: Prover error:
+  [exception      ] line_142_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_154_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_162_Warning
+    Warning: Prover error:
+  [exception      ] line_162_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_174_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_182_Warning
+    Warning: Prover error:
+  [exception      ] line_182_exception
     exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
   [Warning        ] line_14_Warning
     Warning: Prover error (pass the "verbose" option for details)
@@ -628,48 +489,6 @@ PROVER ERRORS / CRASHES
   [Warning        ] line_202_Warning
     Warning: Prover error:
   [exception      ] line_202_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_214_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_222_Warning
-    Warning: Prover error:
-  [exception      ] line_222_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_234_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_242_Warning
-    Warning: Prover error:
-  [exception      ] line_242_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_14_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_22_Warning
-    Warning: Prover error:
-  [exception      ] line_22_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_14_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_22_Warning
-    Warning: Prover error:
-  [exception      ] line_22_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_34_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_42_Warning
-    Warning: Prover error:
-  [exception      ] line_42_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_54_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_62_Warning
-    Warning: Prover error:
-  [exception      ] line_62_exception
-    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
-  [Warning        ] line_74_Warning
-    Warning: Prover error (pass the "verbose" option for details)
-  [Warning        ] line_82_Warning
-    Warning: Prover error:
-  [exception      ] line_82_exception
     exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
   [Warning        ] line_14_Warning
     Warning: Prover error (pass the "verbose" option for details)
@@ -838,6 +657,468 @@ PROVER ERRORS / CRASHES
   [Warning        ] line_182_Warning
     Warning: Prover error:
   [exception      ] line_182_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_194_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_202_Warning
+    Warning: Prover error:
+  [exception      ] line_202_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_214_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_222_Warning
+    Warning: Prover error:
+  [exception      ] line_222_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_234_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_242_Warning
+    Warning: Prover error:
+  [exception      ] line_242_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_254_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_262_Warning
+    Warning: Prover error:
+  [exception      ] line_262_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_274_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_282_Warning
+    Warning: Prover error:
+  [exception      ] line_282_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_94_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_102_Warning
+    Warning: Prover error:
+  [exception      ] line_102_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_94_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_102_Warning
+    Warning: Prover error:
+  [exception      ] line_102_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_114_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_122_Warning
+    Warning: Prover error:
+  [exception      ] line_122_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_134_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_142_Warning
+    Warning: Prover error:
+  [exception      ] line_142_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_154_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_162_Warning
+    Warning: Prover error:
+  [exception      ] line_162_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_174_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_182_Warning
+    Warning: Prover error:
+  [exception      ] line_182_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_194_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_202_Warning
+    Warning: Prover error:
+  [exception      ] line_202_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_214_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_222_Warning
+    Warning: Prover error:
+  [exception      ] line_222_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_234_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_242_Warning
+    Warning: Prover error:
+  [exception      ] line_242_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_254_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_262_Warning
+    Warning: Prover error:
+  [exception      ] line_262_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_274_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_282_Warning
+    Warning: Prover error:
+  [exception      ] line_282_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_94_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_102_Warning
+    Warning: Prover error:
+  [exception      ] line_102_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_114_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_122_Warning
+    Warning: Prover error:
+  [exception      ] line_122_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_134_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_142_Warning
+    Warning: Prover error:
+  [exception      ] line_142_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_94_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_102_Warning
+    Warning: Prover error:
+  [exception      ] line_102_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_114_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_122_Warning
+    Warning: Prover error:
+  [exception      ] line_122_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_134_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_142_Warning
+    Warning: Prover error:
+  [exception      ] line_142_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_154_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_162_Warning
+    Warning: Prover error:
+  [exception      ] line_162_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_174_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_182_Warning
+    Warning: Prover error:
+  [exception      ] line_182_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_194_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_202_Warning
+    Warning: Prover error:
+  [exception      ] line_202_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_214_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_222_Warning
+    Warning: Prover error:
+  [exception      ] line_222_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_234_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_242_Warning
+    Warning: Prover error:
+  [exception      ] line_242_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_254_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_262_Warning
+    Warning: Prover error:
+  [exception      ] line_262_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_274_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_282_Warning
+    Warning: Prover error:
+  [exception      ] line_282_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_94_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_102_Warning
+    Warning: Prover error:
+  [exception      ] line_102_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_114_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_122_Warning
+    Warning: Prover error:
+  [exception      ] line_122_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_94_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_102_Warning
+    Warning: Prover error:
+  [exception      ] line_102_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_114_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_122_Warning
+    Warning: Prover error:
+  [exception      ] line_122_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_134_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_142_Warning
+    Warning: Prover error:
+  [exception      ] line_142_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_154_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_162_Warning
+    Warning: Prover error:
+  [exception      ] line_162_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_174_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_182_Warning
+    Warning: Prover error:
+  [exception      ] line_182_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_194_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_202_Warning
+    Warning: Prover error:
+  [exception      ] line_202_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_214_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_222_Warning
+    Warning: Prover error:
+  [exception      ] line_222_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_234_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_242_Warning
+    Warning: Prover error:
+  [exception      ] line_242_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_254_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_262_Warning
+    Warning: Prover error:
+  [exception      ] line_262_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_274_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_282_Warning
+    Warning: Prover error:
+  [exception      ] line_282_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_14_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_22_Warning
+    Warning: Prover error:
+  [exception      ] line_22_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_34_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_42_Warning
+    Warning: Prover error:
+  [exception      ] line_42_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_54_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_62_Warning
+    Warning: Prover error:
+  [exception      ] line_62_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_74_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_82_Warning
+    Warning: Prover error:
+  [exception      ] line_82_exception
+    exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
+  [Warning        ] line_94_Warning
+    Warning: Prover error (pass the "verbose" option for details)
+  [Warning        ] line_102_Warning
+    Warning: Prover error:
+  [exception      ] line_102_exception
     exception Fail raised (line 75 of "System/isabelle_system.ML"): I/O error: Broken pipe
 
 ============================================================

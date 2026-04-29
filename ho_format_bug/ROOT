@@ -1,0 +1,4 @@
+session HO_Format_Bug = HOL +
+  options [document = false]
+  theories
+    HO_Format_Bug

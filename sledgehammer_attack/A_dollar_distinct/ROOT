@@ -1,0 +1,3 @@
+session A_dollar_distinct = HOL +
+  theories
+    A_dollar_distinct

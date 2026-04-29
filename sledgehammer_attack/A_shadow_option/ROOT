@@ -1,0 +1,3 @@
+session A_shadow_option = HOL +
+  theories
+    A_shadow_option

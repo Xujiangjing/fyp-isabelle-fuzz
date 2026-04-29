@@ -1,0 +1,3 @@
+session A_mp_lambda_e = HOL +
+  theories
+    A_mp_lambda_e

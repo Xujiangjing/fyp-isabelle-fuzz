@@ -1,0 +1,3 @@
+session A_type_bool = HOL +
+  theories
+    A_type_bool

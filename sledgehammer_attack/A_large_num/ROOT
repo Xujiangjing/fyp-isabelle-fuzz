@@ -1,0 +1,3 @@
+session A_large_num = HOL +
+  theories
+    A_large_num

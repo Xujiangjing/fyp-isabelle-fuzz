@@ -1,0 +1,3 @@
+session A_forall_simple = HOL +
+  theories
+    A_forall_simple
